@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webdziner_All>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Webdziner_All>
+    </modules>
+</config> 

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<customer_account translate="label">
+    <reference name="left">
+        <action method="unsetChild"><name>cart_sidebar</name></action>
+    </reference>
+</customer_account>

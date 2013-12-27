@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webdziner_Ajaxsearch>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Webdziner_Ajaxsearch>
+    </modules>
+</config> 

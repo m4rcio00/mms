@@ -1,0 +1,261 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2011 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('product_top')->toHtml(); ?>
+
+<div class="product-view">
+<div><?php if ($this->getProduct()->getProdutoDrop()){
+  echo "Não";
+} ?></div>
+  <div class="pagamento-mms"><a href="#">
+    <img class="img-centro" alt="Formas de Pagamento" src="<?php echo $this->getSkinUrl('images/pagamento-mms.png', array('_secure'=>true)) ?>"></a></div>
+
+  <?php $_helper = $this->helper('catalog/output'); ?>
+  <?php $_product = $this->getProduct(); ?>
+  <script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+  <?php
+// Previous Next links
+
+// gets latest searchvalue
+$query = Mage::getModel('catalogsearch/query')->getSuggestCollection();
+$timestamp = 0;
+$query_name;
+foreach($query as $q):
+    if($timestamp < strtotime($q['updated_at'])):
+        $timestamp = strtotime($q['updated_at']);
+        $query_name = $q['query'];
+    endif;
+endforeach;
+
+// gets search parameter (set at list.phtml if it was a searchinglist)
+$search_parameter = $_GET['search'];
+
+$sort = Mage::getModel('catalog/session');
+$order = strtolower($sort->getSortOrder());
+$direction = strtolower($sort->getSortDirection());
+if ($direction == "") {
+    $direction = 'asc';
+}
+if ($order == "") {
+    $order = Mage::getStoreConfig('catalog/frontend/default_sort_by');
+}
+
+$category_products = Mage::getModel('catalog/layer')->getProductCollection()->addAttributeToSort($order, $direction); // gets viewed catalog category collection, although does not get the layer collection 
+$search_products = Mage::getModel('catalogsearch/query')->loadByQueryText($query_name)->getResultCollection(); // gets searching product collection
+
+if($search_parameter):
+    $category_products = $search_products;
+endif;
+
+
+$category_products->addAttributeToFilter('status',1); // 1 or 2 
+$category_products->addAttributeToFilter('visibility',4); // 1.2.3.4 
+
+// Generate array from product collection products ids
+if($search_parameter):
+    // since addAttributeToSort() doesnt work for getResultCollection() sorting it by myself
+    $cat_prod_ids = array();
+    $cat_prod_ids2 = array();
+    foreach($category_products as $prod) {
+        $cat_prod_ids2[] = $prod->getId();
+    }
+    $e = count($cat_prod_ids2);
+    while($e >= 0) {
+        $cat_prod_ids[] = $cat_prod_ids2[$e];
+        $e--;
+    }
+else:
+    $cat_prod_ids = array();
+    foreach($category_products as $prod) {
+        $cat_prod_ids [] = $prod->getId();
+    }
+endif;
+// Determine the previous/next link and link to current category
+$_product_id = $_product->getId();
+$_pos = array_search($_product_id, $cat_prod_ids);
+$_next_pos = $_pos+1;
+$_prev_pos = $_pos-1;
+// get the next product url
+    if( isset($cat_prod_ids[$_next_pos]) ) {
+        $_next_prod = Mage::getModel('catalog/product')->load( $cat_prod_ids[$_next_pos] );
+    }
+    else {
+        $_next_prod = NULL;
+    }
+// get the prev product url
+    if( isset($cat_prod_ids[$_prev_pos]) ) {
+        $_prev_prod = Mage::getModel('catalog/product')->load( $cat_prod_ids[$_prev_pos] );
+    }
+    else {
+        $_prev_prod = NULL;
+    }
+// END prev next
+?>
+  <div class="product-essential row">
+    <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+    <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+      <div class="no-display">
+        <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+        <input type="hidden" name="related_product" id="related-products-field" value="" />
+      </div>
+      <div class="product-img-box span4">
+        <?php if( Mage::getModel('newproduct/grid')->isNewProduct($_product->getId()) ): ?>
+        <div class="products-new">New</div>
+        <?php endif; ?>
+        <?php echo $this->getChildHtml('media') ?> </div>
+      <div class="product-shop span8">
+
+        <div class="product-name">
+        <div class="frete-mms">Frete Grátis Brasil*</div>
+        <div class="prev-next"><?php if($_prev_prod != NULL): ?>
+  <a href="<?php print $_prev_prod->getProductUrl();if($search_parameter):?>?search=1<?php endif;?>" class="p-prevNav hidden-phone">&nbsp;</a>
+  <?php endif; ?>
+  <?php if($_next_prod != NULL): ?>
+  <a href="<?php print $_next_prod->getProductUrl();if($search_parameter):?>?search=1<?php endif;?>" class="p-nextNav hidden-phone">&nbsp;</a>
+  <?php endif; ?></div>
+          <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>          
+        </div>
+        <?php echo $this->getReviewsSummaryHtml($_product, false, true)?> <?php echo $this->getChildHtml('alert_urls') ?>
+        <?php if ($_product->isAvailable()): ?>
+        <p class="availability in-stock"><?php echo "Disponibilidade:" ?> <span><?php echo $this->__('In stock') ?></span></p>
+        <?php else: ?>
+        <p class="availability out-of-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('Out of stock') ?></span></p>
+        <?php endif; ?>
+        <p class="sku">Código do Produto: <?php echo $this->htmlEscape($_product->getSku()) ?></p>
+        <?php echo $this->getTierPriceHtml() ?>
+        <div class="box1"> <?php echo $this->getChildHtml('product_type_data') ?> <?php echo $this->getChildHtml('extrahint') ?>
+          <?php if (!$this->hasOptions()):?>
+          <div class="add-to-box one">
+            <?php if($_product->isSaleable()): ?>
+            <?php echo $this->getChildHtml('addtocart') ?>
+            <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+            <?php endif; ?>
+            <?php endif; ?>
+          </div>
+          
+          <? /* php <div class="prazo-mms">Prazo de Entrega</div>
+          <div class="frete-mms">Frete Grátis Brasil*</div>*/?>
+          </div>
+		  <?php echo $this->getChildHtml('extra_buttons') ?>
+          <?php elseif (!$_product->isSaleable()): ?>
+          <div class="add-to-box two"> <?php echo $this->getChildHtml('addto') ?> </div>
+          </div>
+          <?php endif; ?>
+        
+        <?php echo $this->getChildHtml('other');?>
+        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+        <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+        <?php endif;?>
+        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+        <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+        <?php endif;?>
+        <?php if ($_product->getShortDescription()):?>
+
+        <div class="pagamento-aceito-mms">
+        <h4>Pague sua compra com PagSeguro - PayPal - MercadoPago</h4>
+        <span>Parcele sua compra em até 10x</span></div>
+
+        <div class="prazo-mms"><h4>Prazo de Entrega</h4>
+        <span>Produto Importado - Prazo médio de entrega entre 20 a 40 dias úteis</span></div>
+
+
+        <div class="short-description">
+          <?php /*?><h2><?php echo $this->__('Quick Overview') ?></h2><?php */?>
+          <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+        </div>
+        <?php endif;?>
+        <div class="shareButton"><?php echo $this->getChildHtml('addto') ?>
+          <?php if ($this->canEmailToFriend()): ?>
+          <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
+          <?php endif; ?>
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style "> <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a> <a class="addthis_button_preferred_3"></a> <a class="addthis_button_preferred_4"></a> <a class="addthis_button_compact"></a> <a class="addthis_counter addthis_bubble_style"></a> </div>
+          <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4ecde5167f228697"></script> 
+          <!-- AddThis Button END --> 
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </form>
+  </div>
+  <script type="text/javascript">
+    //<![CDATA[
+        var productAddToCartForm = new VarienForm('product_addtocart_form');
+        productAddToCartForm.submit = function(button, url) {
+            if (this.validator.validate()) {
+                var form = this.form;
+                var oldUrl = form.action;
+
+                if (url) {
+                   form.action = url;
+                }
+                var e = null;
+                try {
+                    this.form.submit();
+                } catch (e) {
+                }
+                this.form.action = oldUrl;
+                if (e) {
+                    throw e;
+                }
+
+                if (button && button != 'undefined') {
+                    button.disabled = true;
+                }
+            }
+        }.bind(productAddToCartForm);
+
+        productAddToCartForm.submitLight = function(button, url){
+            if(this.validator) {
+                var nv = Validation.methods;
+                delete Validation.methods['required-entry'];
+                delete Validation.methods['validate-one-required'];
+                delete Validation.methods['validate-one-required-by-name'];
+                if (this.validator.validate()) {
+                    if (url) {
+                        this.form.action = url;
+                    }
+                    this.form.submit();
+                }
+                Object.extend(Validation.methods, nv);
+            }
+        }.bind(productAddToCartForm);
+    //]]>
+    </script> 
+<?php echo $this->getChildHtml('info_tabs') ?> <?php echo $this->getChildHtml('product_additional_data') ?>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('product_mid')->toHtml(); ?>
+<?php echo $this->getChildHtml('upsell_products') ?>
+<?php echo $this->getChildHtml('related_products') ?>
+</div>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('product_bottom')->toHtml(); ?>

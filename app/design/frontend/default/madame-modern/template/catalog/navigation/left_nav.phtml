@@ -1,0 +1,13 @@
+<div class="block left-category hidden-phone">
+<div class="block-title">
+        <strong><span>Category</span></strong>
+    </div>
+<div class="block-content">
+<?php $_menu = $this->renderCategoriesMenuHtml(0,'level-top') ?>
+<?php if($_menu): ?>
+  <ul class="nav_category sf-menu sf-vertical">
+    <?php echo $_menu ?>
+  </ul>
+<?php endif ?>
+</div></div>
+<?php echo $this->getChildHtml('topLeftLinks') ?>

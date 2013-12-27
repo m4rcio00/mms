@@ -1,0 +1,22 @@
+.row { margin-left: -20px;  *zoom: 1;}
+.row:before,  .row:after { display: table; content: ""; }
+.row:after { clear: both; }
+ [class*="span"] {
+ float: left;
+ margin-left: 20px;}
+.page { width: 1180px; }
+.container,  .navbar-fixed-top .container,  .navbar-fixed-bottom .container { width: 1180px; }
+.container .sf-menu a { margin:0 34px 0 0; font-size:12px; }
+.span12 { width: 1180px; }
+.span11 { width: 1090px; }
+.span10 { width: 980px; }
+.span9 { width: 880px; }
+.span8 { width: 780px; }
+.flexslider.span8 { float:none; }
+.span7 { width: 680px; }
+.span6 { width: 580px; }
+.span5 { width: 480px; }
+.span4 { width: 380px; }
+.span3 { width: 280px; }
+.span2 { width: 180px; }
+.span1 { width: 80px; }
