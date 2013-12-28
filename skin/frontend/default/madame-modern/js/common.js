@@ -32,10 +32,7 @@ jQuery(document).ready(function() {
 			   
 			   })
 			   
-			   
-			   
-			   
-			   .mouseout(function() {
+			   jQuery('.top-cart').mouseout(function() {
                jQuery('.cartView').hide()			   
 			   })
 			                
