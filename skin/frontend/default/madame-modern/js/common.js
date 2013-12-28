@@ -28,11 +28,11 @@ jQuery(function() {
 jQuery(document).ready(function() {
 	
                jQuery('.top-cart').mouseenter(function() {
-			   find(".cartView").stop(true, true).slideDown()
+			   this.find(".cartView").stop(true, true).slideDown();
 				   
                //jQuery('.cartView').show()
 			   
-			   })
+			   });
 			   
 			   jQuery('.top-cart').mouseout(function() {
                jQuery('.cartView').hide()			   
