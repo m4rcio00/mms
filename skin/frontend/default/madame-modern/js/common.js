@@ -26,18 +26,29 @@ jQuery(function() {
 
 //Top Cart
 jQuery(document).ready(function() {
-          jQuery('.top-cart').mouseover(function() {
-               jQuery('.cartView').show()})
+	
+               jQuery('.top-cart').mouseover(function() {
+               jQuery('.cartView').show()
 			   
 			   jQuery('.cartView').mouseover(function() {
                jQuery('.cartView').show()})
 			   
+			   })
+			   
+			   
+			   
 			   
 			   .mouseout(function() {
-               jQuery('.cartView').hide(2000)})
+               jQuery('.cartView').hide(2000)
 			   
 			   .mouseout(function() {
-               jQuery('.cartView').hide(2000)})
+               jQuery('.cartView').hide(2000)
+			   
+			   })
+			   
+			   })
+			   
+			   
                              
                return false;
           });
