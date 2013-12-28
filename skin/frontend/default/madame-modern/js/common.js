@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
           jQuery('.top-cart').mouseover(function() {
                jQuery('.cartView').show()})
 			   
-			  jQuery('.top-cart').mouseout(function() {
+			   .mouseout(function() {
                jQuery('.cartView').hide()})
                              
                return false;
