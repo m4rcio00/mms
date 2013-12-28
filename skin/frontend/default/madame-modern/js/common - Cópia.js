@@ -27,8 +27,12 @@ jQuery(function() {
 //Top Cart
 jQuery(document).ready(function() {
           jQuery('.top-cart').mouseover(function() {
-               jQuery('.cartView').show()
-                             
+               if (jQuery('.cartView').is(":hidden"))
+               {
+                    jQuery('.cartView').slideDown("fast");
+               } else {
+                    jQuery('.cartView').slideUp("fast");
+               }
                return false;
           });
 });
