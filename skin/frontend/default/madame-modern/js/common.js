@@ -29,6 +29,8 @@ jQuery(document).ready(function() {
 	
                $('.top-cart').mouseenter(function() {
 			   $('.top-cart').find(".cartView").stop(true, true).slideDown(); });
+			   
+			   return false;
 			           
           });
 	 
