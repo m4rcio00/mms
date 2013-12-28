@@ -28,7 +28,7 @@ jQuery(function() {
 jQuery(document).ready(function() {
 	
                jQuery('.top-cart').mouseenter(function() {
-			    (this).find(".cartView").stop(true, true).slideDown();
+			   find(".cartView").stop(true, true).slideDown()
 				   
                //jQuery('.cartView').show()
 			   
