@@ -33,12 +33,7 @@ jQuery(document).ready(function() {
                //jQuery('.cartView').show()
 			   
 			   });
-			   
-			   jQuery('.top-cart').mouseout(function() {
-               jQuery('.cartView').hide()			   
-			   })
-			                
-               return false;
+			           
           });
 	 
 //Home Page Main Slider
