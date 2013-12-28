@@ -27,12 +27,8 @@ jQuery(function() {
 //Top Cart
 jQuery(document).ready(function() {
 	
-               ('.top-cart').mouseenter(function() {
-			   ('.top-cart').find(".cartView").stop(true, true).slideDown()
-				   
-               //jQuery('.cartView').show()
-			   
-			   });
+               $('.top-cart').mouseenter(function() {
+			   ('.top-cart').find(".cartView").stop(true, true).slideDown(); })
 			           
           });
 	 
