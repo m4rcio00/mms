@@ -32,8 +32,8 @@
 
 ?>
 <?php if ($this->getIsNeedToDisplaySideBar()):?>
-<div class="top-cart">
-<span class="cart-ico"><img src="<?php echo $this->getSkinUrl('images/cart.png') ?>" /></span>
+<div class="top-cart"><div class="cartView" style="display:none;"> Isso é um teste</div>
+  <span class="cart-ico"><img src="<?php echo $this->getSkinUrl('images/cart.png') ?>" /></span>
     <?php $_cartQty = $this->getSummaryCount() ?>
     <?php /*?><div class="top-title">
         <?php echo $this->__('Shopping Cart') ?>
@@ -55,7 +55,9 @@
 
     <?php endif ?>
     <?php $_items = $this->getRecentItems() ?>
-    <?php if(count($_items)): ?></div>
+    <?php if(count($_items)): ?>
+
+</div>
         <div class="cartView" style="display:none;">
         <p class="block-subtitle"><?php echo $this->__('Recently added item(s)') ?></p>
         <ol id="cart-sidebar" class="mini-products-list">
