@@ -27,17 +27,13 @@ jQuery(function() {
 //Top Cart
 jQuery(document).ready(function() {
           jQuery('.top-cart').mouseover(function() {
-               jQuery('.cartView').show()  
+               jQuery('.cartView').show()})
+			   
+			  jQuery('.top-cart').mouseout(function() {
+               jQuery('.cartView').hide()})
                              
                return false;
           });
-		  
-		  jQuery('.top-cart').mouseout()(function() {
-               jQuery('.cartView').hide()
-                             
-               return false;
-          });
-});
 	 
 //Home Page Main Slider
 jQuery(window).load(function(){
