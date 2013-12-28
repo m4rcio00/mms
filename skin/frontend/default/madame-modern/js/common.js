@@ -39,17 +39,9 @@ jQuery(document).ready(function() {
 			   
 			   
 			   .mouseout(function() {
-               jQuery('.cartView').hide(2000)
-			   
-			   .mouseout(function() {
-               jQuery('.cartView').hide(2000)
-			   
+               jQuery('.cartView').hide(2000)			   
 			   })
-			   
-			   })
-			   
-			   
-                             
+			                
                return false;
           });
 	 
