@@ -26,7 +26,7 @@ jQuery(function() {
 
 //Top Cart
 jQuery(document).ready(function() {
-          jQuery('.top-cart').click(function() {
+          jQuery('.top-cart').mouse(function() {
                if (jQuery('.cartView').is(":hidden"))
                {
                     jQuery('.cartView').slideDown("fast");
