@@ -27,7 +27,13 @@ jQuery(function() {
 //Top Cart
 jQuery(document).ready(function() {
           jQuery('.top-cart').mouseover(function() {
-               jQuery('.cartView').show()
+               jQuery('.cartView').show()  
+                             
+               return false;
+          });
+		  
+		  jQuery('.top-cart').mouseout()(function() {
+               jQuery('.cartView').hide()
                              
                return false;
           });
