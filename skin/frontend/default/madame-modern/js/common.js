@@ -26,8 +26,14 @@ jQuery(function() {
 
 //Top Cart
 function slideEffectAjax() {
-
-      alert("Apenas um teste");
+      $('.top-cart').mouseenter(function() {
+           // $(this).find(".cartView").stop(true, true).slideDown();
+           alert("Funcipmasdfasdf");
+        });
+        //hide submenus on exit
+        $('.top-cart-contain').mouseleave(function() {
+            $(this).find(".top-cart-content").stop(true, true).slideUp();
+        });
 }
 
 
@@ -46,7 +52,7 @@ jQuery(window).load(function(){
 
 jQuery(document).ready(function() {
 
-    
+    slideEffectAjax();
 
 	jQuery(".topnav").accordion({
 		accordion:false,
