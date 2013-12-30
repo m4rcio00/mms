@@ -26,6 +26,7 @@ jQuery(function() {
 
 //Top Cart
 function slideEffectAjax() {
+
       alert("Apenas um teste");
 }
 
@@ -45,7 +46,7 @@ jQuery(window).load(function(){
 
 jQuery(document).ready(function() {
 
-    slideEffectAjax();
+    
 
 	jQuery(".topnav").accordion({
 		accordion:false,
