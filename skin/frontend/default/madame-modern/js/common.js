@@ -26,13 +26,7 @@ jQuery(function() {
 
 //Top Cart
 function slideEffectAjax() {
-      $('.top-cart').mouseenter(function() {
-            $(this).find(".cartView").stop(true, true).slideDown();
-        });
-        //hide submenus on exit
-        $('.top-cart-contain').mouseleave(function() {
-            $(this).find(".top-cart-content").stop(true, true).slideUp();
-        });
+      alert("Apenas um teste");
 }
 
 
@@ -48,7 +42,7 @@ jQuery(window).load(function(){
       });
 });
 
-/*Phone Menu*/
+
 jQuery(document).ready(function() {
 
     slideEffectAjax();
