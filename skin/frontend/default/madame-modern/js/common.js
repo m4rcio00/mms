@@ -25,14 +25,22 @@ jQuery(function() {
 });
 
 //Top Cart
-jQuery(document).ready(function() {
+function slideEffectAjax() {
+      $jq('.top-cart').mouseenter(function() {
+            $jq(this).find(".cartView").stop(true, true).slideDown();
+        });
+        //hide submenus on exit
+        $jq('.top-cart-contain').mouseleave(function() {
+            $jq(this).find(".top-cart-content").stop(true, true).slideUp();
+        });
+}
+
+
+$jq(document).ready(function(){
+  
+    slideEffectAjax();
 	
-               $('.top-cart').mouseenter(function() {
-			   $('.top-cart').find(".cartView").stop(true, true).slideDown(); });
-			   
-			   return false;
-			           
-          });
+});
 	 
 //Home Page Main Slider
 jQuery(window).load(function(){
