@@ -26,12 +26,12 @@ jQuery(function() {
 
 //Top Cart
 function slideEffectAjax() {
-      $jq('.top-cart').mouseenter(function() {
-            $jq(this).find(".cartView").stop(true, true).slideDown();
+      $('.top-cart').mouseenter(function() {
+            $(this).find(".cartView").stop(true, true).slideDown();
         });
         //hide submenus on exit
-        $jq('.top-cart-contain').mouseleave(function() {
-            $jq(this).find(".top-cart-content").stop(true, true).slideUp();
+        $('.top-cart-contain').mouseleave(function() {
+            $(this).find(".top-cart-content").stop(true, true).slideUp();
         });
 }
 
@@ -50,10 +50,15 @@ jQuery(window).load(function(){
 
 /*Phone Menu*/
 jQuery(document).ready(function() {
+
+    slideEffectAjax();
+
 	jQuery(".topnav").accordion({
 		accordion:false,
 		speed: 300,
 		closedSign: '[+]',
 		openedSign: '[-]'
 	});
+
+
 });
