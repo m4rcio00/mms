@@ -36,11 +36,6 @@ function slideEffectAjax() {
 }
 
 
-$jq(document).ready(function(){
-  
-    slideEffectAjax();
-	
-});
 	 
 //Home Page Main Slider
 jQuery(window).load(function(){
