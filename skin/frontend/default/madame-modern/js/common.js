@@ -26,7 +26,7 @@ jQuery(function() {
 
 //Top Cart
 function slideEffectAjax() {
-      $('.shoppingCart').mouseenter(function() {
+      $jQuery('.shoppingCart').mouseenter(function() {
            // $(this).find(".cartView").stop(true, true).slideDown();
            alert("Funcipmasdfasdf");
         });
