@@ -27,11 +27,11 @@ jQuery(function() {
 //Top Cart
 function slideEffectAjax() {
       jQuery('.shoppingCart').mouseenter(function() {
-           // $(this).find(".cartView").stop(true, true).slideDown();
-           alert("Funcipmasdfasdf");
+           jQuery(this).find(".cartView").stop(true, true).slideDown();
+           //alert("Funcipmasdfasdf");
         });
         //hide submenus on exit
-        $('.top-cart-contain').mouseleave(function() {
+        jQuery('.top-cart-contain').mouseleave(function() {
             $(this).find(".top-cart-content").stop(true, true).slideUp();
         });
 }
