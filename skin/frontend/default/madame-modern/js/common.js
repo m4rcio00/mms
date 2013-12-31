@@ -31,7 +31,7 @@ function slideEffectAjax() {
            //alert("Funcipmasdfasdf");
         });
         //hide submenus on exit
-        jQuery('.shoppingCartn').mouseleave(function() {
+        jQuery('.shoppingCart').mouseleave(function() {
             jQuery(this).find(".cartView").stop(true, true).slideUp();
         });
 }
