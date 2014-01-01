@@ -10,6 +10,7 @@
 div.menu a:link, div.menu a:visited,
 div.menu a:hover, div.menu.active a  {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 
@@ -71,5 +72,13 @@ div.itemSubMenu {
     font-family: Georgia;
     font-size: 16px;
     text-transform:uppercase;
+    margin-top: 10px;
+    margin-bottom: 12px;
+
+}
+
+.itemMenuName.level2{
+
+    margin-bottom: 3px;
 
 }
