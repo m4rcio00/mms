@@ -25,7 +25,7 @@
 
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
-body {font:75% 'Trebuchet MS', Tahoma, Arial, Verdana, sans-serif; color:#7e7e7e; text-align:left; background:#F2F2F2; border-top: 3px solid #FF6400;}
+body {font:75% 'Trebuchet MS', Tahoma, Arial, Verdana, sans-serif; color:#7e7e7e; text-align:left; background:#F2F2F2; border-top: 4px solid #FF6400;}
 img { border:0; vertical-align:top; max-width:100%;}
 a { color:#F40; text-decoration:none; }
 a:hover { text-decoration: underline; color:#00abce; }
@@ -483,7 +483,7 @@ height: 39px;
 .search-autocomplete li.ajaxsearch_more { margin-bottom:0px; border-bottom:0px; padding-bottom:0px; }
 .search-autocomplete li.ajaxsearch_more:hover { background:none; }
 /********** < Navigation */
-.nav-container { background: #00abce; height:34px; border-bottom: 3px solid	#FF8433;}
+.nav-container { background: #00abce; height:34px; border-bottom: 4px solid	#FF8433;}
 #nav { padding:0; font-size:15px; text-transform:uppercase; line-height:54px; margin:0 20px; }
 /* All Levels */
 #nav li { text-align:left; position:relative; }
