@@ -1,16 +1,16 @@
 #custommenu {
     position:relative;
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px 0px 0px 0px;
     padding: 0 16px;
     z-index: 999;
+    font-family: Georgia;
 }
 
 /*COLOR*/
 div.menu a:link, div.menu a:visited,
 div.menu a:hover, div.menu.active a  {
     color: #FFFFFF;
-    text-decoration: underline;
 }
 
 
