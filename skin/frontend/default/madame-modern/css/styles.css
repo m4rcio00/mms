@@ -453,7 +453,7 @@ height: 39px;
 .header h1.logo { margin:0; padding:0; }
 .header .links { float:right; border-left:1px solid #EDEDED; ; margin-top:25px; }
 .header-container { margin:0 auto; position:relative; }
-.shop-info { float:right; margin:20px 0; text-transform:uppercase; text-align:right; height: 60px;}
+.shop-info { float:right; margin:20px 0; text-transform:none; text-align:right; height: 60px;}
 .user-search{clear:right;}
 .welcome-to{ font-size:11px; font-weight: bold; font-family: Tahoma; color:#444; margin:16px 10px 0 0; float:right;}
 /*Top info*/
