@@ -25,7 +25,7 @@
 
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
-body {font:75% 'Trebuchet MS', Tahoma, Arial, Verdana, sans-serif; color:#7e7e7e; text-align:left; background:#F2F2F2; border-top: 4px solid #FF6400;}
+body {font:75% 'Trebuchet MS', Tahoma, Arial, Verdana, sans-serif; color:#7e7e7e; text-align:left; background:#F2F2F2; border-top: 2px solid #FF6400;}
 img { border:0; vertical-align:top; max-width:100%;}
 a { color:#F40; text-decoration:none; }
 a:hover { text-decoration: underline; color:#00abce; }
@@ -455,7 +455,7 @@ height: 39px;
 .header-container { margin:0 auto; position:relative; }
 .shop-info { float:right; margin:20px 0; text-transform:uppercase; text-align:right; height: 60px;}
 .user-search{clear:right;}
-.welcome-to{ font-size:11px; color:#000; margin:14px 10px 0 0; float:right;}
+.welcome-to{ font-size:11px; font-weight: bold; font-family: Tahoma; color:#444; margin:16px 10px 0 0; float:right;}
 /*Top info*/
 .top_info { float:right; margin:3px 20px 0 0;}
 .top_info .phone { line-height:21px; display:inline-block;}
