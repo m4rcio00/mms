@@ -351,7 +351,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 /* Top Cart */
-.shoppingCart { position:relative;  font-size:10px; border: 1px solid #00abce; border-top: 3px solid #00abce; min-width:214px; width: 200px; float:right; background:#FFF;  cursor:pointer; height: 69px;}
+.shoppingCart { position:relative;  font-size:10px; border: 1px solid #00abce; border-top: 3px solid #00abce; min-width:250px; width: 200px; float:right; background:#FFF;  cursor:pointer; height: 35px;}
 .shoppingCart .summary{font-size: 13px; font-weight: bold; font-family: Arial; color: #000; margin-right: 10px; margin-top: 5px; float: right; line-height:25px; padding-left:3px;}
 .shoppingCart .top-cart { margin:0px; border:0px; padding:3px 10px; }
 .shoppingCart .empty {color: #000; font-size:13px; font-family: Arial; font-weight: bold; float: right; line-height:25px; padding-left:3px; display:inline-block; margin-right: 10px; margin-top: 5px;}
@@ -453,7 +453,7 @@ height: 39px;
 .header h1.logo { margin:0; padding:0; }
 .header .links { float:right; border-left:1px solid #EDEDED; ; margin-top:25px; }
 .header-container { margin:0 auto; position:relative; }
-.shop-info { float:right; margin:20px 0; text-transform:uppercase; text-align:center; height: 60px;}
+.shop-info { float:right; margin:20px 0; text-transform:uppercase; text-align:right; height: 60px;}
 .user-search{clear:right;}
 .welcome-to{ font-size:11px; color:#000; margin:14px 10px 0 0; float:right;}
 /*Top info*/
