@@ -4,7 +4,7 @@
     margin: 1px 0px 0px 0px;
     padding: 0 16px;
     z-index: 999;
-    font-family: Roboto;
+    font-family: Tahoma;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -29,11 +29,14 @@ div.menu.active {
 div.wp-custom-menu-popup {
     position:absolute;
     z-index:3000;
-    border:5px solid #75AB00;
+    border-top:3px solid #46b08d;
+    border-bottom: 1px solid #46b08d;
+    border-left: 1px solid #46b08d;
+    border-right: 1px solid #46b08d;
     display: none;
     background-color:#fff;
     text-align:left;
-    width: 960px;
+    width: 968px;
 }
 div.menu, div.wp-custom-menu-popup {
     padding: 7px 12px 6px 8px;

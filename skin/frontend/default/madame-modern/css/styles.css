@@ -27,7 +27,7 @@
 * { margin:0; padding:0; }
 body {font:75% 'Trebuchet MS', Tahoma, Arial, Verdana, sans-serif; color:#7e7e7e; text-align:left; background:#F2F2F2; border-top: 2px solid #FF6400;}
 img { border:0; vertical-align:top; max-width:100%;}
-a { color:#F40; text-decoration:none; }
+a { color:#444; text-decoration:none; }
 a:hover { text-decoration: underline; color:#00abce; }
 :focus { outline:0; }
 /* Headings */
