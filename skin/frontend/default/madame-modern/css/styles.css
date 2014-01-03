@@ -483,7 +483,7 @@ height: 39px;
 .search-autocomplete li.ajaxsearch_more { margin-bottom:0px; border-bottom:0px; padding-bottom:0px; }
 .search-autocomplete li.ajaxsearch_more:hover { background:none; }
 /********** < Navigation */
-.nav-container { background: #00abce; height:34px; border-bottom: 3px solid	#ffb502;}
+.nav-container { background: #00abce; height:34px; border-bottom: 3px solid	#46b08d;}
 #nav { padding:0; font-size:15px; text-transform:uppercase; line-height:54px; margin:0 20px; }
 /* All Levels */
 #nav li { text-align:left; position:relative; }
