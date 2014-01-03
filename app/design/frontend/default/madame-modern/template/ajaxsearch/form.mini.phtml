@@ -32,12 +32,11 @@
       <div class="form-search">
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
 		<div class="" id="searchajaxico" style="display: none;"></div>
-       <?php 
-       /**<input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->__('Search entire store here...') ?>" class="input-text" />*/ 
-       ?>
+       
+       <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->__('Search entire store here...') ?>" class="input-text" />
+       
 
-       <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="Digite aqui o que você procura" class="input-text" />
-
+       
         <div id="search_autocomplete" class="search-autocomplete" style="display:none;"></div>
 
         <input type="submit" value="Buscar" class="btn-buscar">
