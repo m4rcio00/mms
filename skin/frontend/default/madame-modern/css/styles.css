@@ -351,7 +351,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 /* Top Cart */
-.shoppingCart { position:relative; top: 16px;  font-size:10px; border: 1px solid #FF4A4A; border-top: 3px solid #FF4A4A; min-width:250px; width: 200px; float:right; background:#FFF;  cursor:pointer; height: 35px;}
+.shoppingCart { position:relative; top: 20px;  font-size:10px; border: 1px solid #FF4A4A; border-top: 3px solid #FF4A4A; min-width:250px; width: 200px; float:right; background:#FFF;  cursor:pointer; height: 35px;}
 .shoppingCart .summary{font-size: 13px; font-weight: bold; font-family: Arial; color: #000; margin-right: 120px; margin-top: 5px; float: right; line-height:25px; padding-left:3px; text-transform: initial;}
 .shoppingCart .top-cart { margin:0px; border:0px; padding:3px 10px; }
 .shoppingCart .empty {color: #000; font-size:13px; font-family: Arial; font-weight: bold; float: right; line-height:25px; padding-left:0px; display:inline-block; margin-right: 120px; margin-top: 5px; text-transform:initial;}
@@ -377,7 +377,7 @@ tr.summary-details-excluded { font-style:italic; }
 .logo { }
 .shopLinks { background:#FFFFFF; border-bottom: 1px solid #00abce; height: 25px;}
 .links {font-size:11px; float:left; margin:4px 0px 0px 4px; font-family:Tahoma, Helvetica, sans-serif; font-weight: bold;}
-.links a { color: #000; text-decoration:none; padding:0 8px 0 7px; no-repeat;
+.links a { color: #444; text-decoration:none; padding:0 8px 0 7px; no-repeat;
 border-right:1px solid #d7d7d7; }
 .links a:hover { text-decoration:underline; color:#FF6400; }
 
@@ -400,7 +400,7 @@ border-right:1px solid #d7d7d7; }
 .preco-de-mms {font-size: 12px; font-family: 'Open Sans'; color: #000}
 .preco-por-mms {font-size: 12px; font-family: 'Open Sans'; color: #f40; font-weight: 600;}
 .preco-por-valor-mms {font-size: 17px; font-family: 'Open Sans'; font-weight: 600; color: #f40;}
-.teste{text-transform: none; font-size: 12px; color:#000; position: absolute; top: -36px; right: 350px;}
+.mmsContato{text-transform: none; font-size: 12px; color:#000; position: absolute; top: -36px; right: 350px;}
 .pagamento-mms {margin-top: 12px; margin-bottom: 12px; height: 52px; border: 1px solid #00abce; background: #f7f7f7;}
 img.pagamento-mms{ }
 .breadcrumbs span {color: #000;}
@@ -448,14 +448,14 @@ height: 39px;
 .form-language select { padding:2px; font-size:10px; }
 .form-language label { text-transform:uppercase; font-size:10px; }
 .header { position:relative;}
-.header .logo { text-decoration:none !important; margin:38px 0 0 20px; }
+.header .logo { text-decoration:none !important; margin:33px 0 0 20px; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; padding:0; }
 .header .links { float:right; border-left:1px solid #EDEDED; ; margin-top:25px; }
 .header-container { margin:0 auto; position:relative; }
 .shop-info { float:right; margin:20px 0; text-transform:none; text-align:right; height: 60px;}
 .user-search{clear:right;}
-.welcome-to{ font-size:11px; font-weight: bold; font-family: Tahoma; color:#444; margin:16px 10px 0 0; float:right;}
+.welcome-to{ font-size:11px; font-weight: bold; font-family: Tahoma; color:#444; margin:6px 10px 0 0; float:right;}
 /*Top info*/
 .top_info { float:right; margin:3px 20px 0 0;}
 .top_info .phone { line-height:21px; display:inline-block;}
