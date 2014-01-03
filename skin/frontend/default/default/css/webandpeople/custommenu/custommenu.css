@@ -25,6 +25,7 @@ div.menu.act {
 }
 div.menu.active {
     background-color:#46b08d;
+    height: 19px;
 }
 div.wp-custom-menu-popup {
     position:absolute;
