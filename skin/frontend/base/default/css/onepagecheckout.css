@@ -181,3 +181,11 @@ p.newsletter label{color:#8E8D8B;}
 * html .d-sh-tl, * html .d-sh-tr { padding-right:42px; }
 /* IE7 fix */
 *:first-child+html .onepagecheckout-window { width: 500px; }
+
+
+/*	MINHAS CONFIFURAÇÕES	*/
+
+.op_block_title.osc_number-1 {
+
+	background-image: url("../images/osc_number-1.png") !important;
+}
