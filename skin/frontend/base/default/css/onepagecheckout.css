@@ -187,5 +187,9 @@ p.newsletter label{color:#8E8D8B;}
 
 .op_block_title.osc-numbers-1 {
 
-	background-image: url("../images/osc-numbers-1.png") !important;
+	background: url("../images/osc-numbers-1.png") left center no-repeat transparent;
+}
+
+.osc-numbers-1{
+
 }
