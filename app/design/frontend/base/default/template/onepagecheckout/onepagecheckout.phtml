@@ -55,7 +55,7 @@ $seq_http	= (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS']==='on');
 
 <form action="" id="onepagecheckout_orderform">
 <div class="col3-set onepagecheckout_datafields">
-    <div class="col-1 number_one">
+    <div class="col-1">
         <?php echo $this->getChildHtml('billing.address') ?>
         <?php echo $this->getChildHtml('shipping.address') ?>
     </div>
