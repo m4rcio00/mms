@@ -1350,3 +1350,19 @@ ul.topnav ul li { margin: 0; padding: 0; clear: both; }
 ul.topnav ul li a { padding-left: 20px; font-size: 11px; font-weight: normal; outline:0; color:#909090; }
 ul.topnav ul ul li a { padding-left: 40px; }
 ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style:normal; font-size:16px; color:#7E7E7E; padding:10px 0 10px 10px;}
+
+/*	MINHAS CONFIGURAÇÕES	*/
+
+.produto-categoria {
+
+	margin-top: 14px;
+	padding-left: 12px;
+	padding-top: 2px;
+	width: 10%;
+	height: 34px;
+	background-color: #0191C8;
+	color: FFF;
+	font-family: Tahoma;
+	font-size: 24px;
+
+}
