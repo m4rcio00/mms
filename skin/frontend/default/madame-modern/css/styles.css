@@ -466,7 +466,7 @@ height: 39px;
 .header .form-search {border: 0px solid #C7C7C7; border-top: 0px solid #C7C7C7; background:#FFF; float:left; padding:2px; margin-bottom:5px; position:absolute; top: 38px}
 .header .form-search .input-text { font-family: Tahoma, Arial; font-size: 15px; border:0px; width:310px; padding:9px 10px 8px 10px; color:#444; margin-right:0px; background:#FFF; border: 1px solid #00658c; border-top: 3px solid #00658c;}
 .header .form-search .button { background:url("../images/sprites.png") no-repeat 4px -4px transparent; width:36px; height:26px; }
-.header .form-search .search-autocomplete { z-index:999; }
+.header .form-search .search-autocomplete { z-index:5000; }
 .header .form-search .search-autocomplete li .amount { float:right; font-weight:bold; }
 .header .form-search .search-autocomplete li.selected { }
 /* Ajax Search*/
