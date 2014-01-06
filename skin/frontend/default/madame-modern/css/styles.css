@@ -471,7 +471,7 @@ height: 39px;
 .header .form-search .search-autocomplete li.selected { }
 /* Ajax Search*/
 #searchajaxico { background: url(../images/loader.gif) no-repeat scroll 0 0 transparent; height:16px; left:202px; position: absolute; width: 16px; top:6px; }
-.search-autocomplete { padding:10px; position: absolute; right:1px; top:29px; width: 374px; background:#fff; border:1px solid #00658c; min-height:216px; }
+.search-autocomplete { padding:10px; position: absolute; right:1px; top:42px; width: 374px; background:#fff; border:1px solid #00658c; min-height:216px; }
 .search-autocomplete li { border-bottom:1px solid #f0f0f0; cursor:pointer; margin-bottom:10px; padding-bottom:10px; }
 .no-result { cursor:auto !important; }
 .search-autocomplete li:hover { background:#f5f5f5; }
