@@ -414,7 +414,7 @@ img.pagamento-mms{ }
 .prazo-mms span {font-size: 12px; display: block; }
 
 
-.frete-mms{color: #FFF000;  background-color: #F40; border: 1px solid #FF6400; font-size: 16px; position: relative; font-size: 12px; font-family:Tahoma, Geneva, sans-serif; padding:4px 2px 4px 12px; width:154px; margin-bottom: 6px;}
+.frete-mms{color: #FFF000;  background-color: #46b08d; border: 1px solid #46b08d; font-size: 11px; position: relative; font-size: 12px; font-family:Tahoma, Geneva, sans-serif; padding:3px 3px 4px 12px; width:140px; margin-bottom: 6px;}
 
 .add-to-cart .button.button p.carrinho{font-size: 12px; position: relative; top: 20px; right: 172px;}
 
