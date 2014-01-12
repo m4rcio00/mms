@@ -1356,13 +1356,14 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .produto-categoria {
 
 	margin-top: 14px;
-	padding-left: 12px;
+	padding-left: 2px;
 	padding-top: 2px;
 	width: 100%;
 	height: 34px;
-	background-color: #0191C8;
-	color: #FFF;
+	background-color: #FFF;
+	border-bottom: 3px solid #c6c6c6;
+	color: #0191C8;
 	font-family: Tahoma;
-	font-size: 24px;
+	font-size: 20px;
 
 }
