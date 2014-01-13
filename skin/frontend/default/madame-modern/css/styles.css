@@ -955,7 +955,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .advanced-search-amount { }
 .advanced-search-summary { }
 /* CMS Home Page */
-.home{ margin-top:12px;}
+.home{ margin-top:6px;}
 .welcome { background:url("../images/box.png") repeat scroll 0 0 transparent; border-left:4px solid #e8e8e8; margin:20px 0 0; padding:22px 22px 22px 20px; font-size:18px; color:#000;}
 .welcome h1 { color: #FF0054; float: left; font-size: 30px; margin-right:18px; line-height:23px; font-weight:700; text-transform:uppercase;}
 .welcome span{font-family:Georgia, "Times New Roman", Times, serif; background:url("../images/quot.png") no-repeat scroll 0 0 transparent; display:inline-block; width:16px; 
@@ -1365,5 +1365,11 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	color: #0191C8;
 	font-family: Tahoma;
 	font-size: 20px;
+
+}
+
+.barra-topo {
+
+	margin-top: 5px;
 
 }
