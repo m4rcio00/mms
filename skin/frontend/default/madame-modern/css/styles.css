@@ -947,7 +947,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 
 
 /* Content Styles ================================================================= */
-.product-name { font-size:12px; text-transform:uppercase; font-weight:700; }
+.product-name { font-size:12px; font-weight:700; }
 /* Product Tags */
 .tags-list li { float:left; margin-right:5px; }
 /* Advanced Search */
