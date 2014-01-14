@@ -165,11 +165,9 @@ $_prev_pos = $_pos-1;
             <?php endif; ?>
           </div>
           
-          <div class="prazo-mms">Prazo de Entrega</div>
-          <div class="frete-mms">Frete Grátis Brasil*</div>
-          
-         </div>
-
+          <? /* php <div class="prazo-mms">Prazo de Entrega</div>
+          <div class="frete-mms">Frete Grátis Brasil*</div>*/?>
+          </div>
 		  <?php echo $this->getChildHtml('extra_buttons') ?>
           <?php elseif (!$_product->isSaleable()): ?>
           <div class="add-to-box two"> <?php echo $this->getChildHtml('addto') ?> </div>
