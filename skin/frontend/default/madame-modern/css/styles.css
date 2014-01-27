@@ -1394,3 +1394,11 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	line-height: 20px;
 
 }
+
+.prazo-de-entrega h1 {
+	color:#0191C8;
+}
+
+.prazo-de-entrega p {
+	margin-bottom: 10px;
+}
