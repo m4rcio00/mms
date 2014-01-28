@@ -552,7 +552,7 @@ button.button span, .tags-list a, .quick-link a, .product-tabs a, .product-tabs 
 h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .as-price, #nav, .block .block-title strong, .block .block-subtitle, .products-grid .product-name a, .price, .product-tabs a, .product-name, .welcome h1, .cart .discount h2, .cart .shipping h2, .cart.crosssell h2, .cart .totals strong, .opc .step-title, .opc .step-title h2, .footer h2, .sf-menu, button.button span, ul.topnav li a, .welcome, .f-updates .block1 h3, .quick-link a{ font-family: 'Open Sans', sans-serif; }
 /*Mix*/
 .category-products, .products-home, .product-view .product-shop, .product-view .box-up-sell, .product-tabs-content, .product-view .product-img-box .product-image-zoom, .more-views li { }
-.products-grid .product-image, .jcarousel-skin-tango .jcarousel-item .product-image, .product-image-zoom a, .more-views li a, .cart .product-image { border:1px solid #0191C8; }
+.products-grid .product-image, .jcarousel-skin-tango .jcarousel-item .product-image, .product-image-zoom a, .more-views li a, .cart .product-image-novo { border:1px solid #0191C8; }
 /* Sidebar =============================================================================== */
 .block { margin-bottom:15px; padding-bottom:5px; background:#fff; }
 .block .block-title { padding:8px 0 6px 14px; color:#a3a3a3; text-transform:uppercase; background:#f7f7f7; border-bottom:4px solid #eeeeee; }
