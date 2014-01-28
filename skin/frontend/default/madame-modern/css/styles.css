@@ -129,9 +129,9 @@ padding:0;
 border:0;
 } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
-button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; margin-bottom: 6px;}
-button.button span { float:left; height:28px; background:#00abce; padding:0 0 0 12px; font-size:11px; line-height:28px; text-align:center; white-space:nowrap; color:#FFF; font-weight:700; text-transform:uppercase; }
-button.button:hover span { background:#75AB00; color:#FFF; }
+button.button { overflow:visible; width:auto; border:0; padding-left:5px; margin:0; background:transparent; cursor:pointer; margin-bottom: 6px;}
+button.button span { float:left; height:28px; background:#0191C8; padding:0 0 0 12px; font-size:11px; line-height:28px; text-align:center; white-space:nowrap; color:#FFF; font-weight:700; text-transform:uppercase; }
+button.button:hover span { background:#46b08d; color:#FFF; }
 button.button span span { padding:0 12px 0 0; }
 button.disabled { }
 button.disabled span { }
@@ -370,7 +370,7 @@ tr.summary-details-excluded { font-style:italic; }
 .shoppingCart .top-cart .amount a { color:#000; }
 .cartView .view-cart { float:right; margin:5px 0 0 0; }
 .shoppingCart .top-cart .subtotal .price { font-weight:bold; color:#B68C65; }
-.cartView { position:absolute; right:-1px; padding:10px; margin:4px 0 0; z-index:1000; background:#fff; border:1px solid #d61717; width:230px; text-align:left;}
+.cartView { position:absolute; right:-1px; padding:10px; margin:4px 0 0; z-index:1000; background:#fff; border:1px solid #d61717; width:305px; text-align:left;}
 .cartView .mini-products-list li { height:62px; padding:6px 0 10px; }
 .cartView .btn-remove, .cartView .btn-edit { float: right; }
 /* Header ================================================================================ */
@@ -670,7 +670,7 @@ h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .
 .products-grid li.item.last { margin-right:0px; }
 .products-grid .product-image { display:block; }
 .products-grid .product-image img { margin:0 auto;}
-.products-grid .product-name { font-weight:normal; height:36px; *line-height:16px; margin:10px 0; }
+.products-grid .product-name { font-weight:normal; height:36px; *line-height:16px; margin:10px 0; padding-left: 6px;}
 .products-grid .product-name a { color:#000; font-weight:700; line-height:18px; height:36px; display:block; overflow:hidden; font-size:12px;}
 .products-grid .product-name a:hover { color:#FF6400; }
 .products-grid .availability { line-height:21px; }
@@ -678,7 +678,7 @@ h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .
 .products-grid .minimal-price { color:#fff; }
 .products-grid .price-action{ height:28px;}
 .products-grid .actions{float:left;}
-.products-grid .price-box{float:left; margin-left:10px;}
+.products-grid .price-box{float:left; margin-left:18px; margin-bottom: 6px;}
 .products-grid .price-box .regular-price{font-size:22px; font-weight:700; float:left; line-height:26px;}
 
 /* View Type: List */
