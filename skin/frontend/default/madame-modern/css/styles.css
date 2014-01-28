@@ -1369,7 +1369,15 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .products-box {
-	width: 172px;
+	width: 180px;
+}
+
+#box-produto{
+	border-top: 1px solid #E6DEDE;
+}
+
+#box-produto:hover{
+	border-top: 1px solid #46b08d;
 }
 
 .barra-topo {
