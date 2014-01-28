@@ -46,7 +46,7 @@
 <?php if ($i++%$_columnCount==0): ?>
 <ul class="products-grid row">
   <?php endif ?>
-  <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?> span3">
+  <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?> span3" id="meu-teste">
     <div class="products-box">
       <?php if( Mage::getModel('newproduct/grid')->isNewProduct($_product->getId()) ): ?>
       <div class="products-new">New</div>
