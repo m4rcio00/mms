@@ -7,8 +7,37 @@
 		autoArrows:  false,                          
 		dropShadows: false                            
 	}); 
-// COMECO BARRA FIXA TOP
-	 var bar;
+}); 
+
+//Back to Top Button
+jQuery(function() {
+	jQuery(window).scroll(function() {
+		if(jQuery(this).scrollTop() > 300) {
+			jQuery('#back_top').fadeIn();	
+		} else {
+			jQuery('#back_top').fadeOut();
+		}
+	});
+ 
+	jQuery('#back_top').click(function() {
+		jQuery('body,html').animate({scrollTop:0},500);
+	});	
+});
+
+//Top Cart
+function slideEffectAjax() {
+      jQuery('.shoppingCart').mouseenter(function() {
+           jQuery(this).find(".cartView").stop(true, true).slideDown();
+           //alert("Funcipmasdfasdf");
+        });
+        //hide submenus on exit
+        jQuery('.shoppingCart').mouseleave(function() {
+            jQuery(this).find(".cartView").stop(true, true).slideUp();
+        });
+}
+//COMEÇO BARRA FIXA DO TOP
+function barraTopoFixaAjax() {
+		var bar;
         bar=$(".floatingTopBar");
         $("body").addClass("hideFloatingBar");
 		
@@ -39,37 +68,8 @@
 				}
 				
 	});
-// FIM BARRA FIXA TOP
-}); 
-
-//Back to Top Button
-jQuery(function() {
-	jQuery(window).scroll(function() {
-		if(jQuery(this).scrollTop() > 300) {
-			jQuery('#back_top').fadeIn();	
-		} else {
-			jQuery('#back_top').fadeOut();
-		}
-	});
- 
-	jQuery('#back_top').click(function() {
-		jQuery('body,html').animate({scrollTop:0},500);
-	});	
-});
-
-//Top Cart
-function slideEffectAjax() {
-      jQuery('.shoppingCart').mouseenter(function() {
-           jQuery(this).find(".cartView").stop(true, true).slideDown();
-           //alert("Funcipmasdfasdf");
-        });
-        //hide submenus on exit
-        jQuery('.shoppingCart').mouseleave(function() {
-            jQuery(this).find(".cartView").stop(true, true).slideUp();
-        });
 }
-
-
+//FINAL BARRA FIXA DO TOP
 	 
 //Home Page Main Slider
 jQuery(window).load(function(){
@@ -86,6 +86,7 @@ jQuery(window).load(function(){
 jQuery(document).ready(function() {
 
     slideEffectAjax();
+	barraTopoFixaAjax();
 
 	jQuery(".topnav").accordion({
 		accordion:false,
