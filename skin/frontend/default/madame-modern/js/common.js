@@ -7,6 +7,39 @@
 		autoArrows:  false,                          
 		dropShadows: false                            
 	}); 
+// COMECO BARRA FIXA TOP
+	 var bar;
+        bar=$(".floatingTopBar");
+        $("body").addClass("hideFloatingBar");
+		
+		var price;
+        price = $(".comprabot2");
+        $("body").addClass("hidePrice");
+		
+		if(bar.length)
+			$(window).QD_scroll(function(scrollTop){
+				if(scrollTop>220){
+					bar.slideDown(function(){ $("body").addClass("showFloatingBar").removeClass("hideFloatingBar"); });
+				}
+				else{
+					bar.slideUp();
+					$("body").removeClass("showFloatingBar").addClass("hideFloatingBar");
+				}
+				
+				if(price.length){
+				
+					if(!price.hasClass('inativo'))
+					if(scrollTop>450){
+						price.slideDown(function(){ $("body").addClass("showPrice").removeClass("hidePrice"); });
+					}
+					else{
+						price.slideUp();
+						$("body").removeClass("showPrice").addClass("hidePrice");
+					}
+				}
+				
+	});
+// FIM BARRA FIXA TOP
 }); 
 
 //Back to Top Button
