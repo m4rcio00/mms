@@ -1368,6 +1368,18 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 }
 
+.floatingTopBar {
+	display:none;
+	height:50px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:20000;
+	background-color:#0F6;
+	width:100%;
+	
+}
+
 .products-box {
 	width: 180px;
 }
