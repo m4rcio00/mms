@@ -38,32 +38,32 @@ function slideEffectAjax() {
 //COMEÇO BARRA FIXA DO TOP
 function barraTopoFixaAjax() {
 		var bar;
-        bar=$(".floatingTopBar");
-        $("body").addClass("hideFloatingBar");
+        bar=jQuery(".floatingTopBar");
+        jQuery("body").addClass("hideFloatingBar");
 		
 		var price;
-        price = $(".comprabot2");
-        $("body").addClass("hidePrice");
+        price = jQuery(".comprabot2");
+        jQuery("body").addClass("hidePrice");
 		
 		if(bar.length)
-			$(window).QD_scroll(function(scrollTop){
+			jQuery(window).QD_scroll(function(scrollTop){
 				if(scrollTop>220){
-					bar.slideDown(function(){ $("body").addClass("showFloatingBar").removeClass("hideFloatingBar"); });
+					bar.slideDown(function(){ jQuery("body").addClass("showFloatingBar").removeClass("hideFloatingBar"); });
 				}
 				else{
 					bar.slideUp();
-					$("body").removeClass("showFloatingBar").addClass("hideFloatingBar");
+					jQuery("body").removeClass("showFloatingBar").addClass("hideFloatingBar");
 				}
 				
 				if(price.length){
 				
 					if(!price.hasClass('inativo'))
 					if(scrollTop>450){
-						price.slideDown(function(){ $("body").addClass("showPrice").removeClass("hidePrice"); });
+						price.slideDown(function(){ jQuery("body").addClass("showPrice").removeClass("hidePrice"); });
 					}
 					else{
 						price.slideUp();
-						$("body").removeClass("showPrice").addClass("hidePrice");
+						jQuery("body").removeClass("showPrice").addClass("hidePrice");
 					}
 				}
 				
