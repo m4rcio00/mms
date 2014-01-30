@@ -33,6 +33,7 @@ Default layout, loads most of the pages
     <default translate="label" module="page">
         <label>All Pages</label>
         <block type="page/html" name="root" output="toHtml" template="page/2columns-left.phtml">
+		
 		<block type="core/text_list" name="newreference" as="newreference"/>
 
             <block type="page/html_head" name="head" as="head">
@@ -67,7 +68,12 @@ Default layout, loads most of the pages
             </block>
 
             <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml" />
+			
+			<reference name="newreference">
+            <block type="core/template" name="newreferenceblock" template="newreference.phtml" />
+        </reference>
 
+                
             
             <!-- Header checkout-->
             <block type="page/html_header" name="header" as="header">
