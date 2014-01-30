@@ -10,13 +10,16 @@
             <block type="core/template" name="newreferenceblock" template="page/newreference.phtml" />
         </reference>
     </default>
-</layout>
 
-<customer_account translate="label">
+    <customer_account translate="label">
     <reference name="left">
         <action method="unsetChild"><name>cart_sidebar</name></action>
     </reference>
 </customer_account>
+
+</layout>
+
+
 
 
 
