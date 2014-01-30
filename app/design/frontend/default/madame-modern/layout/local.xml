@@ -4,3 +4,16 @@
         <action method="unsetChild"><name>cart_sidebar</name></action>
     </reference>
 </customer_account>
+
+<layout>
+    <default>
+        <reference name="root">
+            <block type="core/text_list" name="newreference" as="newreference" translate="label">
+                <label>New Reference</label>
+            </block>
+        </reference>
+        <reference name="newreference">
+            <block type="core/template" name="newreferenceblock" template="page/newreference.phtml" />
+        </reference>
+    </default>
+</layout>
