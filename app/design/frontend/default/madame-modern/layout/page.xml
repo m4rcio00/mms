@@ -66,6 +66,8 @@ Default layout, loads most of the pages
             </block>
 
             <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml" />
+			
+			<block type="core/text_list" name="newreference" as="newreference"/>
 
             
             <!-- Header checkout-->
@@ -75,6 +77,7 @@ Default layout, loads most of the pages
                 <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
                 <block type="directory/currency" name="store_currency_selector" as="store_currency_selector" template="directory/currency_top.phtml"/>
                 <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+				
                     <label>Navigation Bar</label>
                 </block>
                 <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
