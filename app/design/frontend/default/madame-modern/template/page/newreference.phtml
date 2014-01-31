@@ -25,4 +25,7 @@
  */
 ?>
 
-<div class="logo-barra"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></div>
+<div class="logo-barra">
+<?php echo $this->getChildHtml('topContainer'); ?> <?php echo $this->getChildHtml('topSearch') ?>
+<!-- <div class="welcome-to"><?php echo $this->getWelcome() ?></div> -->
+</div>
