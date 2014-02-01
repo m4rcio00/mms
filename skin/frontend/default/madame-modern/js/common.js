@@ -48,7 +48,9 @@ function barraTopoFixaAjax() {
 		if(bar.length)
 			jQuery(window).QD_scroll(function(scrollTop){
 				if(scrollTop>220){
-					bar.slideDown(function(){ jQuery("body").addClass("showFloatingBar").removeClass("hideFloatingBar"); });
+					bar.slideDown(function(){ jQuery("body").addClass("showFloatingBar").removeClass("hideFloatingBar"); 
+					jQuery('#buttonFixedBar').show();
+					});
 				}
 				else{
 					bar.slideUp();
