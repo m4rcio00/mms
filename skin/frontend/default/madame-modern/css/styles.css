@@ -375,7 +375,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cartView .btn-remove, .cartView .btn-edit { float: right; }
 /* Header ================================================================================ */
 .logo { }
-.shopLinks { background:#FFFFFF; border-bottom: 1px solid #00abce; height: 25px;}
+.shopLinks { background:#FFFFFF; height: 25px;}
 .links {font-size:11px; float:left; margin:4px 0px 0px 4px; font-family:Tahoma, Helvetica, sans-serif; font-weight: bold;}
 .links a { color: #444; text-decoration:none; padding:0 8px 0 7px; no-repeat;
 border-right:1px solid #d7d7d7; }
