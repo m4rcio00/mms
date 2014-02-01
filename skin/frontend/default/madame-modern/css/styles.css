@@ -1400,6 +1400,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	position: absolute;
 	top: 51px;
 	background-color: #f40;
+	width: 480px;
 }
 
 .products-box {
