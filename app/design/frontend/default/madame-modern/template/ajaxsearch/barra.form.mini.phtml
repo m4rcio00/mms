@@ -32,7 +32,7 @@
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
 		<div class="" id="searchajaxico-barra" style="display: none;"></div>
        
-       <input id="search-barra" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->__('Search entire store here...') ?>" class="input-text" />
+       <input id="search-barra" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="Digite aqui o que você deseja encontrar" class="input-text" />
        
 
        
@@ -44,12 +44,12 @@
 		<script type="text/javascript">
             //<![CDATA[
 			Event.observe('search-barra','click',function(event){
-				if($('search-barra').value == '<?php echo $this->__('Search entire store here...') ?>')
+				if($('search-barra').value == 'Digite aqui o que você deseja encontrar')
 					$('search-barra').value = '';
 			});
 			Event.observe('search-barra','blur',function(event){
 				if($('search-barra').value == '')
-					$('search-barra').value = '<?php echo $this->__('Search entire store here...') ?>';
+					$('search-barra').value = 'Digite aqui o que você deseja encontrar';
 				 
 				if($('search_autocomplete-barra').style.display != 'none')
 						setTimeout(function(){$('search_autocomplete-barra').hide();}, 500);
@@ -107,7 +107,7 @@
 		<?php else: ?>
 		<script type="text/javascript">
 			//<![CDATA[
-			var searchForm = new Varien.searchForm('search_mini_form', 'search-barra', '<?php echo $this->__('Search entire store here...') ?>');
+			var searchForm = new Varien.searchForm('search_mini_form', 'search-barra', 'Digite aqui o que você deseja encontrar');
 			searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete-barra');
 			//]]>
 		</script>
