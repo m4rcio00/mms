@@ -30,7 +30,7 @@
 <form id="search_mini_form" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
       <div class="form-search">
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
-		<div class="" id="searchajaxico" style="display: none;"></div>
+		<div class="" id="searchajaxico-barra" style="display: none;"></div>
        
        <input id="search-barra" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->__('Search entire store here...') ?>" class="input-text" />
        
@@ -70,12 +70,12 @@
 							method:'get',
 							parameters: { 'q' : $('search-barra').value },
 							onLoading: function(){
-								$('searchajaxico').show();
+								$('searchajaxico-barra').show();
 							},
 							onSuccess: function(transport){
 							  var response = transport.responseText || "No product found";
 							  //alert("Success! \n\n" + response);
-							  $('searchajaxico').hide();
+							  $('searchajaxico-barra').hide();
 							  $('search_autocomplete-barra').update('');
 							  $('search_autocomplete-barra').update(response);
 							  if(!$('search_autocomplete-barra').visible())
