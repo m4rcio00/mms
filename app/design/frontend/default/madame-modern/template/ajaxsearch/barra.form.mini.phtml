@@ -43,9 +43,9 @@
 		<?php if( Mage::getModel('ajaxsearch/ajaxsearch')->load(1)->getData('enabled') ): ?>
 		<script type="text/javascript">
             //<![CDATA[
-			Event.observe('search','click',function(event){
-				if($('search').value == '<?php echo $this->__('Search entire store here...') ?>')
-					$('search').value = '';
+			Event.observe('search-barra','click',function(event){
+				if($('search-barra').value == '<?php echo $this->__('Search entire store here...') ?>')
+					$('search-barra').value = '';
 			});
 			Event.observe('search','blur',function(event){
 				if($('search').value == '')
