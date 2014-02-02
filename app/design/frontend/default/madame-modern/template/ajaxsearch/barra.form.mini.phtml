@@ -36,7 +36,7 @@
        
 
        
-        <div id="search_autocomplete" class="search-autocomplete" style="display:none;"></div>
+        <div id="search_autocomplete-barra" class="search-autocomplete" style="display:none;"></div>
 
         <input type="submit" value="Buscar" class="btn-buscar"> 
          
@@ -51,15 +51,15 @@
 				if($('search-barra').value == '')
 					$('search-barra').value = '<?php echo $this->__('Search entire store here...') ?>';
 				 
-				if($('search_autocomplete').style.display != 'none')
-						setTimeout(function(){$('search_autocomplete').hide();}, 500);
-						//$('search_autocomplete').slideUp('.8');
+				if($('search_autocomplete-barra').style.display != 'none')
+						setTimeout(function(){$('search_autocomplete-barra').hide();}, 500);
+						//$('search_autocomplete-barra').slideUp('.8');
 			});
 			
 			Event.observe('search-barra', 'keyup', function(event){
 				if(event.keyCode == 8 || event.keyCode == 46){
 					if($('search-barra').value.length < 3){
-						$('search_autocomplete').hide();
+						$('search_autocomplete-barra').hide();
 					}
 				}
 
@@ -76,17 +76,17 @@
 							  var response = transport.responseText || "No product found";
 							  //alert("Success! \n\n" + response);
 							  $('searchajaxico').hide();
-							  $('search_autocomplete').update('');
-							  $('search_autocomplete').update(response);
-							  if(!$('search_autocomplete').visible())
-								$('search_autocomplete').slideDown('fast');
+							  $('search_autocomplete-barra').update('');
+							  $('search_autocomplete-barra').update(response);
+							  if(!$('search_autocomplete-barra').visible())
+								$('search_autocomplete-barra').slideDown('fast');
 							  
 							},
 							onFailure: function(){ alert('Something went wrong...') }
 						});
 					}
 					else{
-						$('search_autocomplete').hide();
+						$('search_autocomplete-barra').hide();
 					}
 				}
 			});
@@ -100,7 +100,7 @@
 			{
 				//flag=1;
 				//alert("Is clck");
-				//$('search_autocomplete').show();
+				//$('search_autocomplete-barra').show();
 			}
             //]]>
             </script>
@@ -108,7 +108,7 @@
 		<script type="text/javascript">
 			//<![CDATA[
 			var searchForm = new Varien.searchForm('search_mini_form', 'search-barra', '<?php echo $this->__('Search entire store here...') ?>');
-			searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete');
+			searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete-barra');
 			//]]>
 		</script>
 		<?php endif; ?>
