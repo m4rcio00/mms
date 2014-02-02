@@ -44,14 +44,14 @@
 		<script type="text/javascript">
             //<![CDATA[
 			Event.observe('search','click',function(event){
-				if(jQuery('search').value == '<?php echo $this->__('Search entire store here...') ?>')
-					jQuery('search').value = '';
+				if($('search').value == '<?php echo $this->__('Search entire store here...') ?>')
+					$('search').value = '';
 			});
 			Event.observe('search','blur',function(event){
-				if(jQuery('search').value == '')
-					jQuery('search').value = '<?php echo $this->__('Search entire store here...') ?>';
+				if($('search').value == '')
+					$('search').value = '<?php echo $this->__('Search entire store here...') ?>';
 				 
-				if(jQuery('search_autocomplete').style.display != 'none')
+				if($('search_autocomplete').style.display != 'none')
 						setTimeout(function(){$('search_autocomplete').hide();}, 500);
 						//$('search_autocomplete').slideUp('.8');
 			});
