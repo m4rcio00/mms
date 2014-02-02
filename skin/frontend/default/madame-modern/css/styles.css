@@ -1381,16 +1381,16 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	
 }
 
-.floatingTopBar .logo-barra {
-	float: left;
-	margin-left: 150px;
-	margin-top: 12px;
-	width: 15%;
+.floatingTopBar .floatingTopBarWrap {
+	width: 999px;
+	margin-top: 0 auto;
 }
 
-.floatingTopBar .form-search{
+.floatingTopBar .logo-barra {
 	float: left;
-	margin-top: 9px;
+}
+
+.floatingTopBar .form-search {
 
 }
 
