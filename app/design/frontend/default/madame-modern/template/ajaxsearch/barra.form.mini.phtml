@@ -47,28 +47,28 @@
 				if($('search-barra').value == '<?php echo $this->__('Search entire store here...') ?>')
 					$('search-barra').value = '';
 			});
-			Event.observe('search','blur',function(event){
-				if($('search').value == '')
-					$('search').value = '<?php echo $this->__('Search entire store here...') ?>';
+			Event.observe('search-barra','blur',function(event){
+				if($('search-barra').value == '')
+					$('search-barra').value = '<?php echo $this->__('Search entire store here...') ?>';
 				 
 				if($('search_autocomplete').style.display != 'none')
 						setTimeout(function(){$('search_autocomplete').hide();}, 500);
 						//$('search_autocomplete').slideUp('.8');
 			});
 			
-			Event.observe('search', 'keyup', function(event){
+			Event.observe('search-barra', 'keyup', function(event){
 				if(event.keyCode == 8 || event.keyCode == 46){
-					if($('search').value.length < 3){
+					if($('search-barra').value.length < 3){
 						$('search_autocomplete').hide();
 					}
 				}
 
 				if( (event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 96 && event.keyCode <= 105) || (event.keyCode >= 48 && event.keyCode <= 57) || event.keyCode == 32 ){
-					if($('search').value.length > 2){
+					if($('search-barra').value.length > 2){
 						new Ajax.Request('<?php echo $this->getUrl('ajaxsearch/index'); ?>',
 						{
 							method:'get',
-							parameters: { 'q' : $('search').value },
+							parameters: { 'q' : $('search-barra').value },
 							onLoading: function(){
 								$('searchajaxico').show();
 							},
@@ -107,7 +107,7 @@
 		<?php else: ?>
 		<script type="text/javascript">
 			//<![CDATA[
-			var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Search entire store here...') ?>');
+			var searchForm = new Varien.searchForm('search_mini_form', 'search-barra', '<?php echo $this->__('Search entire store here...') ?>');
 			searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete');
 			//]]>
 		</script>
