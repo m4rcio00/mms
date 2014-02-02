@@ -1397,7 +1397,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	margin-top: 5px;
 }
 
-.floatingTopBar .floatingTopBarWrap .form-search .input.btn-buscar {
+.floatingTopBar .floatingTopBarWrap .form-search .btn-buscar {
 	height: 32px;
 }
 
