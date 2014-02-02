@@ -1383,7 +1383,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .floatingTopBar .floatingTopBarWrap {
 	width: 999px;
-	margin-top: 0 auto;
+	margin: 0 auto;
 }
 
 .floatingTopBar .logo-barra {
