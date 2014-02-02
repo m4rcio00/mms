@@ -425,7 +425,7 @@ img.pagamento-mms{ }
 input.btn-buscar {  
 border: none;
 color: #fff;
-background: #00658c !important;
+background: #f40 !important;
 cursor: pointer;
 padding: 5px;
 padding-left: 8px;
@@ -1384,13 +1384,13 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .floatingTopBar .logo-barra {
 	float: left;
 	margin-left: 150px;
-	margin-top: 11px;
+	margin-top: 12px;
 	width: 15%;
 }
 
 .floatingTopBar .form-search{
 	float: left;
-	margin-top: 6px;
+	margin-top: 9px;
 
 }
 
