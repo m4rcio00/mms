@@ -9,7 +9,7 @@
         <reference name="newreference">
             <block type="core/template" name="newreferenceblock" template="page/newreference.phtml" />
             <block type="core/template" name="top.search" as="topSearch" template="ajaxsearch/barra.form.mini.phtml"/>
-            <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/topbar-barra.phtml"/>
+            <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart-barra" template="checkout/cart/topbar-barra.phtml"/>
         </reference>
     </default>
 
