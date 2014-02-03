@@ -11,7 +11,7 @@
             <block type="core/template" name="newreferenceblock" template="page/newreference.phtml" />
             <block type="core/template" name="top.search" as="topSearch" template="ajaxsearch/barra.form.mini.phtml"/>
             
-             <block type="page/html_header" name="header" as="header">
+             
                 <block type="page/template_links" name="top.links" as="topLinks"/>
                 <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
                 <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
@@ -25,7 +25,7 @@
                     <action method="setElementClass"><value>top-container</value></action>
                 </block>
                 <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart" template="checkout/cart/topbar-barra.phtml"/>
-            </block>
+           
             
         </reference>
     </default>
