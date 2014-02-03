@@ -10,8 +10,8 @@
             <block type="core/template" name="newreferenceblock" template="page/newreference.phtml" />
             <block type="core/template" name="top.search" as="topSearch" template="ajaxsearch/barra.form.mini.phtml"/>
 
-            <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" before="-">
-            </block>
+            <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart" template="checkout/cart/topbar.phtml" />
+            
 
         </reference>
     </default>
