@@ -5,26 +5,13 @@
             <block type="core/text_list" name="newreference" as="newreference" translate="label">
                 <label>New Reference</label>
             </block>
+            <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart" template="checkout/cart/topbar-barra.phtml"/>
         </reference>
         <reference name="newreference">
 
             <block type="core/template" name="newreferenceblock" template="page/newreference.phtml" />
             <block type="core/template" name="top.search" as="topSearch" template="ajaxsearch/barra.form.mini.phtml"/>
-            
-             
-                <block type="page/template_links" name="top.links" as="topLinks"/>
-                <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
-                <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
-                <block type="directory/currency" name="store_currency_selector" as="store_currency_selector" template="directory/currency_top.phtml"/>
-                <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
                 
-                    <label>Navigation Bar</label>
-                </block>
-                <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
-                    <label>Page Header</label>
-                    <action method="setElementClass"><value>top-container</value></action>
-                </block>
-                <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart" template="checkout/cart/topbar-barra.phtml"/>
            
             
         </reference>
