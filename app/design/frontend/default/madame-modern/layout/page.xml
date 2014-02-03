@@ -82,7 +82,7 @@ Default layout, loads most of the pages
                     <label>Page Header</label>
                     <action method="setElementClass"><value>top-container</value></action>
                 </block>
-                <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart" template="checkout/cart/topbar.phtml"/>
+                <!-- <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart" template="checkout/cart/topbar.phtml"/> -->
             </block>
             <!-- Header checkout-->
 
