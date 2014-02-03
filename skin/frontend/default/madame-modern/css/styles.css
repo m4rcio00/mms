@@ -1398,7 +1398,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .floatingTopBar input[type=submit] {height: 29px;}
 
-.floatingTopBar input[type=text] {width: 480px; height: 25px; background-color:#f3f3f3; border: 1px solid #c7c7c7; font-size:16px; padding:4px 4px 4px 6px; color:#444; font-family:Arial, Helvetica, sans-serif; }
+.floatingTopBar input[type=text] {width: 400px; height: 25px; background-color:#f3f3f3; border: 1px solid #c7c7c7; font-size:16px; padding:4px 4px 4px 6px; color:#444; font-family:Arial, Helvetica, sans-serif; }
 
 .floatingTopBar #buttonFixedBar {
 	position: absolute;
