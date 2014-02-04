@@ -24,7 +24,7 @@ jQuery(function() {
 	});	
 });
 
-//Top Cart
+// TOP CART
 function slideEffectAjax() {
       jQuery('.shoppingCart').mouseenter(function() {
            jQuery(this).find(".cartView").stop(true, true).slideDown();
@@ -33,6 +33,18 @@ function slideEffectAjax() {
         //hide submenus on exit
         jQuery('.shoppingCart').mouseleave(function() {
             jQuery(this).find(".cartView").stop(true, true).slideUp();
+        });
+}
+
+// TOP CART BARRA
+function slideEffectAjax() {
+      jQuery('.shoppingCartBarra').mouseenter(function() {
+           jQuery(this).find(".cartViewBarra").stop(true, true).slideDown();
+           //alert("Funcipmasdfasdf");
+        });
+        //hide submenus on exit
+        jQuery('.shoppingCartBarra').mouseleave(function() {
+            jQuery(this).find(".cartViewBarra").stop(true, true).slideUp();
         });
 }
 //COMEÇO BARRA FIXA DO TOP
