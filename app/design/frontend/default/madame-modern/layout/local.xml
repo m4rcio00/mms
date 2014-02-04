@@ -3,8 +3,7 @@
     <default>
         <reference name="root">
             <block type="core/text_list" name="newreference" as="newreference" translate="label">
-                <label>New Reference</label>
-                
+                <label>New Reference</label>  
             </block>
         </reference>
         <reference name="newreference">
