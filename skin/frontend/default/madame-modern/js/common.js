@@ -37,7 +37,7 @@ function slideEffectAjax() {
 }
 
 // TOP CART BARRA
-function slideEffectAjax() {
+function slideEffectAjaxBarra() {
       jQuery('.shoppingCartBarra').mouseenter(function() {
            jQuery(this).find(".cartViewBarra").stop(true, true).slideDown();
            //alert("Funcipmasdfasdf");
@@ -101,6 +101,7 @@ jQuery(document).ready(function() {
 
     slideEffectAjax();
 	barraTopoFixaAjax();
+	slideEffectAjaxBarra();
 
 	jQuery(".topnav").accordion({
 		accordion:false,
