@@ -1399,7 +1399,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .floatingTopBar input[type=submit] {height: 29px;}
 
-.floatingTopBar input[type=text] {width: 400px; height: 25px; background-color:#f3f3f3; border: 1px solid #c7c7c7; font-size:16px; padding:4px 4px 4px 6px; color:#444; font-family:Arial, Helvetica, sans-serif; }
+.floatingTopBar input[type=text] {width: 580px; height: 25px; background-color:#f3f3f3; border: 1px solid #c7c7c7; font-size:16px; padding:4px 4px 4px 6px; color:#444; font-family:Arial, Helvetica, sans-serif; }
 
 .floatingTopBar #buttonFixedBar {
 	position: absolute;
@@ -1426,7 +1426,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 /* TOP CART */
-.shoppingCartBarra { position:absolute; top: 8px; right: 120px; font-size:10px; border: 1px solid #f40; width: 148px; float:right; background:#f40;  cursor:pointer; height: 35px;}
+.shoppingCartBarra { position:absolute; top: 9px; right: 150px; font-size:10px; border: 1px solid #f40; width: 148px; float:right; background:#f40;  cursor:pointer; height: 35px;}
 .shoppingCartBarra .summary{font-size: 13px; font-weight: bold; font-family: Arial; color: #000; margin-right: 120px; margin-top: 5px; float: right; line-height:25px; padding-left:3px; text-transform: initial;}
 .shoppingCartBarra .top-cart { margin:0px; border:0px; padding:3px 10px; }
 .shoppingCartBarra .empty {color: #000; font-size:15px; font-family: Tahoma, Arial; font-weight:700; padding-left:0px; display:inline-block; margin-top: 5px;}
