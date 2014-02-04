@@ -439,6 +439,7 @@ height: 41px;
 
 
 .shoppingCart .preco-mms {font-size: 12px; line-height: 15px; position: absolute; top: 13px; right: 32px; text-transform: initial; font-weight: bold;}
+.shoppingCartBarra .preco-mms {font-size: 12px; line-height: 15px; position: absolute; top: 13px; right: 32px; text-transform: initial; font-weight: bold;}
 
 .shopLinks .block-currency select { padding:1px; font-size:10px; width:138px; color:#8A8A8A; background:#FFF; }
 .language-switcher { float:right; margin:8px 16px 0; }
