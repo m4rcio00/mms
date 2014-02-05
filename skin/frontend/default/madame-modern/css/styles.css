@@ -1453,7 +1453,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 /* TOP CART */
 
 /* AJAX SEARCH BARRA*/
-#searchajaxico-barra { background: url(../images/loader.gif) no-repeat scroll 0 0 transparent; height:16px; left:802px; position: absolute; width: 16px; top:20px; }
+#searchajaxico-barra { background: url(../images/loader.gif) no-repeat scroll 0 0 transparent; height:25px; width: 25px; left:842px; position: absolute; top:15px; }
 
 .testee{
 
