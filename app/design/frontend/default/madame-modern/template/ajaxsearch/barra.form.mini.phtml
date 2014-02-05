@@ -32,10 +32,8 @@
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
 		<div class="" id="searchajaxico-barra" style="display: none;"></div>
        
-       <input id="search-barra" type="text" name="<?php  ?>" value="Digite aqui o que você deseja encontrar" class="input-text" />
-       
-
-       
+       <input id="search-barra" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="Digite aqui o que você deseja encontrar" class="input-text" />
+              
         <div id="search_autocomplete-barra" class="search-autocomplete-barra" style="display:none;"></div>
 
         <input type="image" class="btn-buscar-barra" src="<?php echo $this->getSkinUrl('images/btn-search.png') ?>"  />
