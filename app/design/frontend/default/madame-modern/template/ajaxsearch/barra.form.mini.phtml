@@ -27,7 +27,7 @@
 
 
 
-<form id="search_mini_form" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
+<form id="search_mini_form_barra" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
       <div class="form-search">
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
 		<div class="" id="searchajaxico-barra" style="display: none;"></div>
@@ -107,7 +107,7 @@
 		<?php else: ?>
 		<script type="text/javascript">
 			//<![CDATA[
-			var searchForm = new Varien.searchForm('search_mini_form', 'search-barra', 'Digite aqui o que você deseja encontrar');
+			var searchForm = new Varien.searchForm('search_mini_form_barra', 'search-barra', 'Digite aqui o que você deseja encontrar');
 			searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete-barra');
 			//]]>
 		</script>
