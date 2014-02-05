@@ -24,14 +24,20 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+
+
+
 <form id="search_mini_form" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
-    <div class="form-search">
+    <div class="teste-mms">
+      <div class="form-search">
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
 		<div class="" id="searchajaxico" style="display: none;"></div>
         <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->__('Search entire store here...') ?>" class="input-text" />
-        <button type="submit" title="<?php echo $this->__('Search') ?>" class="button"><?php /*?><span><span><?php echo $this->__('Search') ?></span></span><?php */?></button>
+
         <div id="search_autocomplete" class="search-autocomplete" style="display:none;"></div>
-        
+
+        <?php //<input type="submit" value="Buscar" class="btn-buscar"> ?>
+
 		<?php if( Mage::getModel('ajaxsearch/ajaxsearch')->load(1)->getData('enabled') ): ?>
 		<script type="text/javascript">
             //<![CDATA[
@@ -104,5 +110,9 @@
 			//]]>
 		</script>
 		<?php endif; ?>
-    </div>
+
+      </div>
+        <input type="submit" value="Buscar" class="btn-buscar">
+     </div>
+
 </form>
