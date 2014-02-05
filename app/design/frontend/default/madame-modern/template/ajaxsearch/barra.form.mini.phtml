@@ -32,7 +32,7 @@
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
 		<div class="" id="searchajaxico-barra" style="display: none;"></div>
        
-       <input id="search-barra" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="Digite aqui o que você deseja encontrar" class="input-text" />
+       <input id="search-barra" type="text" name="<?php  ?>" value="Digite aqui o que você deseja encontrar" class="input-text" />
        
 
        
@@ -65,7 +65,7 @@
 
 				if( (event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 96 && event.keyCode <= 105) || (event.keyCode >= 48 && event.keyCode <= 57) || event.keyCode == 32 ){
 					if($('search-barra').value.length > 2){
-						new Ajax.Request('<?php  ?>',
+						new Ajax.Request('<?php echo $this->getUrl('ajaxsearch/index'); ?>',
 						{
 							method:'get',
 							parameters: { 'q' : $('search-barra').value },
