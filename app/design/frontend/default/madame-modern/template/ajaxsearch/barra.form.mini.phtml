@@ -50,14 +50,14 @@
 					$('search-barra').value = 'Digite aqui o que você deseja encontrar';
 				 
 				if($('search_autocomplete-barra').style.display != 'none')
-						setTimeout(function(){$('search_autocomplete-barra').hide();}, 500);
+						//setTimeout(function(){$('search_autocomplete-barra').hide();}, 500);
 						//$('search_autocomplete-barra').slideUp('.8');
 			});
 			
 			Event.observe('search-barra', 'keyup', function(event){
 				if(event.keyCode == 8 || event.keyCode == 46){
 					if($('search-barra').value.length < 3){
-						$('search_autocomplete-barra').hide();
+						//$('search_autocomplete-barra').hide();
 					}
 				}
 
@@ -68,23 +68,23 @@
 							method:'get',
 							parameters: { 'q' : $('search-barra').value },
 							onLoading: function(){
-								$('searchajaxico-barra').show();
+								//$('searchajaxico-barra').show();
 							},
 							onSuccess: function(transport){
 							  var response = transport.responseText || "No product found";
 							  //alert("Success! \n\n" + response);
-							  $('searchajaxico-barra').hide();
-							  $('search_autocomplete-barra').update('');
-							  $('search_autocomplete-barra').update(response);
+							 // $('searchajaxico-barra').hide();
+							  //$('search_autocomplete-barra').update('');
+							 // $('search_autocomplete-barra').update(response);
 							  if(!$('search_autocomplete-barra').visible())
-								$('search_autocomplete-barra').slideDown('fast');
+								//$('search_autocomplete-barra').slideDown('fast');
 							  
 							},
 							onFailure: function(){ alert('Something went wrong...') }
 						});
 					}
 					else{
-						$('search_autocomplete-barra').hide();
+						//$('search_autocomplete-barra').hide();
 					}
 				}
 			});
@@ -106,7 +106,7 @@
 		<script type="text/javascript">
 			//<![CDATA[
 			var searchForm = new Varien.searchForm('search_mini_form_barra', 'search-barra', 'Digite aqui o que você deseja encontrar');
-			searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete-barra');
+			searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete-barra-r');
 			//]]>
 		</script>
 		<?php endif; ?>
