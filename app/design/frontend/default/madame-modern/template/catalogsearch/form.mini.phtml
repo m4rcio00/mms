@@ -30,6 +30,18 @@
         <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>" class="input-text" />
         
         <input type="image" class="btn-buscar-barra" src="<?php echo $this->getSkinUrl('images/btn-search.png') ?>"  />
+        <script type="text/javascript">
+            //<![CDATA[
+			Event.observe('search-barra','click',function(event){
+				if($('search-barra').value == 'Digite aqui o que você deseja encontrar')
+					$('search-barra').value = '';
+			});
+			Event.observe('search-barra','blur',function(event){
+				if($('search-barra').value == '')
+					$('search-barra').value = 'Digite aqui o que você deseja encontrar';
+			});
+        </script>
+        
         
 		<?php /*?><?php echo $this->__('Search') ?><?php */?></button>
         <div id="search_autocomplete" class="search-autocomplete default"></div>
