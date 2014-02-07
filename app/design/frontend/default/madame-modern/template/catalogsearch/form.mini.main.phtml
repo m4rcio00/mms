@@ -27,12 +27,12 @@
 <form id="search_mini_form" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
     <div class="form-search">
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
-        <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>" class="input-text" />
+        <input id="search-main" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>" class="input-text" />
         <button type="submit" title="<?php echo $this->__('Search') ?>" class="button"><?php /*?><?php echo $this->__('Search') ?><?php */?></button>
         <div id="search_autocomplete" class="search-autocomplete default"></div>
         <script type="text/javascript">
         //<![CDATA[
-            var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Search entire store here...') ?>');
+            var searchForm = new Varien.searchForm('search_mini_form', 'search-main', '<?php echo $this->__('Search entire store here...') ?>');
             searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete');
         //]]>
         </script>
