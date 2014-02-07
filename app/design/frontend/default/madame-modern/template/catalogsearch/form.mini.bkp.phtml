@@ -28,10 +28,7 @@
     <div class="form-search">
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
         <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>" class="input-text" />
-        
-        <input type="image" class="btn-buscar-barra" src="<?php echo $this->getSkinUrl('images/btn-search.png') ?>"  />
-        
-		<?php /*?><?php echo $this->__('Search') ?><?php */?></button>
+        <button type="submit" title="<?php echo $this->__('Search') ?>" class="button"><?php /*?><?php echo $this->__('Search') ?><?php */?></button>
         <div id="search_autocomplete" class="search-autocomplete default"></div>
         <script type="text/javascript">
         //<![CDATA[
