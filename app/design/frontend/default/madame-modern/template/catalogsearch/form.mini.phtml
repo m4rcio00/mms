@@ -29,16 +29,16 @@
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
         <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>" class="input-text" />
         
-        <input type="image" class="btn-buscar-barra" src="<?php echo $this->getSkinUrl('images/btn-search.png') ?>"  />
+        <input type="image" class="btn-buscar-barra" />
         <script type="text/javascript">
             //<![CDATA[
-			Event.observe('search-barra','click',function(event){
-				if($('search-barra').value == 'Digite aqui o que você deseja encontrar')
-					$('search-barra').value = '';
+			Event.observe('search','click',function(event){
+				if($('search').value == 'Digite aqui o que você deseja encontrar')
+					$('search').value = '';
 			});
-			Event.observe('search-barra','blur',function(event){
-				if($('search-barra').value == '')
-					$('search-barra').value = 'Digite aqui o que você deseja encontrar';
+			Event.observe('search','blur',function(event){
+				if($('search').value == '')
+					$('search').value = 'Digite aqui o que você deseja encontrar';
 			});
         </script>
         
