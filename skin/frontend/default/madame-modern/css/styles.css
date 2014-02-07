@@ -351,7 +351,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 /* Top Cart */
-.shoppingCart { position:relative; top: 20px;  font-size:10px; border: 1px solid #f40; width: 148px; float:right; background:#FFF;  cursor:pointer; height: 35px;}
+.shoppingCart { position:relative; top: 20px;  font-size:10px; border: 1px solid #f40; width: 148px; float:right; background:#f40;  cursor:pointer; height: 35px;}
 .shoppingCart .summary{font-size: 13px; font-weight: bold; font-family: Arial; color: #000; margin-right: 120px; margin-top: 5px; float: right; line-height:25px; padding-left:3px; text-transform: initial;}
 .shoppingCart .top-cart { margin:0px; border:0px; padding:3px 10px; }
 .shoppingCart .empty {color: #000; font-size:14px; font-family: Tahoma, Arial; font-weight:400; float: right; line-height:25px; padding-left:0px; display:inline-block; margin-right: 120px; margin-top: 5px; text-transform:initial;}
