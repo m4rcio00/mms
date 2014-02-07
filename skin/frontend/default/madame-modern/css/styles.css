@@ -1493,3 +1493,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	margin-top: 12px;
 	font-weight: 700;
 }
+
+.conteudo-laranja{
+	color:#ff6400;
+	margin-top: 12px;
+	font-weight: 700;
+	font-style: italic;
+}
