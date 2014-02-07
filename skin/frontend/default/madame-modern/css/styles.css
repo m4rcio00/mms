@@ -423,18 +423,7 @@ img.pagamento-mms{ }
 /*.teste-mms input.btn-buscar{float:none;}*/
 
 input.btn-buscar {  
-border: none;
-color: #fff;
-background: #f40 !important;
-cursor: pointer;
-padding: 5px;
-padding-left: 8px;
-padding-right: 8px;
-border: medium none;
-font-size: 13px;
-font-weight: bold;
-margin-right: 0px;
-height: 41px;
+	border: none;
 }
 
 
