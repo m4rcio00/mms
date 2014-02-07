@@ -83,7 +83,7 @@ Default layout, loads most of the pages
                     <action method="setElementClass"><value>top-container</value></action>
                 </block>
                 <block type="checkout/cart_sidebar" name="cart_sidebar" as="topcart" template="checkout/cart/topbar.phtml"/> 
-                
+                <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.main.phtml"/>
             </block>
             <!-- Header checkout-->
 
