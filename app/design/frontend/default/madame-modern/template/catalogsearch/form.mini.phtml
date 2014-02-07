@@ -29,12 +29,12 @@
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
         <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>" class="input-text" />
         
-        <input type="image" class="btn-buscar-barra" />
+        <input type="image" class="btn-buscar-barra" src="<?php echo $this->getSkinUrl('images/btn-search.png') ?>"  />
         <script type="text/javascript">
             //<![CDATA[
 			Event.observe('search','click',function(event){
 				if($('search').value == 'Digite aqui o que você deseja encontrar')
-					$('search').value = '';
+					$('search-barra').value = '';
 			});
 			Event.observe('search','blur',function(event){
 				if($('search').value == '')
@@ -44,6 +44,7 @@
         
         
 		<?php /*?><?php echo $this->__('Search') ?><?php */?></button>
+        
         <div id="search_autocomplete" class="search-autocomplete default"></div>
         <script type="text/javascript">
         //<![CDATA[
