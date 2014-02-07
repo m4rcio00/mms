@@ -25,17 +25,13 @@
  */
 ?>
 
-
-
 <form id="search_mini_form" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
       <div class="form-search">
         <?php /*?><label for="search"><?php echo $this->__('Search:') ?></label><?php */?>
 		<div class="" id="searchajaxico" style="display: none;"></div>
        
        <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->__('Search entire store here...') ?>" class="input-text" />
-       
-
-       
+      
         <div id="search_autocomplete" class="search-autocomplete" style="display:none;"></div>
 
         <input type="submit" value="Buscar" class="btn-buscar"> 
@@ -52,14 +48,14 @@
 					$('search').value = '<?php echo $this->__('Search entire store here...') ?>';
 				 
 				if($('search_autocomplete').style.display != 'none')
-						setTimeout(function(){$('search_autocomplete').hide();}, 500);
+						//setTimeout(function(){$('search_autocomplete').hide();}, 500);
 						//$('search_autocomplete').slideUp('.8');
 			});
 			
 			Event.observe('search', 'keyup', function(event){
 				if(event.keyCode == 8 || event.keyCode == 46){
 					if($('search').value.length < 3){
-						$('search_autocomplete').hide();
+						//$('search_autocomplete').hide();
 					}
 				}
 
@@ -70,23 +66,23 @@
 							method:'get',
 							parameters: { 'q' : $('search').value },
 							onLoading: function(){
-								$('searchajaxico').show();
+								//$('searchajaxico').show();
 							},
 							onSuccess: function(transport){
 							  var response = transport.responseText || "No product found";
 							  //alert("Success! \n\n" + response);
-							  $('searchajaxico').hide();
-							  $('search_autocomplete').update('');
-							  $('search_autocomplete').update(response);
+							 // $('searchajaxico').hide();
+							 // $('search_autocomplete').update('');
+							//  $('search_autocomplete').update(response);
 							  if(!$('search_autocomplete').visible())
-								$('search_autocomplete').slideDown('fast');
+								//$('search_autocomplete').slideDown('fast');
 							  
 							},
 							onFailure: function(){ alert('Something went wrong...') }
 						});
 					}
 					else{
-						$('search_autocomplete').hide();
+						//$('search_autocomplete').hide();
 					}
 				}
 			});
