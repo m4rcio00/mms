@@ -35,7 +35,8 @@
 
 <div class="product-view">
 <div class="pagamento-mms"><a href="#">
-    <img class="img-centro" alt="Formas de Pagamento" src="<?php echo $this->getSkinUrl('images/barra.png');?>"></a></div>
+    <img class="img-centro" alt="Formas de Pagamento" src="<?php echo Mage::getDesign()->getSkinUrl('images/barra.png');?>"></a></div>
+    
 <div>
 <?php if ($this->getProduct()->getProdutoDrop()){
   echo "Não";
