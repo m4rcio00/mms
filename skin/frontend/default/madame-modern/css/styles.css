@@ -1360,7 +1360,8 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .floating-menu{
-	background: #f40;
+	background: #fff;
+	border: 1px solid #f40;
 	height: 240px;
 	width: 150px;
 	position: fixed;
