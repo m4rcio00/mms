@@ -146,11 +146,11 @@ $_prev_pos = $_pos-1;
         <div class="floating-menu" style="display:none"></div>
         
 <script type="text/javascript">
-  $(function(){
-	  var _top = $(window).scrollTop();
+  jQuery(function(){
+	  var _top = jQuery(window).scrollTop();
 	  var _direction;
-	  $(window).scroll(function(){
-		  var _cur_top = $(window).scrollTop();
+	  jQuery(window).scroll(function(){
+		  var _cur_top = jQuery(window).scrollTop();
 		  if(_top <_cur_top)
 		  {
 			  _direction = 'down';
@@ -162,12 +162,12 @@ $_prev_pos = $_pos-1;
 		  _top = _cur_top;
 		  if(_top <390)
 		  {	
-			  $(".floating-menu").fadeOut();
+			  jQuery(".floating-menu").fadeOut();
 			  //firstscroll = true;
 		  }	
 		  if(_top >= 400)
 		  {	
-			  $(".floating-menu").fadeIn();
+			  jQuery(".floating-menu").fadeIn();
 			  //firstscroll = true;
 		  }
 		  
