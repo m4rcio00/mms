@@ -1365,6 +1365,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	width: 100px;
 	position: fixed;
 	z-index: 500;
+	right: 40px;
 }
 
 .floatingTopBar {
