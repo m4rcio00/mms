@@ -144,7 +144,7 @@ $_prev_pos = $_pos-1;
         <div class="product-name">
         <div class="frete-mms">Frete Grátis Brasil*</div>
         
-        <div class="floating-menu" style="display:none">
+  <div class="floating-menu" style="display:none">
         	<div style="padding-left:125px; padding-top:5px; display:block;">
             	<img style="cursor:pointer" onclick="closeFixedBuy()" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."madame-modern/btn-close.png";?>"></div>
                 
@@ -152,8 +152,19 @@ $_prev_pos = $_pos-1;
  
         <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)">
         <span><span>COMPRAR</span></span></button>
-    </div>    
-            </div>
+    </div>
+    
+    
+    <p class="product-image product-image-zoom">
+    <?php
+        $_img = '<a href="'.$this->helper('catalog/image')->init($_product, 'image').'" id="zoom1" class="cloud-zoom" rel="image_gallery" title="'.$this->htmlEscape($this->getImageLabel()).'" ><img id="image" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(590,714).'" alt="'.$this->htmlEscape($this->getImageLabel()).'" title="'.$this->htmlEscape($this->getImageLabel()).'" /></a>';
+        
+		echo $_helper->productAttribute($_product, $_img, 'image');
+    ?>
+</p>
+    
+        
+</div>
         
         
 <script type="text/javascript">
