@@ -34,11 +34,14 @@
 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('product_top')->toHtml(); ?>
 
 <div class="product-view">
-<div><?php if ($this->getProduct()->getProdutoDrop()){
+<div class="pagamento-mms"><a href="#">
+    <img class="img-centro" alt="Formas de Pagamento" src="<?php echo $this->getSkinUrl('images/barra.png');?>"></a></div>
+<div>
+<?php if ($this->getProduct()->getProdutoDrop()){
   echo "Não";
-} ?></div>
-  <div class="pagamento-mms"><a href="#">
-    <img class="img-centro" alt="Formas de Pagamento" src="<?php echo $this->getSkinUrl('images/barra.png') ?>"></a></div>
+} ?>
+</div>
+  
 
   <?php $_helper = $this->helper('catalog/output'); ?>
   <?php $_product = $this->getProduct(); ?>
