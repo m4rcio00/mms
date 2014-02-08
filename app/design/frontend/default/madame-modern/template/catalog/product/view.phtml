@@ -155,13 +155,9 @@ $_prev_pos = $_pos-1;
     </div>
     
     
-    <p class="product-image-b">
-    <?php
-        
-        
-		echo Mage::helper('catalog/image')->init($_product, 'image')->resize(150);
-    ?>
-</p>
+    <p class="product-image-b">    
+		<img src"<?php echo Mage::helper('catalog/image')->init($_product, 'image')->resize(150); ?>">
+    </p>
     
         
 </div>
