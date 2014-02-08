@@ -156,12 +156,14 @@ $_prev_pos = $_pos-1;
     
     <div class="preco-barra">
     	<p class="old-price">
+        		<p class="por">
                 <span class="preco-de-mms">De:</span>
                 <?php $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
-				echo $specialprice;?>
+				echo $specialprice;?></p>
+                <p clasa"de">
 				<span class="preco-de-mms">Por:</span>
 				<?php $price = Mage::getModel('catalog/product')->load($_product->getId())->getPrice(); 
-				echo "R$" . number_format((float)$price, 2, ',', '') ;?>
+				echo "R$" . number_format((float)$price, 2, ',', '') ;?></p>
 				
          </p>
     </div>
