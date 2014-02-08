@@ -159,6 +159,9 @@ $_prev_pos = $_pos-1;
                 <span class="preco-de-mms">De:</span>
                 <?php $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
 				echo $specialprice;
+				<span class="preco-de-mms">Por:</span>
+				$price = Mage::getModel('catalog/product')->load($_product->getId())->getPrice(); 
+				echo $price;
 				?>
          </p>
     </div>
