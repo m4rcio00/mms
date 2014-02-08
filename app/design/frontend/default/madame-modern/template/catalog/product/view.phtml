@@ -157,10 +157,9 @@ $_prev_pos = $_pos-1;
     <div class="preco-barra">
     	<p class="old-price">
                 <span class="preco-de-mms">De:</span>
-                <span class="price-label"><?php echo $this->__('Regular Price:') ?></span>
-                <span class="price" id="old-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
-                    
-                </span>
+                <?php $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
+				echo $specialprice;
+				?>
          </p>
     </div>
     
