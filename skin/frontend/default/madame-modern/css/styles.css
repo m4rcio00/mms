@@ -393,7 +393,7 @@ border-right:1px solid #d7d7d7; }
 
 #top-links-mms {padding-left: 2px; margin-left: 5px; background: url("../images/icone_conta_1.png") left center no-repeat transparent;}
 #preco-cart-mms {font-size: 12px;}
-.img-centro {float:none; display:block; margin-left:4px; margin-right:auto;}
+.img-centro {float:none; display:block;}
 .telefone-contato{position: relative; top: 45px; right: 360px;}
 .telefone-contato .tel-mms {display: inline;}
 .fone-mms{font-family: Arial;}
@@ -401,7 +401,7 @@ border-right:1px solid #d7d7d7; }
 .preco-por-mms {font-size: 12px; font-family: 'Open Sans'; color: #f40; font-weight: 600;}
 .preco-por-valor-mms {font-size: 17px; font-family: 'Open Sans'; font-weight: 600; color: #f40;}
 .mmsContato{text-transform: none; font-size: 12px; color:#000; position: absolute; top: -22px; right: 190px;}
-.pagamento-mms {margin-top: 12px; margin-bottom: 12px; height: 52px; border: 1px solid #00abce; background: #f7f7f7;}
+.pagamento-mms {margin-top: 15px; margin-bottom: 15px;}
 img.pagamento-mms{ }
 .breadcrumbs span {color: #000;}
 
