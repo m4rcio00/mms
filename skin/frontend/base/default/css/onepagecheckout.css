@@ -190,6 +190,21 @@ p.newsletter label{color:#8E8D8B;}
 	background: url("../images/osc-numbers-1.png") left center no-repeat transparent;
 }
 
+.op_block_title.osc-numbers-2 {
+
+	background: url("../images/osc-numbers-2.png") left center no-repeat transparent;
+}
+
+.op_block_title.osc-numbers-3 {
+
+	background: url("../images/osc-numbers-3.png") left center no-repeat transparent;
+}
+
+.op_block_title.osc-numbers-4 {
+
+	background: url("../images/osc-numbers-4.png") left center no-repeat transparent;
+}
+
 .osc-numbers{
 
 }
