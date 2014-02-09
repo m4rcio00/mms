@@ -161,8 +161,8 @@ $_prev_pos = $_pos-1;
                 <?php $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
 				echo "R$" . number_format((float)$specialprice,2, ',', '.');?></p>
                 <p class="economida-de">
-                <?php $economia = $specialprice-$price;
-				echo "R$" . number_format((float)$economia, 2, ',', '.')?></p>
+                <?php $economia = $price-$specialprice;
+				echo "Economia de: R$" . number_format((float)$economia, 2, ',', '.')?></p>
          </p>
     </div>
     
