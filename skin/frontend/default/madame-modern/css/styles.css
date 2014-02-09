@@ -1370,6 +1370,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	top: 145px;
 }
 
+.floating-menu .preco-barra {
+	margin-left: 14px;
+}
+
 .floating-menu .de {
 	color:#444;
 	text-decoration:line-through;
@@ -1377,7 +1381,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 .floating-menu .por {
 	color:#f40;
-	margin-top: 2px;
+	margin-top: 1px;
 	font-size: 25px;
 }
 
@@ -1398,7 +1402,9 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .floating-menu button.button {
-	margin-top: 12px;
+	margin-top: 6px;
+	margin-left: 10px;
+
 }
 
 .floating-menu button.button span {
