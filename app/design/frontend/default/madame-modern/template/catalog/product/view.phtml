@@ -160,7 +160,7 @@ $_prev_pos = $_pos-1;
                 <span class="preco-de-mms">Por: </span>
                 <?php $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
 				echo "R$" . number_format((float)$specialprice,2, ',', '.');?></p>
-                <p class="economida-de">
+                <p class="economia-de">
                 <?php $economia = $price-$specialprice;
 				echo "Economia de: R$" . number_format((float)$economia, 2, ',', '.')?></p>
          </p>
