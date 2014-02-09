@@ -1370,6 +1370,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	top: 145px;
 }
 
+.floating-menu .de {
+	color:000;
+}
+
 .floatingTopBar {
 	display:none;
 	height:55px;
