@@ -540,7 +540,7 @@ button.button span, .tags-list a, .quick-link a, .product-tabs a, .product-tabs 
 .social-ft .twitter, .social-ft .facebook, .social-ft .rss, #back_top { transition: opacity 0.4s linear 0s; -moz-transition: opacity 0.4s linear 0s; -webkit-transition: opacity 0.4s linear 0s; -o-transition: opacity 0.4s linear 0s; }
 .social-ft .twitter:hover, .social-ft .facebook:hover, .social-ft .rss:hover, #back_top:hover { -moz-opacity: .6; -webkit-opacity: .6; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /*IE8*/ opacity: .6; }
 /*Font Style*/
-h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .as-price, #nav, .block .block-title strong, .block .block-subtitle, .products-grid .product-name a, .price, .product-tabs a, .product-name, .welcome h1, .cart .discount h2, .cart .shipping h2, .cart.crosssell h2, .cart .totals strong, .opc .step-title, .opc .step-title h2, .footer h2, .sf-menu, button.button span, ul.topnav li a, .welcome, .f-updates .block1 h3, .quick-link a{ font-family: 'Open Sans', sans-serif; }
+h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .as-price, #nav, .block .block-title strong, .block .block-subtitle, .products-grid .product-name a, .price, .product-tabs a, .product-name, .welcome h1, .cart .discount h2, .cart .shipping h2, .cart.crosssell h2, .cart .totals strong, .opc .step-title, .opc .step-title h2, .footer h2, .sf-menu, button.button span, ul.topnav li a, .welcome, .f-updates .block1 h3, .quick-link a{ font-family: Tahoma, Arial, sans-serif; }
 /*Mix*/
 .category-products, .products-home, .product-view .product-shop, .product-view .box-up-sell, .product-tabs-content, .product-view .product-img-box .product-image-zoom, .more-views li { }
 .products-grid .product-image-novo, .jcarousel-skin-tango .jcarousel-item .product-image-novo, .product-image-zoom a, .more-views li a, .cart .product-image-novo { border:1px solid #0191C8; }
@@ -1379,6 +1379,8 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .floating-menu button.button span {
 	height: 38px;
+	letter-spacing: 1.5px;
+	padding: 4px;
 }
 
 .floatingTopBar {
