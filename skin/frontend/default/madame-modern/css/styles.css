@@ -1373,6 +1373,13 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .floating-menu .de {
 	color:000;
 }
+.floating-menu .por {
+	color:000;
+}
+
+.floating-menu button.button span {
+	height: 38px;
+}
 
 .floatingTopBar {
 	display:none;
