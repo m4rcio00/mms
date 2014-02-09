@@ -152,7 +152,7 @@ $_prev_pos = $_pos-1;
     
     <div class="preco-barra">
     	<p class="old-price">
-        		<p class"de">
+        		<p class="de">
 				<span class="preco-de-mms">De: </span>
 				<?php $price = Mage::getModel('catalog/product')->load($_product->getId())->getPrice(); 
 				echo "R$" . number_format((float)$price, 2, ',', '.') ;?></p>
