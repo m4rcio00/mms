@@ -1371,7 +1371,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .floating-menu .de {
-	color:000;
+	color:#444;
 }
 .floating-menu .por {
 	color:#f40;
@@ -1387,6 +1387,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .floating-menu .preco-de-mms{
+	color:#444;
+}
+
+.floating-menu .preco-por-mms{
 	color:#f40;
 }
 
