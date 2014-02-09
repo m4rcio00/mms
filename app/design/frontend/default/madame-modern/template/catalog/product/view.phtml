@@ -148,25 +148,26 @@ $_prev_pos = $_pos-1;
         	<div style="padding-left:125px; padding-top:5px; display:block;">
             	<img style="cursor:pointer" onclick="closeFixedBuy()" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."madame-modern/btn-close.png";?>"></div>
                 
-    <div class="add-to-cart-b">
- 
-        <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)">
-        <span><span>COMPRAR</span></span></button>
-    </div>
+   
     
     <div class="preco-barra">
     	<p class="old-price">
         		<p clasa"de">
-				<span class="preco-de-mms">Por: </span>
+				<span class="preco-de-mms">De: </span>
 				<?php $price = Mage::getModel('catalog/product')->load($_product->getId())->getPrice(); 
 				echo "R$" . number_format((float)$price, 2, ',', '.') ;?></p>
         		<p class="por">
-                <span class="preco-de-mms">De: </span>
+                <span class="preco-de-mms">Por: </span>
                 <?php $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
 				echo "R$" . number_format((float)$specialprice,2, ',', '.');?></p>
          </p>
     </div>
     
+        <div class="add-to-cart-b">
+ 
+        <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)">
+        <span><span>COMPRAR</span></span></button>
+    </div>
        
 </div>
         
