@@ -30,7 +30,7 @@
  *  solução gratuita que te atendesse e queira prestigiar o trabalho feito efetuando uma doação de qualquer valor, não vou negar e vou ficar grato! você
  *  pode fazer isso visitando a página do projeto em: http://onestepcheckout.com.br/
  *  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- *
+ *<p class="osc-numbers"><?php  echo $this->__('Name & Address'); ?></p>
 /*=========================================================================================================================================================
  */
 
@@ -42,7 +42,7 @@ $has_addr	= $this->customerHasAddresses();
 
 <div class="onepagecheckout_block">
     <div class="op_block_title osc-numbers-1">
-		<p class="osc-numbers"><?php	echo $this->__('Name & Address');	?></p>
+		<p class="osc-numbers"><?php	echo "Informações do Cliente";	?></p>
     </div>
     <div class="form_fields">
     <?php if ($has_addr){ ?>
