@@ -31,11 +31,11 @@ color:#FFFFFF;font:bold 12px/20px Arial,Helvetica,sans-serif;height:20px !import
 .onepagecheckout_datafields .col-1 .form_fields .short {width:50%; float:left; }
 .onepagecheckout_datafields .col-1 .form_fields div.two_fields .data_area { width: 95%; }
 .onepagecheckout_datafields .col-1 .form_fields div.two_fields .short { margin-bottom:15px; }
-.onepagecheckout_datafields .col-1 .form_fields input.t1 { width: 95%; padding:2px; background:none repeat scroll 0 0 #FFFFFF;border:1px solid #B6B6B6;}
+.onepagecheckout_datafields .col-1 .form_fields input.t1 { width: 95%; padding:6px 2px; background-color:#f3f3f3; border:1px solid #c7c7c7;}
 .onepagecheckout_datafields .col-1 .form_fields select { width: 100%; }
 .onepagecheckout_datafields .col-1 .form_fields div.full { margin:0 0 15px; }
 .onepagecheckout_datafields .col-1 .form_fields div.full .data_area { width: 100%; }
-.onepagecheckout_datafields .col-1 .form_fields div.full input.t1 { width: 95%; padding:2px; background:none repeat scroll 0 0 #FFFFFF;border:1px solid #B6B6B6;}
+.onepagecheckout_datafields .col-1 .form_fields div.full input.t1 { width: 95%; padding:6px 2px; background-color:#f3f3f3;border:1px solid #c7c7c7;}
 .onepagecheckout_datafields .col-1 .form_fields div.full select { width: 97%; }
 
 .onepagecheckout_datafields .col-2 .form_fields div.full .data_area { width: 275px; }
