@@ -1016,7 +1016,7 @@ button.btn-continue span span, button.btn-update span span { }
 .cart-collaterals .totals .checkout-types { background:#f3f3f3; padding:10px; }
 .cart-collaterals .totals a { margin-top:6px; display:block; }
 .cart-collaterals .totals button.button span { background:#f40 url(../images/sprites.png) 100% -128px no-repeat; height:40px; line-height:40px; color:#fff; padding:0 16px 0 10px; }
-.cart-collaterals .totals button.button span span { background:none; border-right:0px; }
+.cart-collaterals .totals button.button span span { background:none; border-right:0px; letter-spacing: 2px; }
 /* Options Tool Tip */
 .item-options dt { font-weight:bold; font-style:italic; }
 .item-options dd { padding-left:10px; }
