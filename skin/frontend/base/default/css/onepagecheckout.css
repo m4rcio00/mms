@@ -26,7 +26,7 @@ color:#FFFFFF;font:bold 12px/20px Arial,Helvetica,sans-serif;height:20px !import
 #onepagecheckout_orderform #register-customer-password{margin-bottom:5px;}
 #onepagecheckout_orderform #ship_address_block{margin-top:35px;}
 
-.onepagecheckout_datafields .op_block_title{text-transform:uppercase;color:#000;font-size:11pt;font-weight:bold;border-bottom:1px solid #000;margin: 25px 0 30px;}
+.onepagecheckout_datafields .op_block_title{text-transform:uppercase;color:#000;font-size:12pt;font-weight:bold; font-family: Tahoma, Arial; border-bottom:2px solid #f40;margin: 25px 0 30px; padding-bottom: 1px;}
 
 .onepagecheckout_datafields .col-1 .form_fields .short {width:50%; float:left; }
 .onepagecheckout_datafields .col-1 .form_fields div.two_fields .data_area { width: 95%; }
