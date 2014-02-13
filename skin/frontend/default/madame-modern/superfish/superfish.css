@@ -5,7 +5,7 @@
 .sf-menu ul li { width:			100%; background:#FFF; }
 .sf-menu ul li.parent { background:#fff url(../images/menu-arrow.png) right 10px no-repeat; }
 .sf-menu ul li a { color:#000 !important; border-bottom:1px solid #ededed !important; display:block !important; width:186px !important; padding:0 4px 0 10px; line-height:34px; font-size:12px; }
-.sf-menu ul li a:hover { color:#FF0054 !important; background:#F7F7F7; }
+.sf-menu ul li a:hover { color:#f40 !important; background:#F7F7F7; }
 .sf-menu li:hover { visibility:		inherit; /* fixes IE7 'sticky bug' */ }
 .sf-menu li { float:			left; position:		relative; }
 .sf-menu a { display:		block; position:		relative; }
