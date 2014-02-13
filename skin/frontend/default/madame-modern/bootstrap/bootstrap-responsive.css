@@ -901,3 +901,8 @@
     overflow: visible !important;
   }
 }
+
+/*MINHAS CONFIGURAÇÕES*/
+ .span6-Cart {
+    width: 400px;
+  }
