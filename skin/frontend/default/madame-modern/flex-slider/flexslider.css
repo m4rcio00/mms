@@ -70,8 +70,8 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
 /* flex-caption */
-.flex-caption{ position:absolute; top:66%; background: url(../images/dot.png) repeat 0 0; padding:6px 18px 16px; font-family: 'Anton', sans-serif; text-align:right;}
+.flex-caption{ position:absolute; top:70%; background: url(../images/dot.png) repeat 0 0; padding:6px 18px 16px; font-weight: 700; font-family: Tahoma, sans-serif; text-align:right;}
 .flex-caption h3{ font-size:50px; color:#FFF; text-transform:uppercase;}
 .flex-caption h3 span{color:#000;}
-.flex-caption .f-price{ font-size:30px; color:#ff0054; line-height:34px;}
-.flex-caption .f-btn{ background: #1e1e1e; color: #b4b4b4; font-size:18px; padding:8px 18px; float:right; margin-left:10px;}
+.flex-caption .f-price{ font-size:32px; color:#f40; line-height:48px;}
+.flex-caption .f-btn{ background: #f40; color: #fff; font-size:26px; padding:8px 18px; float:right; margin-left:10px;}
