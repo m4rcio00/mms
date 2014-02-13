@@ -46,7 +46,7 @@
   <?php $_iterator = 0; ?>
   <ol class="products-list" id="products-list">
     <?php foreach ($_productCollection as $_product): ?>
-    <li class="item<?php if( ++$_iterator == sizeof($_productCollection) ): ?> last<?php endif; ?>" id="teste">
+    <li class="item<?php if( ++$_iterator == sizeof($_productCollection) ): ?> last<?php endif; ?>" >
     <?php if( Mage::getModel('newproduct/grid')->isNewProduct($_product->getId()) ): ?>
             <div class="products-new">New</div>
 			<?php endif; ?>
@@ -96,7 +96,7 @@
   <?php if ($i++%$_columnCount==0): ?>
   <ul class="products-grid row">
     <?php endif ?>
-    <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?> span3">
+    <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?> span3" id="box-catalogo">
       <div class="products-box">
       <?php if( Mage::getModel('newproduct/grid')->isNewProduct($_product->getId()) ): ?>
             <div class="products-new">New</div>
