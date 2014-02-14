@@ -1572,11 +1572,9 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .products-box-catalogo{
 	width: 170px;
-}
-
-.products-box-catalogo{
 	border: solid 1px #ddd;
 }
+
 
 .products-box-catalogo:hover{
 	border: solid 1px #0191C8;
