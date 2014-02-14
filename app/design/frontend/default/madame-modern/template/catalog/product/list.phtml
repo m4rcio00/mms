@@ -97,7 +97,7 @@
   <ul class="products-grid row">
     <?php endif ?>
     <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?> span3-catalogo" id="box-catalogo">
-      <div class="products-box">
+      <div class="products-box-catalogo">
       <?php if( Mage::getModel('newproduct/grid')->isNewProduct($_product->getId()) ): ?>
             <div class="products-new">New</div>
 			<?php endif; ?>
