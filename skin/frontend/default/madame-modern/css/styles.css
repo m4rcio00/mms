@@ -1461,11 +1461,11 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 #box-produto{
-	border: 1px solid #E6DEDE;
+	border: 1px solid #c7c7c7;
 }
 
 #box-produto:hover{
-	border: 1px solid #c7c7c7;
+	border: 1px solid #46b08d;
 }
 
 .barra-topo {
