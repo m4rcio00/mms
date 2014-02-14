@@ -15,7 +15,7 @@ ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul { left:			12em; /* match 
 ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul { top:			-999em; }
 ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left:			10em; /* match ul width */ top:			0; }
 /*** DEMO SKIN ***/
-.sf-menu { float:	left; line-height: 50px; margin: 0 20px; padding: 0; text-transform: uppercase; }
+.sf-menu { float:	left; line-height: 50px; margin: 0 20px; padding: 0; }
 .sf-menu a { color: #FFFFFF; float: left; font-weight: normal; margin: 0 44px 0 0; text-decoration:none; font-weight:700; font-size: 12px; }
 .sf-menu li.last a { margin-right:0; }
 .sf-menu li:hover a { color:#f40; border-bottom:3px solid #ff0054; }

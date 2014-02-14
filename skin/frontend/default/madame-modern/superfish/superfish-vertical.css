@@ -3,7 +3,7 @@
 .sf-vertical li {border-bottom:1px solid #EDEDED;}
 .sf-vertical li.parent{ background:#fff url(../images/menu-arrow.png) right 10px no-repeat;}
 .sf-vertical li li{border-bottom:0px;}
-.sf-vertical li a{line-height:30px; font-size:12px; margin-right:0 !important; float:none; color:#a5a5a5;}
+.sf-vertical li a{line-height:30px; font-size:12px; margin-right:0 !important; float:none; color:#444;}
 .sf-vertical li a:hover{border-bottom:0px; background:#F5F5F5;}
 .sf-vertical li:hover a{border-bottom:0px;}
 
