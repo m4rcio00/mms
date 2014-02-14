@@ -253,7 +253,7 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .sorter .view-mode strong.list { background-position: -217px 8px; }
 .sorter .view-mode a.grid { background-position:-196px 7px; }
 /* Toolbar */
-.toolbar { color:#727272; margin:0 0 20px; border:1px solid #fff; background:#f3f3f3; }
+.toolbar { color:#444; margin:0 0 20px; border:1px solid #c7c7c7; background:#f3f3f3; }
 .toolbar .pager { float:right; }
 .toolbar .sorter { float:left; }
 .toolbar-bottom { margin-top:20px; }
