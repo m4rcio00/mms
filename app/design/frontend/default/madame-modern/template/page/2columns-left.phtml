@@ -47,13 +47,13 @@
         <?php echo $this->getChildHtml('breadcrumbs') ?>
             <div class="main row">
             <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('category_top')->toHtml(); ?>            
-                <div class="col-main span9">
+                <div class="col-main span9-catalogo">
                 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('category_right_top')->toHtml(); ?>
                     <?php echo $this->getChildHtml('global_messages') ?>
                     <?php echo $this->getChildHtml('content') ?>
                 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('category_right_bottom')->toHtml(); ?>
                 </div>
-                <div class="col-left sidebar span3">
+                <div class="col-left sidebar span3-left">
                 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('category_left_top')->toHtml(); ?> 
 				<?php echo $this->getChildHtml('left') ?>
                 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('category_left_bottom')->toHtml(); ?>

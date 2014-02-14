@@ -70,7 +70,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
 /* flex-caption */
-.flex-caption{ position:absolute; top:70%; background: url(../images/dot.png) repeat 0 0; padding:6px 18px 16px; font-weight: 700; font-family: Tahoma, sans-serif; text-align:right;}
+.flex-caption{ position:absolute; top:70%; right: 10%; background: url(../images/dot.png) repeat 0 0; padding:6px 18px 16px; font-weight: 700; font-family: Tahoma, sans-serif; text-align:right;}
 .flex-caption h3{ font-size:50px; color:#FFF; text-transform:uppercase;}
 .flex-caption h3 span{color:#000;}
 .flex-caption .f-price{ font-size:32px; color:#f40; line-height:48px;}
