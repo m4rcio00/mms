@@ -1561,3 +1561,11 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	font-weight: 700;
 	color: #000;
 }
+
+.span3-left{
+	width: 202px
+}
+
+.span3-catalogo{
+	width: 772px;
+}
