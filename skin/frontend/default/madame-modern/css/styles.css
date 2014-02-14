@@ -1584,7 +1584,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .products-box-catalogo .button.button {
-	padding: 2px;
+	padding-left: 6px;
 }
 
 .products-box-catalogo .button.button span {
@@ -1593,5 +1593,5 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .products-box-catalogo .button.button span span {
-	padding: 0;
+	padding:  0 5px 0 5px;
 }
