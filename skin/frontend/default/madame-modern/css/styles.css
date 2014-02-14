@@ -546,12 +546,12 @@ h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .
 .products-grid .product-image-novo, .jcarousel-skin-tango .jcarousel-item .product-image-novo, .product-image-zoom a, .more-views li a, .cart .product-image-novo { border:1px solid #0191C8; }
 /* Sidebar =============================================================================== */
 .block { margin-bottom:15px; padding-bottom:5px; background:#fff; }
-.block .block-title { padding:8px 0 6px 14px; color:#444; background:#f7f7f7; border-bottom:4px solid #0191C8; }
+.block .block-title { padding:8px 0 6px 14px; color:#444; background:#f7f7f7; border-bottom:4px solid #c7c7c7; }
 .block .block-title strong { font-size:17px; font-weight: 700;}
 .block .block-title strong span { }
 .block .block-title a { text-decoration:none !important; }
 .block .block-subtitle { font-size:16px; font-weight:normal; text-transform:uppercase; }
-.block .block-content { padding:14px; color:#727272; border-top:0px; border:1px solid #0191C8;}
+.block .block-content { padding:14px; color:#727272; border-top:0px; border:1px solid #c7c7c7;}
 .block .block-content li.item { padding:5px 0; text-align:left;}
 .block .btn-remove, .block .btn-edit { float:right; margin:3px 0 0 3px; }
 .block .actions { text-align:right; }
