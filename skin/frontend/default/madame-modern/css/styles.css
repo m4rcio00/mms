@@ -201,7 +201,7 @@ p.control input.checkbox, p.control input.radio { margin-right:6px; }
 .buttons-set button.button { float:right; }
 .buttons-set p.required { margin:0 0 5px; }
 .buttons-set-order { }
-.fieldset { border:1px solid #414141; padding:22px 15px 12px; margin:28px 0; }
+.fieldset { border:1px solid #c7c7c7; padding:22px 15px 12px; margin:28px 0; }
 .fieldset .legend { float:left; font-weight:bold; font-size:13px; border:1px solid #414141; background:#000000; color:#727272; margin:-33px 0 0 -10px; padding:2px 8px 4px; position:relative; }
 /* Form Validation */
 .validation-advice { clear:both; min-height:13px; margin:3px 0 0; padding-left:17px; font-size:10px; line-height:13px; background:url(../images/validation_advice_bg.gif) 2px 1px no-repeat; color:#f00; }
@@ -948,7 +948,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 /* CMS Home Page */
 .home{ margin-top:6px;}
 .welcome { background:url("../images/box.png") repeat scroll 0 0 transparent; border-left:4px solid #e8e8e8; margin:20px 0 0; padding:22px 22px 22px 20px; font-size:18px; color:#000;}
-.welcome h1 { color: #FF0054; float: left; font-size: 30px; margin-right:18px; line-height:23px; font-weight:700; text-transform:uppercase;}
+.welcome h1 { color: #f40; float: left; font-size: 30px; margin-right:18px; line-height:23px; font-weight:700; text-transform:uppercase;}
 .welcome span{font-family:Georgia, "Times New Roman", Times, serif; background:url("../images/quot.png") no-repeat scroll 0 0 transparent; display:inline-block; width:16px; 
 height:12px;}
 .welcome span.last{ background-position:0 -20px;}
