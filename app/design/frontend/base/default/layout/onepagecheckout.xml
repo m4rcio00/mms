@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout version="0.1.0">                                                
+<layout version="0.1.0">                                                  
 
     <onepagecheckout_index_index translate="label">
         <label>Easy Checkout</label>
         <remove name="left"/>
         <remove name="right"/>
         <reference name="root">
-            <action method="setTemplate"><template>page/1column-mms.phtml</template></action>
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
         </reference>
         <reference name="head">
             <action method="addItem" ifconfig="onepagecheckout/general/enabled"><type>skin_css</type><name>css/onepagecheckout.css</name></action>
             <action method="addItem" ifconfig="onepagecheckout/general/jquery"><type>skin_js</type><name>deivison/jquery.js</name></action>
             <action method="addItem" ifconfig="onepagecheckout/general/jquery"><type>skin_js</type><name>deivison/jquery.maskedinput-1.2.2.min.js</name></action>
+            <action method="addItem" ifconfig="onepagecheckout/general/jquery"><type>skin_js</type><name>deivison/jquery.autotab-1.1b.js</name></action>
             <action method="addItem" ifconfig="onepagecheckout/general/jquery"><type>skin_js</type><name>deivison/deivison.js</name></action>
-        </reference> 
-
-        <reference name="header">
-            <action method="setTemplate"><template>page/html/header2.phtml</template></action>
+            <action method="addItem" ifconfig="onepagecheckout/general/jquery"><type>skin_js</type><name>deivison/osc.validation.js</name></action>
         </reference>
+
 
         <reference name="content">
             <block type="checkout/onepage" name="onepagecheckout" template="onepagecheckout/onepagecheckout.phtml">

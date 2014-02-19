@@ -1,6 +1,6 @@
 /*=========================================================================================================================================================
  *
- *  PROJETO OSC MAGENTO BRASIL - VERSÃO FINAL V4.0.2
+ *  PROJETO OSC MAGENTO BRASIL - VERSÃO FINAL V3.0
  *  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  *  O módulo One Step Checkout normatizado para a localização brasileira.
  *  site do projeto: http://onestepcheckout.com.br/
@@ -18,15 +18,12 @@
  *
  *  Denis Colli Spalenza
  *  http://www.xpdev.com.br
-
- *  Cláudio Luiz Ferreira
- *  http://www.castelcd.com.br
  *
  *  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  *
  *
  *
- *  GOSTOU DO MóDULO?
+ *  GOSTOU DO MÓDULO?
  *  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  *  Se você gostou, se foi útil para você, se fez você economizar aquela grana pois estava prestes a pagar caro por aquele módulo pago, pois não achava uma
  *  solução gratuita que te atendesse e queira prestigiar o trabalho feito efetuando uma doação de qualquer valor, não vou negar e vou ficar grato! você
@@ -36,10 +33,15 @@
 /*=========================================================================================================================================================
  */
 
-window.console && console.log( 'osc4 debug 1' );
 
 
-jQuery(document).ready(function($j) {
+
+
+
+        $j(document).ready(function(){
+
+
+
 
 
             /*Limita os campos da data nascimento*/
@@ -48,21 +50,25 @@ jQuery(document).ready(function($j) {
             $j('input[name*="year"]').attr('maxlength','4');
             $j('input[name*="postcode"]').attr('maxlength','8');
 
+
+
 /*===================================================== Click ===========================================================*/
             /*Roda o clique para selecionar o tipo pessoa*/
             $j('input[name*="tipopessoa"]').click( function(){
 
-                var existeTaxVat = ($j('input[name*="taxvat"]').length > 0),
-                    tipoPessoa  = this.value;
+                var existe;
 
-                //habilita tudo por default
-                $j('.inputcnpj,.Binputcnpj,.inputcpf,.Binputcpf').removeAttr('disabled');
+                /*Pega do click tipo pessoa*/
+                queme = this.value;
 
-                if(tipoPessoa == 'Fisica'){
+                /*Verifica se existe o Taxvat*/
+                existe = $j('input[name*="taxvat"]').length;
+
+                if(queme == 'Fisica'){
 
                   /*fisica*/
                     /*Se existe o Taxvat alterna entre eles mudando o name conforme selecionado o tipo pessoa*/
-                    if( existeTaxVat != ''){
+                    if( existe != ''){
 
                         /*CADASTRO*/
                         $j('input[name="taxvat-old"]').attr('name', 'taxvat');
@@ -83,30 +89,31 @@ jQuery(document).ready(function($j) {
                         $j('input[name*="taxvat"]').attr('class', 'validar_cpfcnpj input-text');
                     }else{
                         /*CADASTRO*/
-                        $j('.inputcnpj').attr('disabled', 'disabled');
+                        $j('.inputcnpj').attr('name', 'NULL');
                         $j('.inputcpf').attr('name', 'cpfcnpj');
 
                         /*BILLING*/
-                        $j('.Binputcnpj').attr('disabled', 'disabled');
-                   
+                        $j('.Binputcnpj').attr('name', "NULL");             /*CNPJ NULL*/
+                        $j('.Binputcpf').attr('name', "billing[cpfcnpj]");  /*CPF OK*/
+                        //$j('.Binputcpf').attr('name', 'oioioi');
                         /*LIMPA CAMPOS*/
-                        //$j('input[name="cpfcnpj"]').val('');
-                        //$j('input[name="billing[cpfcnpj]"]').val('');
+                        $j('input[name="cpfcnpj"]').val('');
+                        $j('input[name="billing[cpfcnpj]"]').val('');
                     }
 
                     /*Exibe ou oculta os boxs*/
                     $j('.boxpj').hide();
                     $j('.boxpf').show();
 
-                    /*Exibe ou oculta o entregar em outro endere~ço conforme a selecao do tipo pessoa*/
+                    /*Exibe ou oculta o entregar em outro endere�o conforme a selecao do tipo pessoa*/
                     $j('li.options').find("label:contains('Entregar')").css('visibility', 'visible');
                     $j('input[name*="[same_as_billing]"]').css('visibility', 'visible');
 
-                }else if(tipoPessoa == 'Juridica'){
+                }else if(queme == 'Juridica'){
                   /*juricica*/
 
                     /*Se existe o Taxvat alterna entre eles mudando o name conforme selecionado o tipo pessoa*/
-                    if( existeTaxVat != ''){
+                    if( existe != ''){
                         /*CADASTRO*/
                         $j('input[name="taxvat-old"]').attr('name', 'taxvat');
                         $j('input[name="taxvat"]:eq(0)').attr('name', 'taxvat-old');
@@ -127,21 +134,22 @@ jQuery(document).ready(function($j) {
                     }else{
                         /*CADASTRO*/
                         $j('.inputcnpj').attr('name', 'cpfcnpj');
-                        $j('.inputcpf').attr('disabled', 'disabled');
+                        $j('.inputcpf').attr('name', 'NULL');
 
                         /*BILLING*/
-                        $j('.Binputcpf').attr('disabled', 'disabled');
+                        $j('.Binputcnpj').attr('name', 'billing[cpfcnpj]'); /*CNPJ OK*/
+                        $j('.Binputcpf').attr('name', 'NULL');              /*CPF NULL*/
 
                         /*LIMPA CAMPOS*/
-                        //$j('input[name="cpfcnpj"]').val('');
-                        //$j('input[name="billing[cpfcnpj]"]').val('');
+                        $j('input[name="cpfcnpj"]').val('');
+                        $j('input[name="billing[cpfcnpj]"]').val('');
                     }
 
                     /*Exibe ou oculta os boxs*/
                     $j('.boxpj').show();
                     $j('.boxpf').hide();
 
-                    /*Exibe ou oculta o entregar em outro endereço conforme a selecao do tipo pessoa*/
+                    /*Exibe ou oculta o entregar em outro endere�o conforme a selecao do tipo pessoa*/
                     $j('li.options').find("label:contains('Entregar')").css('visibility', 'hidden');
                     $j('input[name*="[same_as_billing]"]').css('visibility', 'hidden');
                 }
@@ -188,13 +196,13 @@ jQuery(document).ready(function($j) {
             });
 
 
-            //Ao se coloca o "-" no CEP não irá calcular o frete caso use o módulo Matrix Rates, pois ele não trabalha com o "-"
-            /*Essa opção é caso queira que toda vez ao se entrar no campo ele limpe-o*/
+            //Ao se coloca o "-" no CEP n�o ir� calcular o frete caso use o m�dulo Matrix Rates, pois ele n�o trabalha com o "-"
+            /*Essa op��o � caso queira que toda vez ao se entrar no campo ele limpe-o*/
             $j('input[class*="tracoAtivo"]').focus(function(){
               $j(this).val('');
             });
 
-             /*Script do traço do cep*/
+             /*Script do tra�o do cep*/
              /*   mexer
             $j('input[class*="tracoAtivo"]').keydown( function(e){
                   $j(this).attr('maxlength','9');
@@ -226,7 +234,7 @@ jQuery(document).ready(function($j) {
                     if (length == 3)
                       this.value += ")";
                     /*
-                    Testa para ver se o ddd começa com 11 e coloca maxlength para 14
+                    Testa para ver se o ddd come�a com 11 e coloca maxlength para 14
                             exemplo: (11)95345-1234 que antes era assim (11)5345-1234
                     */
                     if(/(\(11\)9(5[0-9]|6[0-9]|7[01234569]|8[0-9]|9[0-9])).+/i.test(this.value)){
@@ -255,7 +263,7 @@ jQuery(document).ready(function($j) {
                     if (length == 3)
                       this.value += ")";
                     /*
-                    Testa para ver se o ddd começa com 11 e coloca maxlength para 14
+                    Testa para ver se o ddd come�a com 11 e coloca maxlength para 14
                             exemplo: (11)95345-1234 que antes era assim (11)5345-1234
                     */
                     if(/(\(11\)9(5[0-9]|6[0-9]|7[01234569]|8[0-9]|9[0-9])).+/i.test(this.value)){
@@ -283,7 +291,7 @@ jQuery(document).ready(function($j) {
                     if (length == 3)
                       this.value += ")";
                     /*
-                    Testa para ver se o ddd começa com 11 e coloca maxlength para 14
+                    Testa para ver se o ddd come�a com 11 e coloca maxlength para 14
                             exemplo: (11)95345-1234 que antes era assim (11)5345-1234
                     */
                     if(/(\(11\)9(5[0-9]|6[0-9]|7[01234569]|8[0-9]|9[0-9])).+/i.test(this.value)){
@@ -304,33 +312,33 @@ jQuery(document).ready(function($j) {
 
                 //para testar cnpj: 78.425.986/0036-15 ou 78425986003615
 
-                //Remove tudo o que não é dígito
+                //Remove tudo o que n�o � d�gito
                 v = v.replace(/\D/g,"");
 
                 if (v.length <= 11) { //CPF
 
-                    //Coloca um ponto entre o terceiro e o quarto dígitos
+                    //Coloca um ponto entre o terceiro e o quarto d�gitos
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um ponto entre o terceiro e o quarto dígitos
-                    //de novo (para o segundo bloco de números)
+                    //Coloca um ponto entre o terceiro e o quarto d�gitos
+                    //de novo (para o segundo bloco de n�meros)
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um hífen entre o terceiro e o quarto dígitos
+                    //Coloca um h�fen entre o terceiro e o quarto d�gitos
                     v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
 
                 } else { //CNPJ
 
-                    //Coloca ponto entre o segundo e o terceiro dígitos
+                    //Coloca ponto entre o segundo e o terceiro d�gitos
                     v=v.replace(/^(\d{2})(\d)/,"$1.$2");
 
-                    //Coloca ponto entre o quinto e o sexto dígitos
+                    //Coloca ponto entre o quinto e o sexto d�gitos
                     v=v.replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3");
 
-                    //Coloca uma barra entre o oitavo e o nono dígitos
+                    //Coloca uma barra entre o oitavo e o nono d�gitos
                     v=v.replace(/\.(\d{3})(\d)/,".$1/$2");
 
-                    //Coloca um hífen depois do bloco de quatro dígitos
+                    //Coloca um h�fen depois do bloco de quatro d�gitos
                     v=v.replace(/(\d{4})(\d)/,"$1-$2");
                 }
 
@@ -345,33 +353,33 @@ jQuery(document).ready(function($j) {
 
                 //para testar cnpj: 78.425.986/0036-15 ou 78425986003615
 
-                //Remove tudo o que não é dígito
+                //Remove tudo o que n�o � d�gito
                 v = v.replace(/\D/g,"");
 
                 if (v.length <= 11) { //CPF
 
-                    //Coloca um ponto entre o terceiro e o quarto dígitos
+                    //Coloca um ponto entre o terceiro e o quarto d�gitos
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um ponto entre o terceiro e o quarto dígitos
-                    //de novo (para o segundo bloco de números)
+                    //Coloca um ponto entre o terceiro e o quarto d�gitos
+                    //de novo (para o segundo bloco de n�meros)
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um hífen entre o terceiro e o quarto dígitos
+                    //Coloca um h�fen entre o terceiro e o quarto d�gitos
                     v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
 
                 } else { //CNPJ
 
-                    //Coloca ponto entre o segundo e o terceiro dígitos
+                    //Coloca ponto entre o segundo e o terceiro d�gitos
                     v=v.replace(/^(\d{2})(\d)/,"$1.$2");
 
-                    //Coloca ponto entre o quinto e o sexto dígitos
+                    //Coloca ponto entre o quinto e o sexto d�gitos
                     v=v.replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3");
 
-                    //Coloca uma barra entre o oitavo e o nono dígitos
+                    //Coloca uma barra entre o oitavo e o nono d�gitos
                     v=v.replace(/\.(\d{3})(\d)/,".$1/$2");
 
-                    //Coloca um hífen depois do bloco de quatro dígitos
+                    //Coloca um h�fen depois do bloco de quatro d�gitos
                     v=v.replace(/(\d{4})(\d)/,"$1-$2");
                 }
 
@@ -404,48 +412,31 @@ jQuery(document).ready(function($j) {
 
 
         function buscarEndereco(host, quale) {
+            var prefix = "#"+ quale + "\\:",
+            cep = $j(prefix+'postcode').val().replace(/[^0-9]+/g, '');
+            if (cep.toString().length != 8) {
+                return false;
+            }
 
+            $j.ajax({
+                url: host + 'frontend/base/default/deivison/buscacep.php?cep=' + cep,
+                type:'GET',
+                dataType: 'html',
+                success:function(respostaCEP){
+                    //alert(respostaCEP); //para testes
 
-    			$j.ajax({
-    				url: host + 'frontend/base/default/deivison/buscacep.php?cep=' + document.getElementById(quale+':postcode').value.replace(/\+/g, ''),
-    				type:'GET',
-    				dataType: 'html',
-    				success:function(respostaCEP){
-    					//alert(respostaCEP); //para testes
+                    var obj = eval ("(" + respostaCEP + ")");
 
-                        var r = respostaCEP;
+                    $j(prefix+'street1').val(obj.logradouro);
+                    $j(prefix+'street4').val(obj.bairro);
+                    $j(prefix+'city').val(obj.cidade);
 
-                        street_1 = r.substring(0, (i = r.indexOf(':')));
-                        document.getElementById(quale+':street1').value = unescape(street_1.replace(/\+/g," "));
+                    $j('select[id*="'+quale+':region"]').children("option:contains('"+obj.uf_extenso+"')").attr('selected', 'selected');
+                    $j('select[id*="'+quale+':region_id"]').val(obj.codigo);
 
-                        r = r.substring(++i);
-                        street_4 = r.substring(0, (i = r.indexOf(':')));
-                        document.getElementById(quale+':street4').value = unescape(street_4.replace(/\+/g," "));
-
-                        r = r.substring(++i);
-                        city = r.substring(0, (i = r.indexOf(':')));
-                        document.getElementById(quale+':city').value = unescape(city.replace(/\+/g," "));
-
-                        r = r.substring(++i);
-                        region = r.substring(0, (i = r.indexOf(':')));
-
-                        //document.getElementById(quale+':region').selectedIndex = unescape(region.replace(/\+/g," "));
-                        //document.getElementById(quale+':region_id').selectedIndex = unescape(region.replace(/\+/g," "));
-
-                        region = region.replace(/\+/g," ");
-
-                        //alert(region);
-                        $j('select[id*="'+quale+':region"]').children("option:contains('"+region+"')").attr('selected', 'selected');
-                        $j('select[id*="'+quale+':region_id"]').children("option:contains('"+region+"')").attr('selected', 'selected');
-
-                        //document.getElementById(quale+':region_id').children("option:contains('"+region+"')").attr('selected', 'selected');
-
-
-
-                        setTimeout(function() { document.getElementById(quale+':street2').focus(); }, 1);
-    				}
-    			});
-
+                    setTimeout(function() { $j(prefix+'street2').focus(); }, 1);
+                }
+            });
         };
 
 
@@ -456,7 +447,7 @@ jQuery(document).ready(function($j) {
         /********************* Valida CPF e CNPJ *********************/
 
     	// Adicionar classe de validacao de cpf e cnpj ao Taxvat
-    	//$j('#billing:taxvat"]').addClassName('validar_cpf'); //removido e colocado na mão
+    	//$j('#billing:taxvat"]').addClassName('validar_cpf'); //removido e colocado na m�o
 
         function validaCPF(cpf,pType){
         	var cpf_filtrado = "", valor_1 = " ", valor_2 = " ", ch = "";
@@ -535,13 +526,13 @@ jQuery(document).ready(function($j) {
 
 
 /*  deivison 02
-    FUNÇÃO QUE EXECUTA PASSO A PASSO DE ATUALIZAÇÃO DOS CAMPOS PAYMENTS E REVIEW
+    FUN��O QUE EXECUTA PASSO A PASSO DE ATUALIZA��O DOS CAMPOS PAYMENTS E REVIEW
     -------------------------------------------------------------------------------------------------------------------------------
-    Essa função foi feita para atualização dos valores, caso haja desconto para pagamentos específicos como 10% pagamento no boleto
+    Essa fun��o foi feita para atualiza��o dos valores, caso haja desconto para pagamentos espec�ficos como 10% pagamento no boleto
     -------------------------------------------------------------------------------------------------------------------------------
-    Métodos de atualiação
+    M�todos de atualia��o
     'payment-method': 1,    <- Atualiza os meios de pagamentos
-    'shipping-method': 1,   <- Atualiza os métodos de envio
+    'shipping-method': 1,   <- Atualiza os m�todos de envio
     'review': 1             <- Atualiza o resumo da compra
 */
 
@@ -573,10 +564,10 @@ $j(function($) {
                     ,'payment-method': 1
                     //'shipping-method': 1
               });
-             setTimeout(function(){
-                        checkout.update({
-                            'review': 1,
-                            //'payment-method': 1
+              setTimeout(function(){
+              checkout.update({
+                'review': 1
+                //,'payment-method': 1
                         });
              }, 500);
 
@@ -595,7 +586,6 @@ $j(function($) {
 
 
 });
-
 
 
 
