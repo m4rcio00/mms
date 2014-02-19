@@ -17,6 +17,9 @@
             <action method="addItem" ifconfig="onepagecheckout/general/jquery"><type>skin_js</type><name>deivison/osc.validation.js</name></action>
         </reference>
 
+        <reference name="header">
+            <action method="setTemplate"><template>page/html/header2.phtml</template></action>
+        </reference>
 
         <reference name="content">
             <block type="checkout/onepage" name="onepagecheckout" template="onepagecheckout/onepagecheckout.phtml">
