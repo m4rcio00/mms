@@ -1,6 +1,6 @@
 /*=========================================================================================================================================================
  *
- *  PROJETO OSC MAGENTO BRASIL - VERSÃO FINAL V3.0
+ *  PROJETO OSC MAGENTO BRASIL - VERSÃO FINAL V4.0.2
  *  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  *  O módulo One Step Checkout normatizado para a localização brasileira.
  *  site do projeto: http://onestepcheckout.com.br/
@@ -18,12 +18,15 @@
  *
  *  Denis Colli Spalenza
  *  http://www.xpdev.com.br
+
+ *  Cláudio Luiz Ferreira
+ *  http://www.castelcd.com.br
  *
  *  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  *
  *
  *
- *  GOSTOU DO MÓDULO?
+ *  GOSTOU DO MóDULO?
  *  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  *  Se você gostou, se foi útil para você, se fez você economizar aquela grana pois estava prestes a pagar caro por aquele módulo pago, pois não achava uma
  *  solução gratuita que te atendesse e queira prestigiar o trabalho feito efetuando uma doação de qualquer valor, não vou negar e vou ficar grato! você
@@ -33,15 +36,10 @@
 /*=========================================================================================================================================================
  */
 
+//window.console && console.log( 'osc4 debug 1' );
 
 
-
-
-
-        $j(document).ready(function(){
-
-
-
+jQuery(document).ready(function($j) {
 
 
             /*Limita os campos da data nascimento*/
@@ -50,25 +48,30 @@
             $j('input[name*="year"]').attr('maxlength','4');
             $j('input[name*="postcode"]').attr('maxlength','8');
 
-
+			if($j('.account-create').length) {
+                $j('.account-create .boxpf #cpfcnpj').attr('name', 'cpfcnpj').removeAttr('disabled');
+                $j('.account-create .boxpj #cpfcnpj').attr('name', 'cpfcnpj-disabled').attr('disabled', 'disabled');
+            }
+            if($j('#onepagecheckout_orderform').length) {
+                $j('#onepagecheckout_orderform .boxpf #cpfcnpj').attr('name', 'cpfcnpj').removeAttr('disabled');
+                $j('#onepagecheckout_orderform .boxpj #cpfcnpj').attr('name', 'cpfcnpj-disabled').attr('disabled', 'disabled');
+            }
 
 /*===================================================== Click ===========================================================*/
             /*Roda o clique para selecionar o tipo pessoa*/
             $j('input[name*="tipopessoa"]').click( function(){
 
-                var existe;
+                var existeTaxVat = ($j('input[name*="taxvat"]').length > 0),
+                    tipoPessoa  = this.value;
 
-                /*Pega do click tipo pessoa*/
-                queme = this.value;
+                //habilita tudo por default
+                $j('.inputcnpj,.Binputcnpj,.inputcpf,.Binputcpf').removeAttr('disabled');
 
-                /*Verifica se existe o Taxvat*/
-                existe = $j('input[name*="taxvat"]').length;
-
-                if(queme == 'Fisica'){
+                if(tipoPessoa == 'Fisica'){
 
                   /*fisica*/
                     /*Se existe o Taxvat alterna entre eles mudando o name conforme selecionado o tipo pessoa*/
-                    if( existe != ''){
+                    if( existeTaxVat != ''){
 
                         /*CADASTRO*/
                         $j('input[name="taxvat-old"]').attr('name', 'taxvat');
@@ -89,31 +92,31 @@
                         $j('input[name*="taxvat"]').attr('class', 'validar_cpfcnpj input-text');
                     }else{
                         /*CADASTRO*/
-                        $j('.inputcnpj').attr('name', 'NULL');
-                        $j('.inputcpf').attr('name', 'cpfcnpj');
+                        $j('.account-create .boxpf #cpfcnpj').attr('name', 'cpfcnpj').removeAttr('disabled');
+                        $j('.account-create .boxpj #cpfcnpj').attr('name', 'cpfcnpj-disabled').attr('disabled', 'disabled');
 
                         /*BILLING*/
-                        $j('.Binputcnpj').attr('name', "NULL");             /*CNPJ NULL*/
-                        $j('.Binputcpf').attr('name', "billing[cpfcnpj]");  /*CPF OK*/
-                        //$j('.Binputcpf').attr('name', 'oioioi');
+                        $j('#onepagecheckout_orderform .boxpf #cpfcnpj').attr('name', 'cpfcnpj').removeAttr('disabled');
+                        $j('#onepagecheckout_orderform .boxpj #cpfcnpj').attr('name', 'cpfcnpj-disabled').attr('disabled', 'disabled');
+                   
                         /*LIMPA CAMPOS*/
-                        $j('input[name="cpfcnpj"]').val('');
-                        $j('input[name="billing[cpfcnpj]"]').val('');
+                        //$j('input[name="cpfcnpj"]').val('');
+                        //$j('input[name="billing[cpfcnpj]"]').val('');
                     }
 
                     /*Exibe ou oculta os boxs*/
                     $j('.boxpj').hide();
                     $j('.boxpf').show();
 
-                    /*Exibe ou oculta o entregar em outro endere�o conforme a selecao do tipo pessoa*/
+                    /*Exibe ou oculta o entregar em outro endere~ço conforme a selecao do tipo pessoa*/
                     $j('li.options').find("label:contains('Entregar')").css('visibility', 'visible');
                     $j('input[name*="[same_as_billing]"]').css('visibility', 'visible');
 
-                }else if(queme == 'Juridica'){
+                }else if(tipoPessoa == 'Juridica'){
                   /*juricica*/
 
                     /*Se existe o Taxvat alterna entre eles mudando o name conforme selecionado o tipo pessoa*/
-                    if( existe != ''){
+                    if( existeTaxVat != ''){
                         /*CADASTRO*/
                         $j('input[name="taxvat-old"]').attr('name', 'taxvat');
                         $j('input[name="taxvat"]:eq(0)').attr('name', 'taxvat-old');
@@ -133,23 +136,23 @@
                         $j('input[name*="taxvat"]').attr('class', 'validar_cpfcnpj input-text');
                     }else{
                         /*CADASTRO*/
-                        $j('.inputcnpj').attr('name', 'cpfcnpj');
-                        $j('.inputcpf').attr('name', 'NULL');
+                        $j('.account-create .boxpj #cpfcnpj').attr('name', 'cpfcnpj').removeAttr('disabled');
+                        $j('.account-create .boxpf #cpfcnpj').attr('name', 'cpfcnpj-disabled').attr('disabled', 'disabled');
 
                         /*BILLING*/
-                        $j('.Binputcnpj').attr('name', 'billing[cpfcnpj]'); /*CNPJ OK*/
-                        $j('.Binputcpf').attr('name', 'NULL');              /*CPF NULL*/
+                        $j('#onepagecheckout_orderform .boxpj #cpfcnpj').attr('name', 'cpfcnpj').removeAttr('disabled');
+                        $j('#onepagecheckout_orderform .boxpf #cpfcnpj').attr('name', 'cpfcnpj-disabled').attr('disabled', 'disabled');
 
                         /*LIMPA CAMPOS*/
-                        $j('input[name="cpfcnpj"]').val('');
-                        $j('input[name="billing[cpfcnpj]"]').val('');
+                        //$j('input[name="cpfcnpj"]').val('');
+                        //$j('input[name="billing[cpfcnpj]"]').val('');
                     }
 
                     /*Exibe ou oculta os boxs*/
                     $j('.boxpj').show();
                     $j('.boxpf').hide();
 
-                    /*Exibe ou oculta o entregar em outro endere�o conforme a selecao do tipo pessoa*/
+                    /*Exibe ou oculta o entregar em outro endereço conforme a selecao do tipo pessoa*/
                     $j('li.options').find("label:contains('Entregar')").css('visibility', 'hidden');
                     $j('input[name*="[same_as_billing]"]').css('visibility', 'hidden');
                 }
@@ -196,13 +199,13 @@
             });
 
 
-            //Ao se coloca o "-" no CEP n�o ir� calcular o frete caso use o m�dulo Matrix Rates, pois ele n�o trabalha com o "-"
-            /*Essa op��o � caso queira que toda vez ao se entrar no campo ele limpe-o*/
+            //Ao se coloca o "-" no CEP não irá calcular o frete caso use o módulo Matrix Rates, pois ele não trabalha com o "-"
+            /*Essa opção é caso queira que toda vez ao se entrar no campo ele limpe-o*/
             $j('input[class*="tracoAtivo"]').focus(function(){
               $j(this).val('');
             });
 
-             /*Script do tra�o do cep*/
+             /*Script do traço do cep*/
              /*   mexer
             $j('input[class*="tracoAtivo"]').keydown( function(e){
                   $j(this).attr('maxlength','9');
@@ -234,7 +237,7 @@
                     if (length == 3)
                       this.value += ")";
                     /*
-                    Testa para ver se o ddd come�a com 11 e coloca maxlength para 14
+                    Testa para ver se o ddd começa com 11 e coloca maxlength para 14
                             exemplo: (11)95345-1234 que antes era assim (11)5345-1234
                     */
                     if(/(\(11\)9(5[0-9]|6[0-9]|7[01234569]|8[0-9]|9[0-9])).+/i.test(this.value)){
@@ -263,7 +266,7 @@
                     if (length == 3)
                       this.value += ")";
                     /*
-                    Testa para ver se o ddd come�a com 11 e coloca maxlength para 14
+                    Testa para ver se o ddd começa com 11 e coloca maxlength para 14
                             exemplo: (11)95345-1234 que antes era assim (11)5345-1234
                     */
                     if(/(\(11\)9(5[0-9]|6[0-9]|7[01234569]|8[0-9]|9[0-9])).+/i.test(this.value)){
@@ -291,7 +294,7 @@
                     if (length == 3)
                       this.value += ")";
                     /*
-                    Testa para ver se o ddd come�a com 11 e coloca maxlength para 14
+                    Testa para ver se o ddd começa com 11 e coloca maxlength para 14
                             exemplo: (11)95345-1234 que antes era assim (11)5345-1234
                     */
                     if(/(\(11\)9(5[0-9]|6[0-9]|7[01234569]|8[0-9]|9[0-9])).+/i.test(this.value)){
@@ -312,33 +315,33 @@
 
                 //para testar cnpj: 78.425.986/0036-15 ou 78425986003615
 
-                //Remove tudo o que n�o � d�gito
+                //Remove tudo o que não é dígito
                 v = v.replace(/\D/g,"");
 
                 if (v.length <= 11) { //CPF
 
-                    //Coloca um ponto entre o terceiro e o quarto d�gitos
+                    //Coloca um ponto entre o terceiro e o quarto dígitos
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um ponto entre o terceiro e o quarto d�gitos
-                    //de novo (para o segundo bloco de n�meros)
+                    //Coloca um ponto entre o terceiro e o quarto dígitos
+                    //de novo (para o segundo bloco de números)
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um h�fen entre o terceiro e o quarto d�gitos
+                    //Coloca um hífen entre o terceiro e o quarto dígitos
                     v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
 
                 } else { //CNPJ
 
-                    //Coloca ponto entre o segundo e o terceiro d�gitos
+                    //Coloca ponto entre o segundo e o terceiro dígitos
                     v=v.replace(/^(\d{2})(\d)/,"$1.$2");
 
-                    //Coloca ponto entre o quinto e o sexto d�gitos
+                    //Coloca ponto entre o quinto e o sexto dígitos
                     v=v.replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3");
 
-                    //Coloca uma barra entre o oitavo e o nono d�gitos
+                    //Coloca uma barra entre o oitavo e o nono dígitos
                     v=v.replace(/\.(\d{3})(\d)/,".$1/$2");
 
-                    //Coloca um h�fen depois do bloco de quatro d�gitos
+                    //Coloca um hífen depois do bloco de quatro dígitos
                     v=v.replace(/(\d{4})(\d)/,"$1-$2");
                 }
 
@@ -353,33 +356,33 @@
 
                 //para testar cnpj: 78.425.986/0036-15 ou 78425986003615
 
-                //Remove tudo o que n�o � d�gito
+                //Remove tudo o que não é dígito
                 v = v.replace(/\D/g,"");
 
                 if (v.length <= 11) { //CPF
 
-                    //Coloca um ponto entre o terceiro e o quarto d�gitos
+                    //Coloca um ponto entre o terceiro e o quarto dígitos
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um ponto entre o terceiro e o quarto d�gitos
-                    //de novo (para o segundo bloco de n�meros)
+                    //Coloca um ponto entre o terceiro e o quarto dígitos
+                    //de novo (para o segundo bloco de números)
                     v=v.replace(/(\d{3})(\d)/,"$1.$2");
 
-                    //Coloca um h�fen entre o terceiro e o quarto d�gitos
+                    //Coloca um hífen entre o terceiro e o quarto dígitos
                     v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
 
                 } else { //CNPJ
 
-                    //Coloca ponto entre o segundo e o terceiro d�gitos
+                    //Coloca ponto entre o segundo e o terceiro dígitos
                     v=v.replace(/^(\d{2})(\d)/,"$1.$2");
 
-                    //Coloca ponto entre o quinto e o sexto d�gitos
+                    //Coloca ponto entre o quinto e o sexto dígitos
                     v=v.replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3");
 
-                    //Coloca uma barra entre o oitavo e o nono d�gitos
+                    //Coloca uma barra entre o oitavo e o nono dígitos
                     v=v.replace(/\.(\d{3})(\d)/,".$1/$2");
 
-                    //Coloca um h�fen depois do bloco de quatro d�gitos
+                    //Coloca um hífen depois do bloco de quatro dígitos
                     v=v.replace(/(\d{4})(\d)/,"$1-$2");
                 }
 
@@ -412,31 +415,48 @@
 
 
         function buscarEndereco(host, quale) {
-            var prefix = "#"+ quale + "\\:",
-            cep = $j(prefix+'postcode').val().replace(/[^0-9]+/g, '');
-            if (cep.toString().length != 8) {
-                return false;
-            }
 
-            $j.ajax({
-                url: host + 'frontend/base/default/deivison/buscacep.php?cep=' + cep,
-                type:'GET',
-                dataType: 'html',
-                success:function(respostaCEP){
-                    //alert(respostaCEP); //para testes
 
-                    var obj = eval ("(" + respostaCEP + ")");
+    			$j.ajax({
+    				url: host + 'frontend/base/default/deivison/buscacep.php?cep=' + document.getElementById(quale+':postcode').value.replace(/\+/g, ''),
+    				type:'GET',
+    				dataType: 'html',
+    				success:function(respostaCEP){
+    					//alert(respostaCEP); //para testes
 
-                    $j(prefix+'street1').val(obj.logradouro);
-                    $j(prefix+'street4').val(obj.bairro);
-                    $j(prefix+'city').val(obj.cidade);
+                        var r = respostaCEP;
 
-                    $j('select[id*="'+quale+':region"]').children("option:contains('"+obj.uf_extenso+"')").attr('selected', 'selected');
-                    $j('select[id*="'+quale+':region_id"]').val(obj.codigo);
+                        street_1 = r.substring(0, (i = r.indexOf(':')));
+                        document.getElementById(quale+':street1').value = unescape(street_1.replace(/\+/g," "));
 
-                    setTimeout(function() { $j(prefix+'street2').focus(); }, 1);
-                }
-            });
+                        r = r.substring(++i);
+                        street_4 = r.substring(0, (i = r.indexOf(':')));
+                        document.getElementById(quale+':street4').value = unescape(street_4.replace(/\+/g," "));
+
+                        r = r.substring(++i);
+                        city = r.substring(0, (i = r.indexOf(':')));
+                        document.getElementById(quale+':city').value = unescape(city.replace(/\+/g," "));
+
+                        r = r.substring(++i);
+                        region = r.substring(0, (i = r.indexOf(':')));
+
+                        //document.getElementById(quale+':region').selectedIndex = unescape(region.replace(/\+/g," "));
+                        //document.getElementById(quale+':region_id').selectedIndex = unescape(region.replace(/\+/g," "));
+
+                        region = region.replace(/\+/g," ");
+
+                        //alert(region);
+                        $j('select[id*="'+quale+':region"]').children("option:contains('"+region+"')").attr('selected', 'selected');
+                        $j('select[id*="'+quale+':region_id"]').children("option:contains('"+region+"')").attr('selected', 'selected');
+
+                        //document.getElementById(quale+':region_id').children("option:contains('"+region+"')").attr('selected', 'selected');
+
+
+
+                        setTimeout(function() { document.getElementById(quale+':street2').focus(); }, 1);
+    				}
+    			});
+
         };
 
 
@@ -447,7 +467,7 @@
         /********************* Valida CPF e CNPJ *********************/
 
     	// Adicionar classe de validacao de cpf e cnpj ao Taxvat
-    	//$j('#billing:taxvat"]').addClassName('validar_cpf'); //removido e colocado na m�o
+    	//$j('#billing:taxvat"]').addClassName('validar_cpf'); //removido e colocado na mão
 
         function validaCPF(cpf,pType){
         	var cpf_filtrado = "", valor_1 = " ", valor_2 = " ", ch = "";
@@ -526,13 +546,13 @@
 
 
 /*  deivison 02
-    FUN��O QUE EXECUTA PASSO A PASSO DE ATUALIZA��O DOS CAMPOS PAYMENTS E REVIEW
+    FUNÇÃO QUE EXECUTA PASSO A PASSO DE ATUALIZAÇÃO DOS CAMPOS PAYMENTS E REVIEW
     -------------------------------------------------------------------------------------------------------------------------------
-    Essa fun��o foi feita para atualiza��o dos valores, caso haja desconto para pagamentos espec�ficos como 10% pagamento no boleto
+    Essa função foi feita para atualização dos valores, caso haja desconto para pagamentos específicos como 10% pagamento no boleto
     -------------------------------------------------------------------------------------------------------------------------------
-    M�todos de atualia��o
+    Métodos de atualiação
     'payment-method': 1,    <- Atualiza os meios de pagamentos
-    'shipping-method': 1,   <- Atualiza os m�todos de envio
+    'shipping-method': 1,   <- Atualiza os métodos de envio
     'review': 1             <- Atualiza o resumo da compra
 */
 
@@ -564,10 +584,10 @@ $j(function($) {
                     ,'payment-method': 1
                     //'shipping-method': 1
               });
-              setTimeout(function(){
-              checkout.update({
-                'review': 1
-                //,'payment-method': 1
+             setTimeout(function(){
+                        checkout.update({
+                            'review': 1,
+                            //'payment-method': 1
                         });
              }, 500);
 
@@ -586,6 +606,3 @@ $j(function($) {
 
 
 });
-
-
-
