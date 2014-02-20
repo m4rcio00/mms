@@ -205,6 +205,11 @@ p.newsletter label{color:#8E8D8B;}
 	background: url("../images/osc-numbers-4.png") left center no-repeat transparent;
 }
 
+.op_block_title.osc-numbers-presente {
+
+	background: url("../images/osc-numbers-presente.png") left center no-repeat transparent;
+}
+
 .osc-numbers{
 	margin-left: 25px;
 }
