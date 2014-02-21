@@ -114,7 +114,7 @@ ul, ol { list-style:none; }
 /* Global Styles ========================================================================= */
 /* Form Elements */
 input, select, textarea, button { font:12px Arial, Helvetica, sans-serif; vertical-align:middle; color:#8a8a8a; }
-input.input-text, select, textarea { background:#fff; border:1px solid #dadada; }
+input.input-text, select, textarea { background:#f3f3f3; border:1px solid #c7c7c7; }
 input.input-text, textarea { padding:5px; }
 select { padding:5px; }
 select option { padding-right:10px; }
@@ -1137,7 +1137,7 @@ button.btn-continue span span, button.btn-update span span { }
 /* Account Login/Create Pages ============================================================ */
 .account-login .new-users, .account-login .registered-users { width:47%; }
 .account-login .new-users .content, .account-login .registered-users .content { padding:15px; border: 1px solid #DADADA;}
-.account-login h2 { font-size:14px; margin:0 0 10px; }
+.account-login h2 {color: #f40; font-size:16px; font-weight: 700; margin:0 0 10px; }
 .account-login .registered-users .content p { margin-bottom:8px; }
 .account-create .messages li { margin:18px 0 10px; }
 /* Account Login/Create Pages ============================================================ */
