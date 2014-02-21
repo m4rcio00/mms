@@ -214,8 +214,13 @@ p.newsletter label{color:#8E8D8B;}
 	margin-left: 25px;
 }
 
+.short-email {
+	float: left;
+	width: 99%;
+}
+
 .short-c-email {
 	float: left;
-	width: 92%;
+	width: 99%;
 	margin-top: 12px;
 }
