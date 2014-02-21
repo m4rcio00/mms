@@ -213,3 +213,9 @@ p.newsletter label{color:#8E8D8B;}
 .osc-numbers{
 	margin-left: 25px;
 }
+
+.short-c-email {
+	float: left;
+	width: 92%;
+	margin-top: 12px;
+}
