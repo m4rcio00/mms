@@ -103,7 +103,7 @@ color:#FFFFFF;font:bold 16px/32px Arial,Helvetica,sans-serif; height:42px !impor
 box-shadow:0px 0px 8px #555;
 -webkit-box-shadow: 0px 0px 8px #555;
 -moz-box-shadow:0px 0px 8px #555;
-filter: progid:DXImageTransform.Microsoft.dropShadow(color=#555, offX=0, offY=0, positive=true);
+/*filter: progid:DXImageTransform.Microsoft.dropShadow(color=#555, offX=0, offY=0, positive=true)*/;
 }
 
 #onepagecheckout_orderform .form_fields sup {color:#d66;font-size:100%;line-height:0;margin-left:3px;position:relative;top:6px;}
