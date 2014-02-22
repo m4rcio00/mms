@@ -235,7 +235,7 @@ $_prev_pos = $_pos-1;
         <p class="availability out-of-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('Out of stock') ?></span></p>
         <?php endif; ?>
         </span>
-        <p class="sku">Código do Produto: <?php echo $this->htmlEscape($_product->getSku()) ?></p></div>
+        <span><p class="sku">Código do Produto: <?php echo $this->htmlEscape($_product->getSku()) ?></p></span></div>
         <?php echo $this->getTierPriceHtml() ?>
         <div class="box1"> <?php echo $this->getChildHtml('product_type_data') ?> <?php echo $this->getChildHtml('extrahint') ?>
           <?php if (!$this->hasOptions()):?>
