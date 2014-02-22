@@ -1391,6 +1391,13 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	font-weight: 100;
 }
 
+.economia-de {
+	color:#46b08d;
+	margin-top: 4px;
+	font-size: 14px;
+	font-weight: 100;
+}
+
 .floating-menu .preco-de-mms{
 	color:#444;
 }
