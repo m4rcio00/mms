@@ -543,7 +543,7 @@ button.button span, .tags-list a, .quick-link a, .product-tabs a, .product-tabs 
 h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .as-price, #nav, .block .block-title strong, .block .block-subtitle, .products-grid .product-name a, .price, .product-tabs a, .product-name, .welcome h1, .cart .discount h2, .cart .shipping h2, .cart.crosssell h2, .cart .totals strong, .opc .step-title, .opc .step-title h2, .footer h2, .sf-menu, button.button span, ul.topnav li a, .welcome, .f-updates .block1 h3, .quick-link a{ font-family: Tahoma, Arial, sans-serif; }
 /*Mix*/
 .category-products, .products-home, .product-view .product-shop, .product-view .box-up-sell, .product-tabs-content, .product-view .product-img-box .product-image-zoom, .more-views li { }
-.products-grid .product-image-novo, .jcarousel-skin-tango .jcarousel-item .product-image-novo, .product-image-zoom a, .more-views li a, .cart .product-image-novo { border:1px solid #0191C8; }
+.products-grid .product-image-novo, .jcarousel-skin-tango .jcarousel-item .product-image-novo, .product-image-zoom a, .more-views li a, .cart .product-image-novo { border:1px solid #c7c7c7; }
 /* Sidebar =============================================================================== */
 .block { margin-bottom:15px; padding-bottom:5px; background:#fff; }
 .block .block-title { padding:8px 0 6px 4px; color:#444; background:#f7f7f7; border-bottom:4px solid #c7c7c7; }
@@ -812,7 +812,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .add-to-box .add-to-cart {margin-right: 22px; }
 .add-to-box .or { float:left; margin:0 10px; }
 .add-to-box .add-to-links { float:left; }
-.box1 { border-top:3px solid #dadada; border-bottom:3px solid #dadada; height:130px; position:relative; background: #f4f4f4; }
+.box1 { border-top:3px solid #c7c7c7; border-bottom:3px solid #c7c7c7; height:130px; position:relative; background: #f3f3f3; }
 .box1 .price-box { margin:14px 20px 0; float:left; }
 .box1 .regular-price .price { font-size:30px; font-weight:700; }
 .box1 .availability {display:none;}
@@ -1393,9 +1393,8 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .economia-de {
 	color:#46b08d;
-	margin-top: 4px;
+	margin-top: 2px;
 	font-size: 14px;
-	font-weight: 100;
 }
 
 .floating-menu .preco-de-mms{
