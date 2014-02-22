@@ -398,8 +398,8 @@ border-right:1px solid #d7d7d7; }
 .telefone-contato .tel-mms {display: inline;}
 .fone-mms{font-family: Arial;}
 .preco-de-mms {font-size: 12px; font-family: Tahoma; color: #000}
-.preco-por-mms {font-size: 12px; font-family: Tahoma; color: #f40; font-weight: 600;}
-.preco-por-valor-mms {font-size: 17px; font-family: Tahoma; font-weight: 600; color: #f40;}
+.preco-por-mms {font-size: 18px; font-family: Tahoma; color: #f40; font-weight: 600;}
+.preco-por-valor-mms {font-size: 24px; font-family: Tahoma; font-weight: 600; color: #f40;}
 .mmsContato{text-transform: none; font-size: 12px; color:#000; position: absolute; top: -22px; right: 190px;}
 .pagamento-mms {margin-top: 15px; margin-bottom: 15px;}
 img.pagamento-mms{ }
@@ -669,7 +669,7 @@ h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .
 .products-grid .minimal-price { color:#fff; }
 .products-grid .price-action{ height:28px;}
 .products-grid .actions{float:left;}
-.products-grid .price-box{float:left; margin-left:18px; margin-bottom: 6px;}
+.products-grid .price-box{float:left; margin-left:8px; margin-bottom: 8px;}
 .products-grid .price-box .regular-price{font-size:22px; font-weight:700; float:left; line-height:26px;}
 
 /* View Type: List */
