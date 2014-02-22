@@ -366,6 +366,12 @@
                 <span class="preco-por-valor-mms">
                     <?php echo $_coreHelper->currency($_finalPrice, true, false) ?>
                 </span>
+                <p class="economia-de">
+                <?php 
+				$price = Mage::getModel('catalog/product')->load($_product->getId())->getPrice();
+				$specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice();
+				$economia = $price-$specialprice;
+				echo "Economia de: R$" . number_format((float)$economia, 2, ',', '.')?></p>
             </p>
             <?php endif; ?>
         <?php endif; ?>
