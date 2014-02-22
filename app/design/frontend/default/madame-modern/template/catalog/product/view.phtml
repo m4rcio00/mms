@@ -229,10 +229,12 @@ $_prev_pos = $_pos-1;
         <?php echo $this->getReviewsSummaryHtml($_product, false, true)?> <?php echo $this->getChildHtml('alert_urls') ?>
         <?php if ($_product->isAvailable()): ?>
         <div class="sku-estoque">
+        <span>
         <p class="availability in-stock"><?php echo "Disponibilidade:" ?> <span><?php echo $this->__('In stock') ?></span></p>
         <?php else: ?>
         <p class="availability out-of-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('Out of stock') ?></span></p>
         <?php endif; ?>
+        </span>
         <p class="sku">Código do Produto: <?php echo $this->htmlEscape($_product->getSku()) ?></p></div>
         <?php echo $this->getTierPriceHtml() ?>
         <div class="box1"> <?php echo $this->getChildHtml('product_type_data') ?> <?php echo $this->getChildHtml('extrahint') ?>
