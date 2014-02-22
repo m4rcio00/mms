@@ -812,7 +812,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .add-to-box .add-to-cart {margin-right: 22px; }
 .add-to-box .or { float:left; margin:0 10px; }
 .add-to-box .add-to-links { float:left; }
-.box1 { border-top:3px solid #c7c7c7; border-bottom:3px solid #c7c7c7; height:130px; position:relative; background: #f3f3f3; }
+.box1 { border-top:3px solid #c7c7c7; border-bottom:3px solid #c7c7c7; height:130px; position:relative; background: #f3f3f3; margin-top: 10px; }
 .box1 .price-box { margin:14px 20px 0; float:left; }
 .box1 .regular-price .price { font-size:30px; font-weight:700; }
 .box1 .availability {display:none;}
@@ -1609,4 +1609,12 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .m-login{
 	color: #444;
 	line-height: 22px;
+}
+
+.m-sku-estoque {
+	color: #444;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	font-weight: 700;
+
 }

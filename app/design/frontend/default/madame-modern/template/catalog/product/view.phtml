@@ -29,6 +29,8 @@
  *
  * @see Mage_Catalog_Block_Product_View
  * @see Mage_Review_Block_Product_View
+ * <p class="sku">Código do Produto: <?php echo $this->htmlEscape($_product->getSku()) ?></p>
+ * <p class="availability in-stock"><?php echo "Disponibilidade:" ?> <span><?php echo $this->__('In stock') ?>
  */
 ?>
 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('product_top')->toHtml(); ?>
@@ -229,13 +231,13 @@ $_prev_pos = $_pos-1;
         <?php echo $this->getReviewsSummaryHtml($_product, false, true)?> <?php echo $this->getChildHtml('alert_urls') ?>
         <?php if ($_product->isAvailable()): ?>
         <div class="sku-estoque">
-        <span>
-        <p class="availability in-stock"><?php echo "Disponibilidade:" ?> <span><?php echo $this->__('In stock') ?></span></p>
+        
+        <span class="m-sku-estoque"><?php echo "Disponibilidade:" ?> <span><?php echo $this->__('In stock') ?></span>
         <?php else: ?>
         <p class="availability out-of-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('Out of stock') ?></span></p>
         <?php endif; ?>
         </span>
-        <span><p class="sku">Código do Produto: <?php echo $this->htmlEscape($_product->getSku()) ?></p></span></div>
+        <span class="m-sku-estoque">Código do Produto: <?php echo $this->htmlEscape($_product->getSku()) ?></span></div>
         <?php echo $this->getTierPriceHtml() ?>
         <div class="box1"> <?php echo $this->getChildHtml('product_type_data') ?> <?php echo $this->getChildHtml('extrahint') ?>
           <?php if (!$this->hasOptions()):?>
