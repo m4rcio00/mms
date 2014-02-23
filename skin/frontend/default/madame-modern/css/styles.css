@@ -1005,14 +1005,14 @@ button.btn-continue span span, button.btn-update span span { }
 .cart-collaterals .discount-form .input-box { margin-top:5px; }
 .cart-collaterals .shipping-form select { width:100%; }
 .cart-collaterals .shipping-form .input-text, .cart-collaterals .discount-form .input-text { width:97%; }
-.cart-collaterals .shipping-form button.button, .cart-collaterals .discount-form button.button { float:left; }
+.cart-collaterals .shipping-form button.button, .cart-collaterals .discount-form button.button { float:right; margin-top: 8px }
 /* Shopping Cart Totals */
 .cart-collaterals .totals {  border:1px solid #dadada; }
 .cart-collaterals .totals table { width:100%; background:#fff; }
 .cart-collaterals .totals table th, .cart-collaterals .totals table td { padding:6px 12px; }
 .cart-collaterals .totals table th { font-weight:bold; }
 .cart-collaterals .totals table tfoot th { }
-.cart-collaterals .totals strong { font-weight:normal; font-size:24px; }
+.cart-collaterals .totals strong { font-weight:normal; font-size:28px; }
 .cart-collaterals .totals .checkout-types { background:#f3f3f3; padding:10px; }
 .cart-collaterals .totals a { margin-top:6px; display:block; }
 .cart-collaterals .totals button.button span { height:40px; line-height:40px; color:#fff; padding:0 16px 0 10px; }
