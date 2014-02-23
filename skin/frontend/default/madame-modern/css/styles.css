@@ -694,7 +694,7 @@ h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .
 
 /* Product View ========================================================================== */
 /* Rating */
-.no-rating { margin:14px 0; font-size:10px; text-transform:uppercase; }
+.no-rating { margin:8px 0; font-size:10px; text-transform:uppercase; }
 .ratings { font-size:10px; line-height:16px; margin:10px 0 0; }
 .ratings strong { float:left; margin:1px 3px 0 0; }
 .ratings .rating-links { margin:0; text-transform:uppercase; }
