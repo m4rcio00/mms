@@ -906,3 +906,15 @@
  .span6-Cart {
     width: 485px;
   }
+
+  .span4-frete {
+    width: 325px;
+  }
+
+   .span4-cupom {
+    width: 280px;
+  }
+
+   .span4-total {
+    width: 345px;
+  }

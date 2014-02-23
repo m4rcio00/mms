@@ -114,8 +114,8 @@
   <div class="span4-frete">
     <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
   </div>
-  <div class="span4"> <?php echo $this->getChildHtml('coupon') ?> </div>
-  <div class="span4">
+  <div class="span4-cupom"> <?php echo $this->getChildHtml('coupon') ?> </div>
+  <div class="span4-total">
   <div class="totals"> <?php echo $this->getChildHtml('totals'); ?>
     <?php if(!$this->hasError()): ?>
     <ul class="checkout-types a-right">
