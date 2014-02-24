@@ -86,7 +86,7 @@ function barraTopoFixaAjax() {
 //FINAL BARRA FIXA DO TOP
 
 //FUNÇÃO PARA O TOOLTIP
-function tooltip(){
+function tooltipmms(){
 	$('.tooltip-contato').tooltipster({
 				interactive: true,
 				content: 
@@ -112,7 +112,7 @@ jQuery(document).ready(function() {
     slideEffectAjax();
 	barraTopoFixaAjax();
 	slideEffectAjaxBarra();
-	tooltip-mms();
+	tooltipmms();
 
 	jQuery(".topnav").accordion({
 		accordion:false,
