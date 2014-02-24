@@ -24,7 +24,7 @@
 }
 
 .icBigFone {
-	 background:url("../sprite_home.png") no-repeat 0 -238px;
+	 background:url("../images/sprite_home.png") no-repeat 0 -238px;
 	 width:27px;
 	 height:43px;
 	 float:left;
@@ -37,7 +37,7 @@
 }
 
 .ichora  {
-	background: url("../sprite_home.png") no-repeat 0 -291px;
+	background: url("../imagens/sprite_home.png") no-repeat 0 -291px;
 	width:26px;
 	height:26px;
 	vertical-align:middle;
@@ -46,7 +46,7 @@
 }
 
 .icmoney {
-	background: url("../sprite_home.png") no-repeat 0 -327px;
+	background: url("../images/sprite_home.png") no-repeat 0 -327px;
 	width:26px;
 	height:26px;
 	vertical-align:middle;
