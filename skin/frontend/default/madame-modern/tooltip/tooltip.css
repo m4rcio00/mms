@@ -45,6 +45,15 @@
 	display:inline-block;
 }
 
+.icemail  {
+	background: url("../images/email-icon.png") no-repeat;
+	width:26px;
+	height:26px;
+	vertical-align:middle;
+	margin-left:7px;
+	display:inline-block;
+}
+
 .icmoney {
 	background: url("../images/sprite_home.png") no-repeat 0 -327px;
 	width:26px;
