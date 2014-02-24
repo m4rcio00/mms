@@ -84,6 +84,16 @@ function barraTopoFixaAjax() {
 	});
 }
 //FINAL BARRA FIXA DO TOP
+
+//FUNÇÃO PARA O TOOLTIP
+function tooltip(){
+	$('.tooltip-contato').tooltipster({
+				interactive: true,
+				content: 
+				$('<div class="fale-conosco"><div class="dropdown dropTelevendas"><i class="ic icBigFone"></i><div class="big laranja">Atendimento</div><p class="fale-msg">Tire suas dúvidas sobre produtos, preços ou pedidos</p><div class="borderSection"><div class="titleTele"><i class="ichora"></i> Horário de Atendimento</div><span class="colLabelTele">Segunda a Sexta</span> <span class="colInfoTele">8h00 às 20h00</span><span class="colLabelTele">Sábados</span> <span class="colInfoTele">8h00 às 14h00</span></div><div class="borderSection"><div class="titleTele"><i class="ic icmoney"></i> Custo da Chamada</div><span class="colLabelTele">4007 1307</span> <span class="colInfoTele">Custo da ligação + impostos <br> <span class="small">(de acordo com operadora e Estado)</span></span><span class="colLabelTele">0800604 8200</span> <span class="colInfoTele">Gratuito, somente para ligações de telefone fixo</span></div></div></div>'), 
+	});			
+}
+//FIM FUNÇÃO PARA O TOOLTIP
 	 
 //Home Page Main Slider
 jQuery(window).load(function(){
@@ -102,6 +112,7 @@ jQuery(document).ready(function() {
     slideEffectAjax();
 	barraTopoFixaAjax();
 	slideEffectAjaxBarra();
+	tooltip-mms();
 
 	jQuery(".topnav").accordion({
 		accordion:false,
@@ -116,3 +127,4 @@ jQuery(document).ready(function() {
 /* Quatro Digital jQuery Scroll // 1.0 // Carlos Vinicius // Todos os direitos reservados */
 (function(a){"function"!==typeof a.fn.QD_scroll&&(a.fn.QD_scroll=function(d,b){var c;b=b||100;window.QuatroDigital_scroll=window.QuatroDigital_scroll||{};window.QuatroDigital_scroll.scrollTop=null;window.QuatroDigital_scroll.lastScrollTop=null;a(this).scroll(function(){c=this;window.QuatroDigital_scroll.scrollTop=a(window).scrollTop()});(function(){window.QuatroDigital_scroll.interval=setInterval(function(){window.QuatroDigital_scroll.lastScrollTop!==window.QuatroDigital_scroll.scrollTop&&(null!==
 window.QuatroDigital_scroll.scrollTop&&d.call(c,window.QuatroDigital_scroll.scrollTop),window.QuatroDigital_scroll.lastScrollTop=window.QuatroDigital_scroll.scrollTop)},b)})()})})(jQuery);
+
