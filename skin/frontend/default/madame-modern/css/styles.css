@@ -1629,3 +1629,19 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 #cart-titulo-top{
 	padding-top: 10px;
 }
+
+/* COMEÇO CENTAL ATENDIMENTO */
+
+.at-esqueda {
+	width: 202px;
+	float: left;
+}
+
+.at-direita {
+	width: 768px;
+	float: left;
+}
+
+
+
+/* FINAL CENTAL ATENDIMENTO */
