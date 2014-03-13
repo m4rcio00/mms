@@ -1638,6 +1638,8 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .at-titulo {
 	color:#f40;
+	padding-bottom: 4px;
+	border-bottom:2px solid #c7c7c7;
 }
 
 .at-esquerda {
@@ -1656,6 +1658,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .at-direita {
 	width: 768px;
 	float: left;
+	margin-left: 22px;
 }
 
 
