@@ -1344,6 +1344,15 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 /*	MINHAS CONFIGURAÇÕES	*/
 
+.img-pagar {
+	margin-left: 22px;
+}
+
+.c-pagar{
+	
+}
+
+
 .produto-categoria {
 
 	margin-top: 14px;
