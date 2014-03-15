@@ -1345,9 +1345,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 /*	MINHAS CONFIGURAÇÕES	*/
 
 .img-pagar {
-	margin-left: 2px;
-	font-size: 15px;
-	font-family: Tahoma;
+	margin-left: 0px;
 }
 
 .c-pagar{
