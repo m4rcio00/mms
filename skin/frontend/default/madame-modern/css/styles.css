@@ -1351,7 +1351,9 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .c-pagar{
-
+	margin-left: 2px;
+	font-size: 15px;
+	font-family: Tahoma;
 }
 
 .produto-categoria {
