@@ -405,7 +405,7 @@ border-right:1px solid #d7d7d7; }
 img.pagamento-mms{ }
 .breadcrumbs span {color: #000;}
 
-.pagamento-aceito-mms{padding: 10px; padding-left:5px; color: #3a87ad;  background-color: #d9edf7; border: 1px solid #bce8f1; font-size: 16px; position: relative; top: 10px;}
+.pagamento-aceito-mms{padding: 5px; padding-left:25px; color: #444;  background-color: #FFF; border: 1px solid #c7c7c7; position: relative; top: 10px;}
 .pagamento-aceito-mms span{font-size: 12px; display: block;}
 .pagamento-aceito-mms h4{font-size: 14px; display: block; }
 
@@ -1345,13 +1345,14 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 /*	MINHAS CONFIGURAÇÕES	*/
 
 .img-pagar {
-	margin-left: 22px;
+	margin-left: 2px;
+	font-size: 15px;
+	font-family: Tahoma;
 }
 
 .c-pagar{
-	
-}
 
+}
 
 .produto-categoria {
 
