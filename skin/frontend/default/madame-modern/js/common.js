@@ -95,6 +95,16 @@ function tooltipmms(){
 	});			
 }
 //FIM FUNÇÃO PARA O TOOLTIP
+
+//COMEÇO FADEIN FORMA DE PAGAMENTO
+	function mPagamentoFadeIn(){
+			jQuery('.pagamento-aceito-mms').hover(function() { 
+    		jQuery('.pagamento-aceito-mms-show').fadeIn('slow') 
+		}, function() { 
+    		jQuery('.pagamento-aceito-mms-show').fadeOut('slow'); 
+	});
+}	
+//FIM FADEIN FORMA DE PAGAMENTO
 	 
 //Home Page Main Slider
 jQuery(window).load(function(){
@@ -114,6 +124,7 @@ jQuery(document).ready(function() {
 	barraTopoFixaAjax();
 	slideEffectAjaxBarra();
 	tooltipmms();
+	mPagamentoFadeIn();
 
 	jQuery(".topnav").accordion({
 		accordion:false,
