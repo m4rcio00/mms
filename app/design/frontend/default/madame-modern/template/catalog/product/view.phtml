@@ -271,8 +271,9 @@ $_prev_pos = $_pos-1;
         <?php endif;?>
         <?php if ($_product->getShortDescription()):?>
 		
-        <div class="md-overlay"></div>
+        
         <div class="pagamento-aceito-mms md-trigger" data-modal="modal-1">
+        	<div class="md-overlay"></div>
        		<strong class="c-pagar">Pague as suas compras de forma rápida e segura! Parcelo tudo em 10X no Cartão</strong>
             <img class="img-pagar" alt="Formas de Pagamento" src="http://www.mmstoree.com.br/media/madame-modern/f-pagamento.png">
             <script src="<?php echo $this->getSkinUrl('js/modal/js/classie.js') ?>"></script>
