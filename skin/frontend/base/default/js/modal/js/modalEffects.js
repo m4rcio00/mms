@@ -54,4 +54,4 @@ var ModalEffects = (function() {
 
 	init();
 
-});
+})();
