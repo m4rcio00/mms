@@ -124,7 +124,7 @@ jQuery(document).ready(function() {
 	barraTopoFixaAjax();
 	slideEffectAjaxBarra();
 	tooltipmms();
-	mPagamentoFadeIn();
+	//mPagamentoFadeIn();
 
 	jQuery(".topnav").accordion({
 		accordion:false,
