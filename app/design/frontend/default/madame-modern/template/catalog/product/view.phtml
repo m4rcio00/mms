@@ -270,21 +270,26 @@ $_prev_pos = $_pos-1;
         <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
         <?php endif;?>
         <?php if ($_product->getShortDescription()):?>
-
-        <div class="pagamento-aceito-mms">
+		
+        <div class="md-overlay"></div>
+        <div class="pagamento-aceito-mms md-trigger" data-modal="modal-1">
        		<strong class="c-pagar">Pague as suas compras de forma rápida e segura! Parcelo tudo em 10X no Cartão</strong>
             <img class="img-pagar" alt="Formas de Pagamento" src="http://www.mmstoree.com.br/media/madame-modern/f-pagamento.png">
+            <script src="<?php echo $this->getSkinUrl('js/modal/classie.js') ?>"></script>
+            <script src="<?php echo $this->getSkinUrl('js/modal/modalEffects.js') ?>"></script> 
       	</div>
         
         <?php //------------------------ COMEÇO --------------------------------------------------------- ?>
-    <div class="pagamento-aceito-mms-show">
-		<div class="payments">
-		<h2>Opções de pagamento com o MercadoPago ou PagSeguro</h2>
-			<div class="option-payment">
-			<h3>Com cartão de crédito</h3>
-			<p class="accreditation">
+    		<div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+     <div class="pagamento-aceito-mms-show">
+	<div class="payments">
+	<h2>Opções de pagamento com o MercadoPago ou PagSeguro</h2>
+	<div class="option-payment">
+		<h3>Com cartão de crédito</h3>
+		<p class="accreditation" id="relo">
 			<i class="ch-icon-time"></i> Identificação instantânea
-			</p>
+		</p>
 		<p>
 			Insira os dados do seu cartão de crédito somente uma vez. Nas próximas compras pediremos apenas o código de segurança.
 		</p>
@@ -334,7 +339,7 @@ $_prev_pos = $_pos-1;
 	</div>
 	<div class="option-payment cash-payment">
 		<h3>À vista com boleto bancário	</h3>
-		<p class="accreditation">
+		<p class="accreditation" id="relo">
 			<i class="ch-icon-time"></i> Identificação de 1 a 3 dias úteis
 		</p>
 		<p>
@@ -348,7 +353,7 @@ $_prev_pos = $_pos-1;
 	</div>
 	<div class="option-payment">
 		<h3>Porque é bom comprar com MercadoPago ou PagSeguro</h3>
-		<p class="accreditation">
+		<p class="accreditation" id="relo">
 			<i class="ch-icon-time"></i> Seguro e Rápido
 		</p>
 		<ul class="p-list">
@@ -358,8 +363,12 @@ $_prev_pos = $_pos-1;
 		<li class="pp">Os seus dados estarão sob absoluta privacidade: a sua segurança é o nosso objetivo.</li>
         </ul>
 	</div>
-</div>
+    </div>
+         <p class="md-close teste" id="img-close"></p>
+    </div>
 
+</div>
+</div>
 </div>
         <?php //------------------------ FIM --------------------------------------------------------- ?>
 
