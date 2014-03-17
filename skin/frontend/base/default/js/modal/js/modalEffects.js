@@ -12,7 +12,7 @@ var ModalEffects = (function() {
 
 	function init() {
 
-		var overlay = jQuery(document).querySelector( '.md-overlay' );
+		var overlay = document.querySelector.jQuery('.md-overlay');
 
 		[].slice.call( jQuery(document).querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
 
