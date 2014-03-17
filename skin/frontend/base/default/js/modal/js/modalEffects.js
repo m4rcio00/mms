@@ -12,12 +12,12 @@ var ModalEffects = (function() {
 
 	function init() {
 
-		var overlay = document.querySelector.jQuery('.md-overlay');
+		var overlay = document.querySelector('.md-overlay');
 
-		[].slice.call( jQuery(document).querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
+		[].slice.call( document.querySelectorAll('.md-trigger') ).forEach( function( el, i ) {
 
-			var modal = jQuery(document).querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
+			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
+				close = modal.querySelector('.md-close');
 
 			function removeModal( hasPerspective ) {
 				classie.remove( modal, 'md-show' );
