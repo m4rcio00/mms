@@ -15,7 +15,10 @@ var ModalEffects = (function() {
 		var overlay = document.querySelector('.md-overlay');
 
 		[].slice.call( document.querySelectorAll('.md-trigger') ).forEach( function( el, i ) {
-
+			
+			var modal = document.querySelector( '#' + el.getAttribute('data-modal') ),
+				close = modal.querySelector('.md-close');
+				window.alert(modal);
 
 			function removeModal( hasPerspective ) {
 				classie.remove( modal, 'md-show' );
