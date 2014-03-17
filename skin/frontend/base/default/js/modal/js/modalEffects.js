@@ -21,7 +21,7 @@ var ModalEffects = (function() {
 				classie.remove( modal, 'md-show' );
 
 				if( hasPerspective ) {
-					classie.remove( jQuery(document).documentElement, 'md-perspective' );
+					classie.remove( document.documentElement, 'md-perspective' );
 				}
 			}
 
@@ -36,7 +36,7 @@ var ModalEffects = (function() {
 
 				if( classie.has( el, 'md-setperspective' ) ) {
 					setTimeout( function() {
-						classie.add( jQuery(document).documentElement, 'md-perspective' );
+						classie.add( document.documentElement, 'md-perspective' );
 					}, 25 );
 				}
 			});
