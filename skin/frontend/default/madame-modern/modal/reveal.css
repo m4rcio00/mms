@@ -6,8 +6,7 @@
 		position: fixed; 
 		height: 100%;
 		width: 100%;
-		background: #fff;
-		z-index: 100;
+		z-index: 999;
 		display: none;
 		top: 0;
 		left: 0; 
@@ -19,7 +18,7 @@
 		left: 50%;
 		margin-left: -300px;
 		width: 520px;
-		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		background: #fff;
 		position: absolute;
 		z-index: 101;
 		padding: 30px 40px 34px;
