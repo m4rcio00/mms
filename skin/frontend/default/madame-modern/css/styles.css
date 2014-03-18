@@ -1714,10 +1714,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .ch-icon-time:before{
-   background:url(../relogio.png) no-repeat;
+   background:url(../images/relogio.png) no-repeat;
 }
 
-#relo{ background: url("../relogio.png") no-repeat;}
+#relo{ background: url("../images/relogio.png") no-repeat;}
 
 .option-payment p {
 	color:#666;
