@@ -14,13 +14,21 @@
 	
 	.reveal-modal {
 		visibility: hidden;
-		top: -150px; 
+		top: -130px; 
 		left: 13%;
 		width: 660px;
 		background: #fff;
 		position: absolute;
 		z-index: 9999;
 		padding: 20px 30px 15px;
+		
+		border-radius: 4px 4px 4px 4px;
+		-moz-border-radius: 4px 4px 4px 4px;
+		-webkit-border-radius: 4px 4px 4px 4px;
+		border: 1px solid #c7c7c7;
+		box-shadow: 0px 0px 14px rgba(0,0,0,0.3);
+		background: #fff;
+		color: #2c2c2c;
 		}
 		
 	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
