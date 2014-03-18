@@ -1674,10 +1674,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 /* COMEÇO DETALHES PAGAMENTO PRODUTO */
 	
-	.pagamento-aceito-mms-show {
+.pagamento-aceito-mms-show {
 	width:660px;
     background: #FFF;
-    display:none;
+    display:block;
 	position:relative;
 	top:-1px;
 	padding:15px;
@@ -1691,10 +1691,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 	color: #2c2c2c;
 }
 
-.payments{font-family:Tahoma, Geneva, sans-serif; line-height:18px;}
+.payments{font-family: Arial, Tahoma, Geneva, sans-serif; line-height:18px;}
 
 .payments h2 {
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0 0 18px;
 	padding: 0 0 15px;
 	border-bottom: 1px solid #c7c7c7;	
@@ -1714,8 +1714,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 .ch-icon-time:before{
-	content:'\f017';
+   background:url(../relogio.png) no-repeat;
 }
+
+#relo{ background: url("../relogio.png") no-repeat;}
 
 .option-payment p {
 	color:#666;
@@ -1738,7 +1740,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .option-payment span.card-installments { display:block; font-size:12px;}
 
-.payments-medium { background: url(../images/payment-logos-mlb-medium_v_4dc1e45a15.png);}
+.payments-medium { background: url(payment-logos-mlb-medium_v_4dc1e45a15.png);}
 
 ._visa-medium {width:45px; height:14px; background-position: left -215px;}
 ._master-medium{width:34px; height:20px; background-position: left -170px;}
@@ -1753,6 +1755,10 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 
 .p-list{ padding-left:2px;}
 .option-payment ul.pp {display: inline-block; padding-right: 22px; text-align: center;}
+
+#img-close{position:absolute; top:16px; right:32px; background:url("../b-close.png") left center no-repeat transparent;}
+#img-close:hover{position:absolute; top:16px; right:32px; background:url("../b-close-hover.png") left center no-repeat transparent;}
+.teste{ width:66px; height:17px; cursor:pointer;}
 
 
 /* FIM DETALHES PAGAMENTO PRODUTO */
