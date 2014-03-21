@@ -1,6 +1,6 @@
 #custommenu {
     position:relative;
-    font-size: 15px;
+    font-size: 14px;
     margin: 1px 0px 0px 0px;
     padding: 0 16px;
     z-index: 999;
@@ -75,12 +75,13 @@ div.itemSubMenu {
 
 .itemMenuName.level1 {
 
-    font-family: Roboto;
-    font-size: 14px;
-    text-transform:uppercase;
+    font-family: Tahoma;
+    font-size: 12px;
+    text-transform:initial;
     margin-top: 10px;
     margin-bottom: 8px;
     color: #46b08d;
+    font-weight: 700;
 
 }
 
@@ -89,5 +90,10 @@ div.itemSubMenu {
     margin-bottom: 3px;
     text-transform: none;
     font-weight: 500;
+    font-size: 13px;
 
+}
+
+.itemMenuName.level2:hover {
+    background: #eee4d6;
 }
