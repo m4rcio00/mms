@@ -54,11 +54,11 @@ div.wp-custom-menu-popup a.act {
 }
 div.column {
     float:left;
-    width:200px; /* column width */
+    width:185px; /* column width */
     padding:5px;
 }
 div.itemSubMenu {
-    margin-left:8px;
+    margin-left:1px;
 }
 .clearBoth {
     clear:both;
@@ -91,9 +91,10 @@ div.itemSubMenu {
     text-transform: none;
     font-weight: 500;
     font-size: 13px;
+    padding-left: 10px;
 
 }
 
 .itemMenuName.level2:hover {
-    background: #eee4d6;
+    background: #e3ebfb;
 }
