@@ -54,7 +54,7 @@ div.wp-custom-menu-popup a.act {
 }
 div.column {
     float:left;
-    width:185px; /* column width */
+    width:180px; /* column width */
     padding:5px;
 }
 div.itemSubMenu {
@@ -92,6 +92,8 @@ div.itemSubMenu {
     font-weight: 500;
     font-size: 13px;
     padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 
 }
 
