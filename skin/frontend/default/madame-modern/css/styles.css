@@ -351,7 +351,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 /* Top Cart */
-.shoppingCart { position:relative; top: 10px;  font-size:10px; border: 1px solid #f40; width: 148px; float:right; background:#f40;  cursor:pointer; height: 35px;}
+.shoppingCart { position:relative; top: 10px;  font-size:10px; border: 1px solid #ff8433; width: 148px; float:right; background:#ff8433;  cursor:pointer; height: 35px;}
 .shoppingCart .summary{font-size: 14px; font-weight: bold; font-family: Tahoma, Arial; color: #fff; margin-right: 0px; margin-top: 5px; float: right; text-transform: initial;}
 .shoppingCart .top-cart { margin:0px; border:0px; padding:3px 10px; }
 .shoppingCart .empty {color: #fff; font-size:14px; font-family: Tahoma, Arial; font-weight:700; float: right; padding-left:0px; display:inline-block; margin-right: 0px; margin-top: 5px; text-transform:initial;}
@@ -370,7 +370,7 @@ tr.summary-details-excluded { font-style:italic; }
 .shoppingCart .top-cart .amount a { color:#000; }
 .cartView .view-cart { float:right; margin:5px 0 0 0; }
 .shoppingCart .top-cart .subtotal .price { font-weight:bold; color:#B68C65; }
-.cartView { position:absolute; right:-1px; padding:10px; margin:5px 0 0; z-index:1000; background:#FFE1D7; border:1px solid #f40; width:402px; text-align:left;}
+.cartView { position:absolute; right:-1px; padding:10px; margin:5px 0 0; z-index:1000; background:#FFE1D7; border:1px solid #ff8433; width:402px; text-align:left;}
 .cartView .mini-products-list li { height:62px; padding:6px 0 10px; }
 .cartView .btn-remove, .cartView .btn-edit { float: right; }
 /* Header ================================================================================ */
@@ -1494,7 +1494,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 }
 
 /* TOP CART */
-.shoppingCartBarra { font-size:10px; border: 1px solid #f40; width: 148px; float:right; margin-top: 9px; background:#f40;  cursor:pointer; height: 35px;}
+.shoppingCartBarra { font-size:10px; border: 1px solid #ff8433; width: 148px; float:right; margin-top: 9px; background:#ff8433;  cursor:pointer; height: 35px;}
 .shoppingCartBarra .summary{font-size: 14px; font-weight: bold; font-family: Tahoma, Arial; color: #fff; margin-right:0px; margin-top: 5px; display: inline-block; text-transform: initial;}
 .shoppingCartBarra .top-cart { margin:0px; border:0px; padding:3px 10px; }
 .shoppingCartBarra .empty {color: #fff; font-size:14px; font-family: Tahoma, Arial; font-weight:700; padding-left:0px; display:inline-block; margin-top: 5px;}
@@ -1511,7 +1511,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .shoppingCartBarra .top-cart .amount a { color:#000; }
 .cartViewBarra .view-cart { float:right; margin:5px 0 0 0; }
 .shoppingCartBarra .top-cart .subtotal .price { font-weight:bold; color:#B68C65; }
-.cartViewBarra { position:absolute; right:133px; padding:10px; margin:6px 0 0; z-index:1000; background:#FFE1D7; border:1px solid #f40; width:402px; text-align:left;}
+.cartViewBarra { position:absolute; right:133px; padding:10px; margin:6px 0 0; z-index:1000; background:#FFE1D7; border:1px solid #ff8433; width:402px; text-align:left;}
 .cartViewBarra .mini-products-list li { height:62px; padding:6px 0 10px; }
 .cartViewBarra .btn-remove, .cartView .btn-edit { float: right; }
 /* TOP CART */
