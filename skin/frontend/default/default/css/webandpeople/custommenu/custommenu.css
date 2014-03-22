@@ -20,12 +20,12 @@ div.menu {
     float: left;
 }
 div.menu.act {
-    background-color:#46b08d;
-    height: 19px;
+    background-color:#ff8433;
+    height: 20px;
 }
 div.menu.active {
     background-color:#ff8433;
-    height: 19px;
+    height: 22px;
 }
 div.wp-custom-menu-popup {
     position:absolute;
