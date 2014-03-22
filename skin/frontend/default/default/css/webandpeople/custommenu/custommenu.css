@@ -24,16 +24,16 @@ div.menu.act {
     height: 19px;
 }
 div.menu.active {
-    background-color:#46b08d;
+    background-color:#ff8433;
     height: 19px;
 }
 div.wp-custom-menu-popup {
     position:absolute;
     z-index:3000;
-    border-top:3px solid #46b08d;
-    border-bottom: 1px solid #46b08d;
-    border-left: 1px solid #46b08d;
-    border-right: 1px solid #46b08d;
+    border-top:3px solid #ff8433;
+    border-bottom: 1px solid #ff8433;
+    border-left: 1px solid #ff8433;
+    border-right: 1px solid #ff8433;
     display: none;
     background-color:#fff;
     text-align:left;
