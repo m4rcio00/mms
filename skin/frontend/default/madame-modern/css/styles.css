@@ -374,7 +374,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cartView .mini-products-list li { height:62px; padding:6px 0 10px; }
 .cartView .btn-remove, .cartView .btn-edit { float: right; }
 /* Header ================================================================================ */
-.logo { }
+.logo {width: 242px; }
 .shopLinks { background:#FFFFFF; height: 25px;}
 .links {font-size:11px; float:left; margin:4px 0px 0px 4px; font-family:Tahoma, Helvetica, sans-serif; font-weight: bold;}
 .links a { color: #444; text-decoration:none; padding:0 8px 0 7px; no-repeat;
@@ -439,7 +439,7 @@ input.btn-buscar {
 .form-language select { padding:2px; font-size:10px; }
 .form-language label { text-transform:uppercase; font-size:10px; }
 .header { position:relative;}
-.header .logo { text-decoration:none !important; margin:12px 0 0 20px; }
+.header .logo { text-decoration:none !important; margin:16px 0 0 4px; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; padding:0; }
 .header .links { float:right; border-left:1px solid #EDEDED; ; margin-top:25px; }
