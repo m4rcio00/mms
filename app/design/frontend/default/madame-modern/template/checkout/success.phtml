@@ -31,6 +31,7 @@
 <?php $order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId()); ?>
 <p class="confirmacao-email">Confirmação do pedido enviada para: <strong class="confirmacao-email-color">
 <?php echo $order->getCustomerEmail(); ?></strong></p>
+<?php echo $this->getOrderId(); ?></strong></p>
 </div>
 
 
