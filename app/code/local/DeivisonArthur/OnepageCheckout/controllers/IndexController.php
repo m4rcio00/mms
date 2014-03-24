@@ -142,13 +142,6 @@ class DeivisonArthur_OnepageCheckout_IndexController extends Mage_Checkout_Contr
             $this->_redirect('checkout/cart');
             return;
         }
-
-        foreach(Mage::getSingleton(‘checkout/session’)->getQuote()->getItemsCollection() as $item)
-        {
-            Mage::getSingleton(‘checkout/cart’)->removeItem( $item->getId() )->save();
-        }
-
-        $session->clear();
         
         $this->loadLayout();
         $this->_initLayoutMessages('checkout/session');
