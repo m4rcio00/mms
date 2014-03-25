@@ -1760,6 +1760,45 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 #img-close{position:absolute; top:16px; right:32px; background:url("../images/b-close.png") left center no-repeat transparent;}
 #img-close:hover{position:absolute; top:16px; right:32px; background:url("../images/b-close-hover.png") left center no-repeat transparent;}
 .teste{ width:66px; height:17px; cursor:pointer;}
-
-
 /* FIM DETALHES PAGAMENTO PRODUTO */
+
+
+
+/* COMEÇO TELA DE PAGAMENTO COM SUCESSO */
+.titulo-checkout {background-color:#fff; margin-left:150px; width:988px; padding:2px;}
+
+.meu-h2{text-align: left; font-size: 1.75em; padding: .6em 0 0 0; font-weight:400; color:#F40;}
+
+.confirmacao-email{ margin-bottom:14px; font-size:13px; }
+.confirmacao-email-color {color:#00adef; margin-left:4px;}
+
+.finish-order-wrapper { border: 1px solid #d2d2d2; margin-left:150px; width:990px;}
+
+.order-number-wrapper { margin-top: .8em; margin-bottom: .8em;}
+.visible-desktop { display:block; }
+.clearfix:before,.clearfix:after{content:" ";display:table;}
+.clearfix:after{clear:both}
+
+.left-content { float:left; width:45%; margin:0; padding:0 1.5em; min-height: 9.5em;}
+
+.order-number-description { margin-bottom:.8em;}
+.finish-order-number { color:#5ea20d; font-size:1.8em;}
+
+.right-content { float:right; width:45%; border-left: 1px dotted #d2d2d2; padding: .2em 1.5em 0;}
+.payment-report-title { margin-bottom: .8em;}
+.check-card-description { width: 75%; float:left; margin-right:.94118%; line-height:120%;}
+.check-card-description-item { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%;}
+.check-card-image{ width: 15.88235%; float: left; margin-right: .94118%;}
+.img-responsive{ display: block; max-width: 100%; height: auto; }
+
+.buttons-wrapper {text-align: left; margin-bottom: 0; margin-top:22px;}
+.btn {display: inline-block; background-color: #F2F2F2;border-radius: 4px;border-style: solid;border-color: #E8E6E6;border-width: 3px 0;color: #FFF;text-align: center;text-decoration: none;padding: .3em .8em;-webkit-transition: all .1s ease-in-out;-moz-transition: all .1s ease-in-out;-o-transition: all .1s ease-in-out;transition: all .1s ease-in-out;border-color: rgba(0,0,0,0) rgba(0,0,0,0) #e8e6e6;}
+.btn-print-bill { margin-right: 1.5em; padding: 6px 24px; }
+.btn-green {color: #fff; background-color:#5A981C; border-color: rgba(0,0,0,0) rgba(0,0,0,0) #477716;}
+.btn-light-gray {color: #1a75ce;}
+.btn:hover {cursor: pointer;background-color: #DEDEDE;border-color: rgba(0,0,0,0) rgba(0,0,0,0) #d5d3d3;}
+.btn-green:hover { color: #fff; background-color: #528B19; border-color: rgba(0,0,0,0) rgba(0,0,0,0) #416d14;}
+
+/* FIM TELA DE PAGAMENTO COM SUCESSO */
+
+

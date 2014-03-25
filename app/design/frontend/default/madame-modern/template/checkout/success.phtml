@@ -31,8 +31,38 @@
 <?php $order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId()); ?>
 <p class="confirmacao-email">Confirmação do pedido enviada para: <strong class="confirmacao-email-color">
 <?php echo $order->getCustomerEmail(); ?></strong></p>
-<?php echo $this->getOrderId(); ?></strong></p>
+
 </div>
+
+<div class="finish-order-wrapper">
+	<div class="order-number-wrapper visible-desktop clearfix">
+		<div class="left-content">
+        	<div class="order-number-description">O número de seu pedido é <span class="finish-order-number"><?php echo $this->getOrderId(); ?></span>
+            </div><!--order-number-description-->
+            <div class="order-number-notes"><p class="notes-text"><strong>Atenção:</strong>
+            Você receberá um e-mail com a confirmação e todos os detalhes do seu pedido. Por favor, 
+            verifique as configurações AntiSpam do seu provedor e e-mail.
+            </p>
+            </div><!--order-number-notes-->
+        </div><!--left-content-->	
+        <div class="right-content">
+        <div class="payment-report-title">Foma de Pagamento</div><!--payment-report-title-->
+        <div class="check-card-wrapper clearfix">
+        <figure class="check-card-image"><img class="img-responsive" src="images/payment-type-boleto.png" /></figure>
+        <div class="check-card-description">
+          <ul>
+         	<li class="check-card-description-item">Boleto Bancário</li>
+            <li class="check-card-description-item">Valor: R$199,90</li>
+          </ul>
+        </div><!--check-card-description-->
+        </div><!--check-card-wrapper clearfix-->
+        <div class="buttons-wrapper clearfix">
+        	<a class="btn btn-green btn-print-bill">Imprimir boleto</a>
+            <a class="btn btn-light-gray btn-print-order">Imprimir pedido</a>
+        </div><!--buttons-wrapper clearfix-->
+        </div><!--right-content-->	
+	</div><!--order-number-wrapper visible-desktop clearfix-->
+</div><!--.finish-order-wrapper-->
 
 
 
