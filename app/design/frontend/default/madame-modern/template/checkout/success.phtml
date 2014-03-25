@@ -51,8 +51,8 @@
         <figure class="check-card-image"><img class="img-responsive" src="images/payment-type-boleto.png" /></figure>
         <div class="check-card-description">
           <ul>
-         	<li class="check-card-description-item"><?php $order->getPayment()->getMethod()?></li>
-            <li class="check-card-description-item">Valor: <?php $order->getGrandTotal()?></li>
+         	<li class="check-card-description-item"><?php echo $order->getPayment()->getMethod()?></li>
+            <li class="check-card-description-item">Valor: <?php echo $order->getGrandTotal()?></li>
           </ul>
         </div><!--check-card-description-->
         </div><!--check-card-wrapper clearfix-->
