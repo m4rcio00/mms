@@ -143,7 +143,7 @@ class DeivisonArthur_OnepageCheckout_IndexController extends Mage_Checkout_Contr
             return;
         }
 
-        $session->clear();
+        //$session->clear();
         $this->loadLayout();
         $this->_initLayoutMessages('checkout/session');
         Mage::dispatchEvent('checkout_onepage_controller_success_action', array('order_ids' => array($lastOrderId)));

@@ -1772,7 +1772,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .confirmacao-email{ margin-bottom:14px; font-size:13px; }
 .confirmacao-email-color {color:#00adef; margin-left:4px;}
 
-.finish-order-wrapper { border: 1px solid #d2d2d2; width:990px;}
+.finish-order-wrapper { font-family: Arial, Tahoma, Verdana; font-size: 15px; line-height: 20px; border: 1px solid #d2d2d2; width:990px;}
 
 .order-number-wrapper { margin-top: .8em; margin-bottom: .8em;}
 .visible-desktop { display:block; }
