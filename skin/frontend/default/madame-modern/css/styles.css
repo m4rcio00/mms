@@ -898,8 +898,8 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .product-tabs a:hover { background:#00abce; text-decoration:none; }
 .product-tabs a span { background:#fff; display:block; padding:6px 16px 5px 0; cursor:pointer; }
 .product-tabs a:hover span { color:#fff; background:#00abce; }
-.product-tabs li.active a, .product-tabs li.active a:hover { background:#00abce; text-decoration:none;border-bottom:0px; border-right:0px; }
-.product-tabs li.active a span, .product-tabs li.active a span:hover { background:#00abce; color:#fff; }
+.product-tabs li.active a, .product-tabs li.active a:hover { background:#0191C8; text-decoration:none;border-bottom:0px; border-right:0px; }
+.product-tabs li.active a span, .product-tabs li.active a span:hover { background:#0191C8; color:#fff; }
 .product-tabs-content h2 { display:none; font-size:12px; font-weight:bold; }
 .product-tabs-content { margin-top:-1px; border:1px solid #00acbe; padding:16px;}
 /* Grouped Product */
