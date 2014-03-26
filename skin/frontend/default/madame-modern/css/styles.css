@@ -398,7 +398,7 @@ border-right:1px solid #d7d7d7; }
 .telefone-contato .tel-mms {display: inline;}
 .fone-mms{font-family: Arial;}
 .preco-de-mms {font-size: 12px; font-family: Tahoma; color: #000}
-.preco-por-mms {font-size: 18px; font-family: Tahoma; color: #f40; font-weight: 600;}
+.preco-por-mms {font-size: 18px; font-family: Tahoma; color: #ff8433; font-weight: 600;}
 .preco-por-valor-mms {font-size: 24px; font-family: Tahoma; font-weight: 600; color: #f40;}
 .mmsContato{text-transform: none; font-size: 12px; color:#000; position: absolute; top: -22px; right: 190px;}
 .pagamento-mms {margin-top: 15px; margin-bottom: 15px;}
@@ -414,11 +414,11 @@ img.pagamento-mms{ }
 .prazo-mms span {font-size: 12px; display: block; }
 
 
-.frete-mms{color: #FFF;  background-color: #46b08d; border: 1px solid #46b08d; position: relative; font-size: 10px; font-family:Tahoma, Geneva, sans-serif; padding:3px 15px 4px 22px; width:132px; margin-bottom: 6px; text-transform: uppercase;}
+.frete-mms{color: #FFF;  background-color: #46b08d; border: 1px solid #46b08d; position: relative; font-size: 10px; font-family:Tahoma, Geneva, sans-serif; padding:3px 15px 4px 22px; width:132px; margin-bottom: 8px; text-transform: uppercase;}
 
 .add-to-cart .button.button p.carrinho{font-size: 12px; position: relative; top: 20px; right: 172px;}
 
-.box1 .price-box .preco-por-valor-mms{font-family: Tahoma; font-size: 30px; line-height: 52px;}
+.box1 .price-box .preco-por-valor-mms{font-family: Tahoma; font-size: 32px; }
 
 /*.teste-mms input.btn-buscar{float:none;}*/
 
@@ -848,7 +848,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .product-image-popup .image-label { }
 /* Product Shop */
 .col3-layout .product-view .product-shop { float:none; width:auto; }
-.product-view .product-name h1 { color:#131925; font-size:22px; font-weight:700;}
+.product-view .product-name h1 { color:#404040; font-size:22px; font-weight:700; font-family: Arial;}
 .product-view .short-description { margin-top:18px; padding-bottom:16px; border-bottom:1px solid #dadada; }
 .product-view .product-shop .buttons-set { float:left; }
 .product-view .product-shop .nobr { margin:0 0 8px; display:block; }
