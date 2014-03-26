@@ -895,7 +895,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .product-tabs li.first { border-left:0; }
 .product-tabs li.last { border-right:0; }
 .product-tabs a { display:block; color:#727272; font-weight:700; padding:0 0 0 16px; margin-right:2px; background:#fff; text-transform:uppercase; border-bottom:0px; border-right:0px; }
-.product-tabs a:hover { background:#00abce; text-decoration:none; }
+.product-tabs a:hover { background:#ff8433; text-decoration:none; }
 .product-tabs a span { background:#fff; display:block; padding:6px 16px 5px 0; cursor:pointer; }
 .product-tabs a:hover span { color:#fff; background:#ff8433; }
 .product-tabs li.active a, .product-tabs li.active a:hover { background:#0191C8; text-decoration:none;border-bottom:0px; border-right:0px; }
