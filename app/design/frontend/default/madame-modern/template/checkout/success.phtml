@@ -61,7 +61,7 @@
         </div><!--check-card-wrapper clearfix-->
         <div class="buttons-wrapper clearfix">
         	<a class="btn btn-green btn-print-bill">Imprimir boleto</a>
-            <a class="btn btn-light-gray btn-print-order" href="<?php $order->getPrintUrl()?>">Imprimir pedido</a>
+            <a class="btn btn-light-gray btn-print-order" href="<?php echo $this->__('Click <a href="%s" onclick="this.target=\'_blank\'">here to print</a> a copy of your order confirmation.', $this->getPrintUrl()) ?>">Imprimir pedido</a>
         </div><!--buttons-wrapper clearfix-->
         </div><!--right-content-->	
 	</div><!--order-number-wrapper visible-desktop clearfix-->
