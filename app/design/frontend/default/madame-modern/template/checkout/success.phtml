@@ -66,8 +66,19 @@
         </div><!--right-content-->	
 	</div><!--order-number-wrapper visible-desktop clearfix-->
     <div class="detalhes-compra-checkout">
-        	<h1>Apenas um teste</h1>
-        </div>
+        	<?php $order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
+			
+			foreach ($order_details->getAllItems() as $item) {  
+			 echo '<div class="product">';  
+			 echo '<div class="line"><p class="name">Product:' . $item->getName() . '</p>';  
+			 echo '<p class="price">' . Mage::helper("core")->currency($item->getPrice()) . '</p>';  
+			 echo '<p class="qty">' . round($item->getQtyOrdered(), 0) . '</p>';  
+			 echo '<p class="lineprice">' . Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) . '</p>';  
+			 echo '</div>';  
+			 echo '<p class="model">SKU: ' . $item->getSku() . '</p>';  
+			 echo '</div>';  
+				} ?>
+    </div>
 </div><!--.finish-order-wrapper-->
 
 
@@ -75,8 +86,6 @@
 
 </div>
 <div class="col2-btm"></div>
-
-
 
 
 <div class="buttons-set">
