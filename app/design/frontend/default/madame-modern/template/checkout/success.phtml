@@ -66,7 +66,9 @@
         </div><!--right-content-->	
 	</div><!--order-number-wrapper visible-desktop clearfix-->
     <div class="detalhes-compra-checkout">
-        	<?php $order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
+        	<?php 
+			$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
+			$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
 			
 			foreach ($order_details->getAllItems() as $item) {  
 			 echo '<div class="product">';  
