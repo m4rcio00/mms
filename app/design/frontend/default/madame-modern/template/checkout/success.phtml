@@ -66,37 +66,37 @@
         </div><!--right-content-->	
 	</div><!--order-number-wrapper visible-desktop clearfix-->
     <div class="detalhes-compra-checkout">
-			
-			<?php $_order = $this->getOrder() ?>
-			
-			<table class="data-table" id="my-orders-table">
-			<col />
-			<col width="1" />
-			<col width="1" />
-			<col width="1" />
-			<col width="1" />
-			<thead>
-				<tr>
-            <th><?php echo $this->__('Product Name') ?></th>
-            <th><?php echo $this->__('SKU') ?></th>
-            <th class="a-right"><?php echo $this->__('Price') ?></th>
-            <th class="a-center"><?php echo $this->__('Qty') ?></th>
-            <th class="a-right"><?php echo $this->__('Subtotal') ?></th>
-        </tr>
-    </thead>
-    <tfoot>
-        <?php echo $this->getChildHtml('order_totals') ?>
-    </tfoot>
-    <?php $_items = $_order->getItemsCollection(); ?>
-    <?php $_count = $_items->count(); ?>
-    <?php foreach ($_items as $_item): ?>
-    <?php if ($_item->getParentItem()) continue; ?>
-    <tbody>
-        <?php echo $this->getItemHtml($_item) ?>
-    </tbody>
-        <?php endforeach; ?>
+        	<?php 
+			$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
+			$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
+			foreach ($order_details->getAllItems() as $item) { 		
+?>
+
+<table width="100%" border="0">
+	<tr>
+    <td width="55%">Nome do Produto</td>
+    <td width="11%">ID do Produto</td>
+    <td width="9%">Preço Unidade</td>
+    <td width="12%">Quantidade</td>
+    <td width="13%">Sub-total</td>
+  </tr>
+  <tr>
+    <td>Adaptador MHL HDMI para Samsung Galaxy S3, Samsung Galaxy S4, Note 2, Note 3</td>
+    <td>00005</td>
+    <td>R$59,90</td>
+    <td>2</td>
+    <td>R$119,90</td>
+  </tr>
+  <tr>
+    <td><?php $item->getName()?></td>
+    <td><?php $item->getSKU()?></td>
+    <td><?php Mage::helper("core")->currency($item->getPrice())?></td>
+    <td><?php round($item->getQtyOrdered(), 0)?></td>
+    <td><?php Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) ?></td>
+  </tr>
 </table>
-			
+
+<?php }?>
     </div>
 </div><!--.finish-order-wrapper-->
 
