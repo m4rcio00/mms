@@ -88,7 +88,7 @@
   ?>
   <tr>
     <td class="f-linha"><?php echo $item->getName()?></td>
-    <td class="f-linha"><?php echo $item->getSKU()?></td>
+    <td class="f-linha"><?php echo $item->getData('sku');?></td>
     <td class="f-linha"><?php echo Mage::helper("core")->currency($item->getPrice())?></td>
     <td class="f-linha"><?php echo round($item->getQtyOrdered(), 0)?></td>
     <td class="f-linha"><?php echo Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) ?></td>
@@ -96,11 +96,11 @@
   <?php }?>
   <tr>
     <td colspan="4" class="f-linha-left-frete">Frete</td>
-    <td class="f-color"><?php echo "R$" . number_format($order_details ->getShippingAmount(),2, ",", ".");?></td>
+    <td class="f-color"><?php echo "R$ " . number_format($order_details ->getShippingAmount(),2, ",", ".");?></td>
   </tr>
   <tr>
     <td colspan="4" class="f-linha-left-total">Total</td>
-    <td class="f-color"><?php echo "R$" . number_format($order_details->getGrandTotal(), 2, ",", ".");?></td>
+    <td class="f-color"><?php echo "R$ " . number_format($order_details->getGrandTotal(), 2, ",", ".");?></td>
   </tr>
 </table>
 
