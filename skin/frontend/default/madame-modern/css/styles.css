@@ -1815,6 +1815,16 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 /* FIM DETALHES DO PRODUTO */
 
 
+/*COMEÇO - DETALHES DA COMPRA APOS O CHECKOUT*/
+.f-checkout {border-collapse: collapse; }
+.f-titulo {background:#d6e5f2; color:#095ba6; font-weight: 700; font-family: Tahoma;font-size: 12px;}
+.f-linha { font-family:Tahoma, Arial; font-size:12px; }
+.f-linha-left-frete { text-align:right; font-family:Tahoma, Arial; font-size:12px; font-weight:700; background:#eee; }
+.f-linha-left-total { text-align:right; font-family:Tahoma, Arial; font-size:12px; font-weight:700; background:#eee; }
+.f-checkout td {white-space:nowrap; padding:10px; border:1px solid #c7c7c7;}
+.f-color { background:#d6e5f2; font-family:Tahoma, Arial; font-size:12px; font-weight:700;}
+/*FIM - DETALHES DA COMPRA APOS O CHECKOUT*/
+
 
 
 
