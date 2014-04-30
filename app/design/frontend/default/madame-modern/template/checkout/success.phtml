@@ -67,14 +67,14 @@
 	</div><!--order-number-wrapper visible-desktop clearfix-->
     <div class="detalhes-compra-checkout">
 
-<table width="100%" border="0">
-	<tr>
-    <td width="64%">Nome do Produto</td>
-    <td width="11%">ID do Produto</td>
-    <td width="9%">Preço Unidade</td>
-    <td width="8%">Quantidade</td>
-    <td width="8%">Sub-total</td>
-  </tr>
+<table width="100%" border="0" class="f-checkout" cellspacing="0">
+	<thead><tr class="f-titulo">
+    <td >Nome do Produto</td>
+    <td >ID do Produto</td>
+    <td >Preço Unitário</td>
+    <td >Quantidade</td>
+    <td >Sub-total</td>
+  </tr></thead>
   
   <?php 
   
@@ -84,20 +84,26 @@
   
   ?>
   <tr>
-    <td class="product-name"><?php echo $item->getName()?></td>
-    <td><?php echo $item->getSKU()?></td>
-    <td><?php echo Mage::helper("core")->currency($item->getPrice())?></td>
-    <td><?php echo round($item->getQtyOrdered(), 0)?></td>
-    <td><?php echo Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) ?></td>
+    <td class="f-linha"><?php echo $item->getName()?></td>
+    <td class="f-linha"><?php echo $item->getSKU()?></td>
+    <td class="f-linha"><?php echo Mage::helper("core")->currency($item->getPrice())?></td>
+    <td class="f-linha"><?php echo round($item->getQtyOrdered(), 0)?></td>
+    <td class="f-linha"><?php echo Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) ?></td>
   </tr>
   <?php }?>
+  <tr>
+    <td colspan="4" class="f-linha-left-frete">Frete</td>
+    <td class="f-color">R$ 0,00</td>
+  </tr>
+  <tr>
+    <td colspan="4" class="f-linha-left-total">Total</td>
+    <td class="f-color">R$ 179,90</td>
+  </tr>
 </table>
 
 
     </div>
 </div><!--.finish-order-wrapper-->
-
-
 
 
 </div>
