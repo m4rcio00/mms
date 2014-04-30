@@ -80,13 +80,15 @@
   
   	$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
   	$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
-  	foreach ($order_details->getAllItems() as $item) { 	?>
+    foreach ($order_details->getAllItems() as $item) { 	
+  
+  ?>
   <tr>
-    <td><?php $item->getName()?></td>
-    <td><?php $item->getSKU()?></td>
-    <td><?php Mage::helper("core")->currency($item->getPrice())?></td>
-    <td><?php round($item->getQtyOrdered(), 0)?></td>
-    <td><?php Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) ?></td>
+    <td><?php echo $item->getName()?></td>
+    <td><?php echo $item->getSKU()?></td>
+    <td><?php echo Mage::helper("core")->currency($item->getPrice())?></td>
+    <td><?php echo round($item->getQtyOrdered(), 0)?></td>
+    <td><?php echo Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) ?></td>
   </tr>
   <?php }?>
 </table>
