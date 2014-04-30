@@ -66,10 +66,6 @@
         </div><!--right-content-->	
 	</div><!--order-number-wrapper visible-desktop clearfix-->
     <div class="detalhes-compra-checkout">
-        	<?php 
-			$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
-			$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
-			?>
 
 <table width="100%" border="0">
 	<tr>
@@ -80,7 +76,11 @@
     <td width="13%">Sub-total</td>
   </tr>
   
-  <?php foreach ($order_details->getAllItems() as $item) { 	?>
+  <?php 
+  
+  	$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
+  	$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
+  	foreach ($order_details->getAllItems() as $item) { 	?>
   <tr>
     <td><?php $item->getName()?></td>
     <td><?php $item->getSKU()?></td>
