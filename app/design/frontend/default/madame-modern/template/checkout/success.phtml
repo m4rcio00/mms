@@ -69,8 +69,7 @@
         	<?php 
 			$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
 			$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
-				
-?>
+			?>
 
 <table width="100%" border="0">
 	<tr>
@@ -80,13 +79,7 @@
     <td width="12%">Quantidade</td>
     <td width="13%">Sub-total</td>
   </tr>
-  <tr>
-    <td>Adaptador MHL HDMI para Samsung Galaxy S3, Samsung Galaxy S4, Note 2, Note 3</td>
-    <td>00005</td>
-    <td>R$59,90</td>
-    <td>2</td>
-    <td>R$119,90</td>
-  </tr>
+  
   <?php foreach ($order_details->getAllItems() as $item) { 	?>
   <tr>
     <td><?php $item->getName()?></td>
