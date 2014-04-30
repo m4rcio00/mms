@@ -66,20 +66,17 @@
         </div><!--right-content-->	
 	</div><!--order-number-wrapper visible-desktop clearfix-->
     <div class="detalhes-compra-checkout">
-        	<?php 
-			$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
-			$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
 			
 			
-			//COMEÇO DETALHES
+			
 			<table class="data-table" id="my-orders-table">
-    <col />
-    <col width="1" />
-    <col width="1" />
-    <col width="1" />
-    <col width="1" />
-    <thead>
-        <tr>
+			<col />
+			<col width="1" />
+			<col width="1" />
+			<col width="1" />
+			<col width="1" />
+			<thead>
+				<tr>
             <th><?php echo $this->__('Product Name') ?></th>
             <th><?php echo $this->__('SKU') ?></th>
             <th class="a-right"><?php echo $this->__('Price') ?></th>
@@ -99,10 +96,7 @@
     </tbody>
         <?php endforeach; ?>
 </table>
-			//FIM DETALHES
 			
-			
-			?>
     </div>
 </div><!--.finish-order-wrapper-->
 
