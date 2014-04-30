@@ -80,7 +80,6 @@
     <td width="12%">Quantidade</td>
     <td width="13%">Sub-total</td>
   </tr>
-  <?php foreach ($order_details->getAllItems() as $item) { 	?>
   <tr>
     <td>Adaptador MHL HDMI para Samsung Galaxy S3, Samsung Galaxy S4, Note 2, Note 3</td>
     <td>00005</td>
@@ -88,6 +87,7 @@
     <td>2</td>
     <td>R$119,90</td>
   </tr>
+  <?php foreach ($order_details->getAllItems() as $item) { 	?>
   <tr>
     <td><?php $item->getName()?></td>
     <td><?php $item->getSKU()?></td>
@@ -95,9 +95,10 @@
     <td><?php round($item->getQtyOrdered(), 0)?></td>
     <td><?php Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) ?></td>
   </tr>
+  <?php }?>
 </table>
 
-<?php }?>
+
     </div>
 </div><!--.finish-order-wrapper-->
 
