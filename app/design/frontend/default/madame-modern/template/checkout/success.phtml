@@ -100,7 +100,7 @@
   </tr>
   <tr>
     <td colspan="4" class="f-linha-left-total">Total</td>
-    <td class="f-color">R$ 179,90</td>
+    <td class="f-color"><?php echo Mage::helper("core")->currency($order_details->total_paid)?></td>
   </tr>
 </table>
 
