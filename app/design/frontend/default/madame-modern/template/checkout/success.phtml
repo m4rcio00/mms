@@ -70,16 +70,39 @@
 			$order_id = Mage::getSingleton('checkout/session')->getLastRealOrderId(); 
 			$order_details = Mage::getModel('sales/order')->loadByIncrementId($order_id);
 			
-			foreach ($order_details->getAllItems() as $item) {  
-			 echo '<div class="product">';  
-			 echo '<div class="line"><p class="name">Product:' . $item->getName() . '</p>';  
-			 echo '<p class="price">' . Mage::helper("core")->currency($item->getPrice()) . '</p>';  
-			 echo '<p class="qty">' . round($item->getQtyOrdered(), 0) . '</p>';  
-			 echo '<p class="lineprice">' . Mage::helper("core")->currency($item->getPrice() * $item->getQtyOrdered()) . '</p>';  
-			 echo '</div>';  
-			 echo '<p class="model">SKU: ' . $item->getSku() . '</p>';  
-			 echo '</div>';  
-				} ?>
+			
+			//COMEÇO DETALHES
+			<table class="data-table" id="my-orders-table">
+    <col />
+    <col width="1" />
+    <col width="1" />
+    <col width="1" />
+    <col width="1" />
+    <thead>
+        <tr>
+            <th><?php echo $this->__('Product Name') ?></th>
+            <th><?php echo $this->__('SKU') ?></th>
+            <th class="a-right"><?php echo $this->__('Price') ?></th>
+            <th class="a-center"><?php echo $this->__('Qty') ?></th>
+            <th class="a-right"><?php echo $this->__('Subtotal') ?></th>
+        </tr>
+    </thead>
+    <tfoot>
+        <?php echo $this->getChildHtml('order_totals') ?>
+    </tfoot>
+    <?php $_items = $_order->getItemsCollection(); ?>
+    <?php $_count = $_items->count(); ?>
+    <?php foreach ($_items as $_item): ?>
+    <?php if ($_item->getParentItem()) continue; ?>
+    <tbody>
+        <?php echo $this->getItemHtml($_item) ?>
+    </tbody>
+        <?php endforeach; ?>
+</table>
+			//FIM DETALHES
+			
+			
+			?>
     </div>
 </div><!--.finish-order-wrapper-->
 
