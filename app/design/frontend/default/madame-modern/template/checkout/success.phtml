@@ -84,7 +84,7 @@
   
   ?>
   <tr>
-    <td><?php echo $item->getName()?></td>
+    <td class="product-name"><?php echo $item->getName()?></td>
     <td><?php echo $item->getSKU()?></td>
     <td><?php echo Mage::helper("core")->currency($item->getPrice())?></td>
     <td><?php echo round($item->getQtyOrdered(), 0)?></td>
