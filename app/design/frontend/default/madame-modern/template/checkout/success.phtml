@@ -96,7 +96,7 @@
   <?php }?>
   <tr>
     <td colspan="4" class="f-linha-left-frete">Frete</td>
-    <td class="f-color">R$ 0,00</td>
+    <td class="f-color"><?php echo Mage::helper("core")->currency($order_details->tax_amount)?></td>
   </tr>
   <tr>
     <td colspan="4" class="f-linha-left-total">Total</td>
