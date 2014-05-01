@@ -1830,12 +1830,12 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 /*FIM - DETALHES DA COMPRA APOS O CHECKOUT*/
 
 /*COMEÇO - MEU CARRINHO VAZIO*/
-.emptyCart .wrp { padding: 20px;border: 1px solid #b7cedf;background: #f2f9fd;border-radius: 4px;}
-.emptyCart .innerCart { padding-left: 93px;background: url(ico-atencao.png) no-repeat;}
-.emptyCart em {margin-bottom: 10px;font-size: 1.7em;display: block;font-weight: bold;color: #e89005;}
-.emptyCart p {font-size: 1.1em;line-height: 1.3em;}
+.emptyCart .wrp { padding: 20px;border: 1px solid #c7c7c7;background: #f4f4f4;border-radius: 4px;}
+.emptyCart .innerCart { padding-left: 93px;background: url(images/ico-atencao.png) no-repeat;}
+.emptyCart em {margin-bottom: 10px;font-size: 1.7em;display: block;font-weight: bold;color: #e89005; font-style: normal;}
+.emptyCart p {font-size: 1.1em;line-height: 1.5em;}
 .emptyCart .bt {margin: 20px 0;float: right;}
-.carrinho-vazio {margin-top: 26px; margin-bottom: 22px; color: #ff8433; font-size: 2.1em;}
+.carrinho-vazio {margin-top: 26px; margin-bottom: 22px; color: #ff8433; font-size: 2.1em; font-weight: 700;}
 .bt {
 display: inline-block;
 padding: 10px 20px;
