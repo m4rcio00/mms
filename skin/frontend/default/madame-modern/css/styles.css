@@ -848,7 +848,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .product-image-popup .image-label { }
 /* Product Shop */
 .col3-layout .product-view .product-shop { float:none; width:auto; }
-.product-view .product-name h1 { color:#404040; font-size:22px; font-weight:700; font-family: Arial;}
+.product-view .product-name h1 { color:#000; font-size:22px; font-weight:700; font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;}
 .product-view .short-description { margin-top:18px; padding-bottom:16px; border-bottom:1px solid #dadada; }
 .product-view .product-shop .buttons-set { float:left; }
 .product-view .product-shop .nobr { margin:0 0 8px; display:block; }
