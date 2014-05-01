@@ -360,7 +360,7 @@ tr.summary-details-excluded { font-style:italic; }
 /*.shoppingCart .cart-ico{display:inline-block; line-height:25px; position: relative; top: 8px; right: 10px;}*/
 
 .shoppingCart .cart-ico{display:inline-block; line-height:25px; position: relative; top: 6px; right: 8px;}
-.cartView.top-empty p { text-align:center; padding:10px 0; color:#727272; }
+.cartView.top-empty p { text-align:left; padding:10px 0; color:#444; }
 .shoppingCart:hover .top-cart .cart-empty { display:block; }
 .shoppingCart .top-title { text-transform:uppercase; color:#fff; }
 .cartView .actions { clear:both; border-top:1px solid #EDEDED; padding-top:10px; }
@@ -370,7 +370,7 @@ tr.summary-details-excluded { font-style:italic; }
 .shoppingCart .top-cart .amount a { color:#000; }
 .cartView .view-cart { float:right; margin:5px 0 0 0; }
 .shoppingCart .top-cart .subtotal .price { font-weight:bold; color:#B68C65; }
-.cartView { position:absolute; right:-1px; padding:10px; margin:5px 0 0; z-index:1000; background:#FFE1D7; border:1px solid #ff8433; width:402px; text-align:left;}
+.cartView { position:absolute; right:-1px; padding:10px; margin:5px 0 0; z-index:1000; background:#FFE1D7; border:1px solid #ff8433; width:530px; text-align:left;}
 .cartView .mini-products-list li { height:62px; padding:6px 0 10px; }
 .cartView .btn-remove, .cartView .btn-edit { float: right; }
 /* Header ================================================================================ */
@@ -1852,7 +1852,8 @@ text-decoration: none;
 }
 /*FIM - MEU CARRINHO VAZIO*/
 
-.c-image {padding-left: 93px; background: url(../images/ico-atencao.png) no-repeat;}
+.c-image {padding-left: 72px; background: url(../images/ico-atencao.png) no-repeat;}
+.t-cart {font-family: Arial;font-size: 15px;color: #ff9433;}
 
 
 
