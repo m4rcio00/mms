@@ -1835,6 +1835,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .emptyCart em {margin-bottom: 10px;font-size: 1.7em;display: block;font-weight: bold;color: #e89005;}
 .emptyCart p {font-size: 1.1em;line-height: 1.3em;}
 .emptyCart .bt {margin: 20px 0;float: right;}
+.carrinho-vazio {margin-top: 16px; margin-bottom: 22px; color: #ff8433;}
 .bt {
 display: inline-block;
 padding: 10px 20px;
