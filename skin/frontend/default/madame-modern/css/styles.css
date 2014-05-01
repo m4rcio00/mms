@@ -1823,6 +1823,7 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .f-linha-left-total { text-align:right; font-family:Tahoma, Arial; font-size:12px; font-weight:700; background:#eee; }
 .f-checkout td {white-space:nowrap; padding:10px; border:1px solid #c7c7c7;}
 .f-color { background:#d6e5f2; font-family:Tahoma, Arial; font-size:12px; font-weight:700;}
+.f-delivery-note {background-color: #f2f2f2;color: #f37b20;text-align: center;padding: .7em;width: 100%;}
 /*FIM - DETALHES DA COMPRA APOS O CHECKOUT*/
 
 
