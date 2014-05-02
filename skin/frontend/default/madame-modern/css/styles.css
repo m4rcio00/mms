@@ -1757,8 +1757,8 @@ ul.topnav em { position:absolute; right:2px; top:0px; cursor:pointer; font-style
 .p-list{ padding-left:2px;}
 .option-payment ul.pp {display: inline-block; padding-right: 22px; text-align: center;}
 
-#img-close{position:absolute; top:16px; right:32px; background:url("../images/b-close.png") left center no-repeat transparent;}
-#img-close:hover{position:absolute; top:16px; right:32px; background:url("../images/b-close-hover.png") left center no-repeat transparent;}
+#img-close{position:absolute; top:16px; right:32px; background:url("../images/sprite_home.png") left center no-repeat transparent;}
+#img-close:hover{position:absolute; top:16px; right:32px; background:url("../images/sprite_home.png") left center no-repeat transparent;}
 .teste{ width:66px; height:17px; cursor:pointer;}
 /* FIM DETALHES PAGAMENTO PRODUTO */
 

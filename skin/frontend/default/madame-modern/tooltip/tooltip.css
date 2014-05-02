@@ -46,7 +46,7 @@
 }
 
 .icemail  {
-	background: url("../images/email-icon.png") no-repeat;
+	background: url("../images/sprite_home.png") no-repeat 0 -361px;
 	width:26px;
 	height:26px;
 	vertical-align:middle;
