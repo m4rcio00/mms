@@ -72,6 +72,7 @@
   <?php if ($i%$_columnCount==0 || $i==$_collectionSize): ?>
 </ul>
 <?php endif ?>
+<?php if($i == 10){break;} ?>
 <?php endforeach ?>
 <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
 <?php endif; ?>
