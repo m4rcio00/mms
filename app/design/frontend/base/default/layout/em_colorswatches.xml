@@ -39,12 +39,5 @@ Default layout, loads most of the pages
 		<reference name="product.info.options.wrapper">
 			<block type="colorswatches/settings" name="colorswatches.setting" template="em_colorswatches/settings.phtml"/>
 		</reference>
-		<reference name="before_body_end">
-			<block type="core/text" name="galathemes.copy">
-				<action method="setText"><text><![CDATA[<p style="text-align:center;font-size:0.8em"><a style="color:inherit;text-decoration:none" href="http://galathemes.com/magento-extensions/color-swatches.html">Color Swatches Magento extension</a> by Galathemes <a style="color:inherit;text-decoration:none" href="http://galathemes.com/">Magento Themes</a></p>]]></text></action>
-			</block>
-		</reference>
 	</catalog_product_view>
-
-
 </layout>
