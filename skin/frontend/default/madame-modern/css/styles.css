@@ -414,7 +414,7 @@ img.pagamento-mms{ }
 .prazo-mms span {font-size: 12px; display: block; }
 
 
-.frete-mms{color: #FFF;  background-color: #46b08d; border: 1px solid #46b08d; position: relative; font-size: 10px; font-family:Tahoma, Geneva, sans-serif; padding:3px 15px 4px 22px; width:132px; margin-bottom: 8px; text-transform: uppercase;}
+.frete-mms{color: #FFF;  background-color: #090; border: 1px solid #090; position: relative; font-size: 10px; font-family:Tahoma, Geneva, sans-serif; padding:3px 15px 4px 22px; width:132px; margin-bottom: 8px; text-transform: uppercase;}
 
 .add-to-cart .button.button p.carrinho{font-size: 12px; position: relative; top: 20px; right: 172px;}
 
@@ -837,7 +837,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .more-views { margin:18px auto 0; width:224px; }
 .more-views li { float:left; margin:0 10px 0 0;}
 .more-views li a { display:block; text-align:center; width:48px; }
-.more-views li a img { border:1px solid #fff; }
+.more-views li a img { border:0px solid #fff; }
 .more-views .jcarousel-next { background:url(../images/pre-next.png) -12px -277px no-repeat; width:11px; height:48px; position:absolute; right:-20px; top:22px; cursor:pointer; }
 .more-views .jcarousel-prev { background:url(../images/pre-next.png) 0 -184px no-repeat; width:11px; height:48px; position:absolute; left:-20px; top:20px; cursor:pointer; }
 .more-views .jcarousel-clip { overflow:hidden; }
@@ -898,10 +898,10 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .product-tabs a:hover { background:#ff8433; text-decoration:none; }
 .product-tabs a span { background:#fff; display:block; padding:6px 16px 5px 0; cursor:pointer; }
 .product-tabs a:hover span { color:#fff; background:#ff8433; }
-.product-tabs li.active a, .product-tabs li.active a:hover { background:#0191C8; text-decoration:none;border-bottom:0px; border-right:0px; }
-.product-tabs li.active a span, .product-tabs li.active a span:hover { background:#0191C8; color:#fff; }
+.product-tabs li.active a, .product-tabs li.active a:hover { background:#ff8433; text-decoration:none;border-bottom:0px; border-right:0px; }
+.product-tabs li.active a span, .product-tabs li.active a span:hover { background:#ff8433; color:#fff; }
 .product-tabs-content h2 { display:none; font-size:12px; font-weight:bold; }
-.product-tabs-content { margin-top:-1px; padding:11px;}
+.product-tabs-content { margin-top:-1px; padding:10px;}
 /* Grouped Product */
 .product-view .grouped-items-table { }
 /* Block: Description */
@@ -1856,7 +1856,7 @@ text-decoration: none;
 .c-image {padding-left: 72px; background: url(../images/ico-atencao.png) no-repeat;}
 .t-cart {font-family: Arial;font-size: 15px;color: #ff9433;}
 
-.t-produtos { color:#333; margin-bottom:10px;}
+.t-produtos { color:#333; margin-bottom:10px; margin-top:15px; font-size: 20px; }
 .d-produtos {line-height:1.6em; font-size:14px; color:#333333;}
 
 
