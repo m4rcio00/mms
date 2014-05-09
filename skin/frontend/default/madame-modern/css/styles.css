@@ -1856,5 +1856,8 @@ text-decoration: none;
 .c-image {padding-left: 72px; background: url(../images/ico-atencao.png) no-repeat;}
 .t-cart {font-family: Arial;font-size: 15px;color: #ff9433;}
 
+.t-produtos { color:#333; margin-bottom:10px;}
+.d-produtos {line-height:1.6em; font-size:14px; color:#333333;}
+
 
 
