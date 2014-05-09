@@ -1,5 +1,7 @@
 .swatches-container .swatch-img,
-.swatches-container .swatch-span { margin:0 20px 2px 0; }
+.swatches-container .swatch-img:hover {border: 1px solid #444;}
+.swatches-container .swatch-span { margin:10 21px 2px 0; }
 .swatches-container .swatch-img { border:1px solid #c7c7c7; }
 .swatches-container .swatch-img.current { border:1px solid #ff8433; }
 .swatches-container .swatch-span { }
+div.swatches-container { padding-left: 4px;}
