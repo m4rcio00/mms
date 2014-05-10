@@ -890,7 +890,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .product-options .bundle dd.last { margin-bottom:0;}
 
 /* Product Tabs */
-.product-tabs { height:32px; background:#F7F7F7; padding:4px 0px 0;}
+.product-tabs { height:32px; background:#f2f2f2; padding:4px 0px 0;}
 .product-tabs li { float:left; font-size:12px; line-height:20px; }
 .product-tabs li.first { border-left:0; }
 .product-tabs li.last { border-right:0; }
@@ -901,7 +901,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .product-tabs li.active a, .product-tabs li.active a:hover { background:#ff8433; text-decoration:none;border-bottom:0px; border-right:0px; }
 .product-tabs li.active a span, .product-tabs li.active a span:hover { background:#ff8433; color:#fff; }
 .product-tabs-content h2 { display:none; font-size:12px; font-weight:bold; }
-.product-tabs-content { margin-top:0px; padding:10px;}
+.product-tabs-content { margin-top:0px; padding:10px; border: 1px solid #c7c7c7;}
 /* Grouped Product */
 .product-view .grouped-items-table { }
 /* Block: Description */
