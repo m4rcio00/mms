@@ -1860,6 +1860,7 @@ text-decoration: none;
 .d-produtos {line-height:1.6em; font-size:14px; color:#333333; font-family:"Droid Sans", Arial;}
 .detalhes {font-size:22px; border-bottom: 3px solid #c7c7c7; font-family:"Droid Sans", Arial; color:#ff8433;}
 
+.aboutproduct {margin-top: 15px;}
 .aboutproduct table {font-family: 'Droid Sans';}
 .aboutproduct  tbody td {padding: 15px;background: #fff; border: 1px solid #c7c7c7}
 .aboutproduct  .xl65 {background: #EEF3F9;color: #333;font-weight: bold;text-align: right; font-size: 14px; vertical-align: middle;}
