@@ -712,7 +712,8 @@ h1, h2, .page-title h2, .top .welcome-msg, .product_info strong, .product_info .
 .availability { margin:10px 0; color: #000; font-weight: 700; }
 .availability.in-stock span {width:35px; height:40px; color:#000; padding:5px 7px; text-align:center;}
 /*.availability.in-stock span {background: url("../images/sprites.png") repeat-x scroll 0 -273px transparent; width:35px; height:40px; display:inline-block; color:#FFF; padding:5px 7px; text-align:center;}*/
-.availability.out-of-stock span { color:#fff; background: url("../images/sprites.png") repeat-x scroll -68px -273px transparent; width:34px; height:25px; display:inline-block; padding:13px 8px; text-align:center; line-height:12px; font-size:10px;}
+.availability.out-of-stock span {width:35px; height:40px; color:#000; padding:5px 7px; text-align:center;}
+/*.availability.out-of-stock span { color:#fff; background: url("../images/sprites.png") repeat-x scroll -68px -273px transparent; width:34px; height:25px; display:inline-block; padding:13px 8px; text-align:center; line-height:12px; font-size:10px;}*/
 .availability-only { margin:0 0 7px; }
 .availability-only a { background:url(../images/i_availability_only_arrow.gif) 100% 0 no-repeat; cursor:pointer; padding-right:15px; }
 .availability-only .expanded { background-position:100% -15px; }
