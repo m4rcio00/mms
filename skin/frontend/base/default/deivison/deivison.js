@@ -76,8 +76,8 @@ jQuery(document).ready(function($j) {
                         $j('input[name="billing[taxvat]"]:eq(1)').attr('name', 'billing[taxvat-old]"]');
 
                         /*LIMPA CAMPOS*/
-                        $j('input[name="taxvat"]').val('');
-                        $j('input[name="billing[taxvat]"]').val('');
+                        //$j('input[name="taxvat"]').val('');
+                        //$j('input[name="billing[taxvat]"]').val('');
 
                         /*ADD CLASS TAXVAT*/
                         $j('input[name*="taxvat"]').attr('class', 'validar_cpfcnpj input-text');
@@ -119,8 +119,8 @@ jQuery(document).ready(function($j) {
                         $j('input[name="billing[taxvat]"]:eq(0)').attr('name', 'billing[taxvat-old]');
 
                         /*LIMPA CAMPOS*/
-                        $j('input[name="taxvat"]').val('');
-                        $j('input[name="billing[taxvat]"]').val('');
+                        //$j('input[name="taxvat"]').val('');
+                        //$j('input[name="billing[taxvat]"]').val('');
 
                         /*ADD CLASS TAXVAT*/
                         $j('input[name*="taxvat"]').attr('class', 'validar_cpfcnpj input-text');
