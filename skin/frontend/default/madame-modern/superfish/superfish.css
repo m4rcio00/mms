@@ -19,7 +19,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left:			10em; /* 
 .sf-menu a { color: #FFFFFF; float: left; font-weight: normal; margin: 0 44px 0 0; text-decoration:none; font-weight:700; font-size: 12px; }
 .sf-menu li.last a { margin-right:0; }
 .sf-menu li:hover a { color:#f40; border-bottom:3px solid #ff0054; }
-.sf-menu li li.last { border-bottom:3px solid #f40; }
+.sf-menu li li.last { border-bottom:3px solid #ff8433; }
 .sf-menu li li li { }
 .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active { outline:		0; }
 /*** arrows **/
