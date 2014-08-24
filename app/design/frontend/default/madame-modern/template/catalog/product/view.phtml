@@ -373,12 +373,19 @@ $_prev_pos = $_pos-1;
 		
         <?php
 		
-        if ($this->getProduct()->getDropShip()==0);
+        if ($this->getProduct()->getDropShip()==0) {;
 			
-       
-
+        	echo '<div class="prazo-mms"><h4>Prazo de Entrega</h4>';
+        	echo "<span>Produto Importado - Prazo médio de entrega entre 20 a 40 dias úteis</span></div>";
+		
+		//echo $this->getProduct()->getDropShip();
+		}
+		else {
+        	echo "Nao deu sorte";	
+        }
+		
 		?>
-
+		
         <div class="short-description">
           <?php /*?><h2><?php echo $this->__('Quick Overview') ?></h2><?php */?>
           <div class="std"><?php //echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
