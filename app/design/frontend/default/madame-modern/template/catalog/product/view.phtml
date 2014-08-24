@@ -372,13 +372,13 @@ $_prev_pos = $_pos-1;
         <?php //------------------------ FIM ------------------------------------------------------------ ?>
 		
         <?php
-        	echo $this->getProduct()->getDropShip();
-			echo "Meu Teste";
-		?>
-        
-        <div class="prazo-mms"><h4>Prazo de Entrega</h4>
-        <span>Produto Importado - Prazo médio de entrega entre 20 a 40 dias úteis</span></div>
+		
+        if ($this->getProduct()->getDropShip()==TRUE);
+			
+        echo '"<div class="prazo-mms"><h4>Prazo de Entrega</h4>"';
+        echo "<span>Produto Importado - Prazo médio de entrega entre 20 a 40 dias úteis</span></div>";
 
+		?>
 
         <div class="short-description">
           <?php /*?><h2><?php echo $this->__('Quick Overview') ?></h2><?php */?>
