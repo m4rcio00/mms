@@ -410,8 +410,8 @@ img.pagamento-mms{ }
 .pagamento-aceito-mms h4{font-size: 14px; display: block; }
 
 .prazo-mms{padding: 10px; padding-left: 88px; color: #c00;  background-color: #fff; border: 1px solid #C7C7C7; background: url(../images/icone_prazo.png) 24px no-repeat; font-size: 16px; position: relative; top: 10px; margin-top: 10px;}
-.prazo-mms h4 {font-size: 14px; display: block; }
-.prazo-mms span {font-size: 12px; display: block; }
+.prazo-mms h4 {font-size: 14px; display: block; color:#444; }
+.prazo-mms span {font-size: 13px; display: block; color:#444; }
 
 
 .frete-mms{color: #FFF;  background-color: #090; border: 1px solid #090; position: relative; font-size: 10px; font-family:Tahoma, Geneva, sans-serif; padding:3px 15px 4px 22px; width:132px; margin-bottom: 8px; text-transform: uppercase;}
@@ -813,7 +813,7 @@ s.regular-price .price { font-weight:700; font-size:22px; }
 .add-to-box .add-to-cart {margin-right: 22px; }
 .add-to-box .or { float:left; margin:0 10px; }
 .add-to-box .add-to-links { float:left; }
-.box1 { border-top:3px solid #c7c7c7; border-bottom:3px solid #c7c7c7; height:130px; position:relative; background: #f3f3f3; margin-top: 10px; }
+.box1 { border-top:3px solid #c7c7c7; border-bottom:3px solid #c7c7c7; height:102px; position:relative; background: #f3f3f3; margin-top: 10px; }
 .box1 .price-box { margin:14px 20px 0; float:left; }
 .box1 .regular-price .price { font-size:30px; font-weight:700; }
 .box1 .availability {display:none;}
