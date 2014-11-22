@@ -204,7 +204,7 @@ p.control input.checkbox, p.control input.radio { margin-right:6px; }
 .fieldset { border:1px solid #c7c7c7; padding:22px 15px 12px; margin:28px 0; }
 .fieldset .legend { float:left; font-weight:bold; font-size:13px; border:1px solid #414141; background:#000000; color:#727272; margin:-33px 0 0 -10px; padding:2px 8px 4px; position:relative; }
 /* Form Validation */
-.validation-advice { clear:both; min-height:13px; margin:3px 0 0; padding-left:17px; font-size:10px; line-height:13px; background:url(../images/validation_advice_bg.gif) 2px 1px no-repeat; color:#f00; }
+.validation-advice { clear:both; min-height:13px; margin:3px 0 0; padding-left:17px; font-size:14px; line-height:13px; background:url(../images/validation_advice_bg.gif) 2px 1px no-repeat; color:#c00; font-weight: 700; }
 .validation-failed { border:1px dashed #f00 !important; background:#faebe7 !important; }
 .validation-passed { }
 p.required { font-size:10px; text-align:right; color:#f00; }
